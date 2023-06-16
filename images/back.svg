@@ -1,0 +1,7 @@
+<svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1">
+    <path
+        d="M0 373L37.5 388.8C75 404.7 150 436.3 225 448C300 459.7 375 451.3 450 442.7C525 434 600 425 675 425.8C750 426.7 825 437.3 862.5 442.7L900 448L900 601L862.5 601C825 601 750 601 675 601C600 601 525 601 450 601C375 601 300 601 225 601C150 601 75 601 37.5 601L0 601Z"
+        fill="#BBDEFB" stroke-linecap="round" stroke-linejoin="miter">
+    </path>
+</svg>

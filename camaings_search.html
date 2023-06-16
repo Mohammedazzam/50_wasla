@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+        <meta charset="UTF-8">
+        <title>وصلة</title>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+      
+        <link rel="stylesheet" href="css/owl.carousel.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css"/>
+        <!-- slider css -->
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <!-- start go up -->
+    <div class="scroll-top">
+        <div class="go-up">
+            <svg style="transform: rotate(180deg);" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.70312 9.54688L1.32812 3.17188C0.859375 2.70312 0.859375 2 1.32812 1.57812L2.35938 0.5C2.82812 0.078125 3.53125 0.078125 3.95312 0.5L8.45312 5.04688L13 0.5C13.4219 0.078125 14.125 0.078125 14.5938 0.5L15.625 1.57812C16.0938 2 16.0938 2.70312 15.625 3.17188L9.25 9.54688C8.82812 9.96875 8.125 9.96875 7.70312 9.54688Z" fill="#fff"/>
+            </svg>            
+        </div>
+    </div>
+    <!-- end go up -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand wow fadeIn" data-wow-delay="1.3s" href="index.html">
+                <svg width="130" height="108" viewBox="0 0 130 108" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="130" height="108" fill="url(#pattern0)" />
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_1_3522" transform="matrix(0.00833333 0 0 0.0100309 0 -0.00154321)" />
+                        </pattern>
+                        <image id="image0_1_3522" width="120" height="100"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABkCAYAAABNcPQyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHcWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDYwLCAyMDIwLzA1LzEyLTE2OjA0OjE3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjIgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMy0wNS0xNlQwMjozNzozOSswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMy0wNS0xNlQwMjozNzozOSswMzowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjMtMDUtMTZUMDI6Mzc6MzkrMDM6MDAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzFmNDk3ZGItOTI2NS1jZjRmLWE1NTYtMTkwZDdkNmUxZDE0IiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6YTRkNzk2MWQtNzUxZC1iODRhLWJmOTUtZjllZWIxNDdiNmFkIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MDJlYTAxYTgtNDM1My0xZjRkLTkzMzktNGYwMzBhM2NlNTVkIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDowMmVhMDFhOC00MzUzLTFmNGQtOTMzOS00ZjAzMGEzY2U1NWQiIHN0RXZ0OndoZW49IjIwMjMtMDUtMTZUMDI6Mzc6MzkrMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMS4yIChXaW5kb3dzKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NzFmNDk3ZGItOTI2NS1jZjRmLWE1NTYtMTkwZDdkNmUxZDE0IiBzdEV2dDp3aGVuPSIyMDIzLTA1LTE2VDAyOjM3OjM5KzAzOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjEuMiAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDx4bXBNTTpJbmdyZWRpZW50cz4gPHJkZjpCYWc+IDxyZGY6bGkgc3RSZWY6bGlua0Zvcm09IlJlZmVyZW5jZVN0cmVhbSIgc3RSZWY6ZmlsZVBhdGg9ImNsb3VkLWFzc2V0Oi8vY2MtYXBpLXN0b3JhZ2UuYWRvYmUuaW8vYXNzZXRzL2Fkb2JlLWxpYnJhcmllcy80MzAzNjI3NC1kMjEyLTQyNzYtOTRmMi05NWI3NGZhMjhjZDc7bm9kZT03ZDliM2VkNS01Y2Y2LTRjZDMtYTY1Ny1mM2E1ZjUzMGQ1NzQiIHN0UmVmOkRvY3VtZW50SUQ9InV1aWQ6MmIzM2EzZjUtM2IxMi00Y2JiLWE0ZTktN2JjMGVlODAxYzdkIi8+IDwvcmRmOkJhZz4gPC94bXBNTTpJbmdyZWRpZW50cz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6FIz1LAAAGM0lEQVR4nO3dXYhXRRjH8e+qKb2wUdBWRjeD9CJJWVEZhIYgUWmRFOFKXkwRFUQQ5EVvBIVFXXTRnR2wQCQzLEgyb7a9KChQErwJ8vRCm71QRPSyudZ2MXtyW1bceWbmnGfOOb+7hf8zM7ufPfM/r3MGJicn6dPezGt6AH3SZoHPhwcGBlKNI02K8nxgObCE//8z/wIcBA5hzUQDIxPHd8Yd8ClQD1yUA8AKYBhYC1x4kopx4CPgTWAn1vycdoDh6SZwUc4D7gKeAi4VtjIObAO2YM3XkUYWPd0DLsqrga3AFZFaPAq8ADyLNUcjtRkt3QIuykeB5/Hcl5hjDgB3YM1XCdoWpxvARTkfKIBNiXv6EbgJaw4k7mfO8QXO7zDJ4b5OelyAc4ARivLaGvpKkryAj+NuqLHXQWBfrsj5ADeDWyVb5DyAm8WtkiWyfmAduFWyQ9YNrAu3SlbIeoF14lbJBlknsG7cKlkg6wMuygXox62iHlnXmayiXAjswl0Jyim/Amuw5uPUHeV7JitfXFC8JesAzhu3ikrk5oHbgVtFHXKzwO3CraIKuTngduJWUYPcDHC7cauoQK4fuBu4VRpHrhe4W7hVGkWuD7ibuFUaQ64HuNu4VRpBTg/c405P7chpz0WH4f6Auz/5AO5RE815FbjK4/Pic9d6bpsNw50AlmHNZ4La+lOUbwO3eVaJkHVcbAiflkezwZWnluk6PnCc79yxSKPRnuTIcYH7HSpJkiLHA+5xQ5IMOQ5wjxsjSZDDgd0Ncm/Q48ZIdOQwYPdE/Tbg9ghj6eNSIS+L0VjoFvwksDHGQGbk9wRt5pRBYC9FeW5oQ3LgolwJPB06gBMkq4VREmUxsH1qlhRHBlyUi3Cn55q/p6vdWQ3YkAakQA/glibqkz7PUZRnSIv9gd0h0WZph328MwTcJy2WbMHrgfOkHfYR5UFpoQS4jmeGFtbQR05ZQlH6XI78L37LD7npebWkI88MU5RLA9s4AmzSuNaVMGuA/b5FvutLLQdO9e1EkEFgZUD9GHBvi3ABrpMU+U7Rl0s6qTljwCqs+bzpgUTOJZIiX+CLJZ3UmLbiAlwgKfIFni/ppKa0GRfgdElRW85EtR3XpShP8y1pA3A3cAGs+cO3xBf4T98OEqc7uPCTpMgXWM2qq3QLF+ALSZEv8CeSThKka7gAhyRFfsBucexS0lHEdBEX4ANJkWQna7eko0jpKu4k8L6kUAK8Q9JRhHQVF2AP1nwnKfQHtmY/MCrpLCBfkgq3KIcpyouitxs3r0gLpcfBz0g7FOQwcEMyXLdsovcJhBozijWi6RmkwNaMAO9IO/XIYdyW+030lo/jaj7ZMwE8EtJAyC93P+6tJKmSEncd7n5uzbgAT2DNpyENyH9Ba74H7iTNLa6pcXeR5l1LMfMW8FJoI2H/wdaM4m58/yd0INNSB+4p0duOmxFgGGuC/67hU5Q1O4F7iIPc4zrcW7HmrxiNxfkOsmY74cg97nFc76tGJ0q8nYxw5Ft63Li4EHsvMgz5xam7NuOl47iQ4jBBjrwW2BUNuccFUh0HNo1cP670CcCkuJDyQL8p5Ga23MWCmuS4kPpMThjye943mTWBW5SXAVd6VtWCC3W9Vkd+3nfuf4gw3LsB32UFFwErgC34PYwXhKtnKcOZSYncoR0qHUsZzhb5dH0j8O4Jp+sO4UpS79WU2Mg97klT/+WyWMg97pzS3LsLw76TXwO20kFcvTtZsyWPuyqkSbLl6t3Jmi1xrkJpTKPT8vQ0v+W0D1kNLmgAhjYhq8IFLcDQBmR1uKAJGHJGVokL2oAhR2S1uKARGHJCVo0LWoEhB2T1uKAZGDQjZ4EL2oFBI3I2uJADMGhCzgoXcgEGDcjZ4UJOwNAkcpa4kBswVMgbqe/FHdniQo7AANbsANYBvyXuaTdwc664kCswgDV7gWsQrh91khwDHgfWY814gvZrS7MX/GPEveJnM/AYwhVZZ+RD4CGsORihrejJ646OmCnKIeBh3BtKhjyrJ4F9wMtTM4PadBe4intZ5ircOw6uB5YCZ8/41DHcin37cTtRe7Dm2xpHKU4PPFuK8izgzKmf/gaOYM2xBkckTlLgPvnlX2drp3sn/BGQAAAAAElFTkSuQmCC" />
+                    </defs>
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link wow fadeInRight active" data-wow-delay=".2s" href="blog.html">المدونة</a>
+                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".3s" href="source_lib.html">المصادر</a>
+                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".4s" href="campaigns.html">حملات المناصرة</a>
+                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".5s" href="infographic.html">انفوجرافيك</a>
+                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".6s" href="wasla_center.html">مركز وصلة</a>
+                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".7s" href="aboute_us.html">من نحن</a>
+                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".8s" href="#">تواصل معنا</a>
+                </div>
+                <a href="#" class="btn bg-main-color text-white wow fadeIn" data-wow-delay="1s">
+                    دخول
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 8.25H4.5C4.08579 8.25 3.75 8.58579 3.75 9V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V9C20.25 8.58579 19.9142 8.25 19.5 8.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.625 8.25V4.875C8.625 3.97989 8.98058 3.12145 9.61351 2.48851C10.2465 1.85558 11.1049 1.5 12 1.5C12.8951 1.5 13.7535 1.85558 14.3865 2.48851C15.0194 3.12145 15.375 3.97989 15.375 4.875V8.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15.375C12.6213 15.375 13.125 14.8713 13.125 14.25C13.125 13.6287 12.6213 13.125 12 13.125C11.3787 13.125 10.875 13.6287 10.875 14.25C10.875 14.8713 11.3787 15.375 12 15.375Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <hr style="color: #7777772E;height: 4px;">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-9 blog-main-sec">
+                <!-- start blog cards -->
+                <div class="search-blog-result">
+                    <div class="container">
+                        <div class="search-filter">
+                            <form action="">
+                                <div class="row">
+                                    <div data-wow-delay=".4s" class="wow bounceInRight form-group col-6 col-md-4 col-xl-2 my-4">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.313 8.4375H4.68799C4.17022 8.4375 3.75049 8.85723 3.75049 9.375V24.375C3.75049 24.8928 4.17022 25.3125 4.68799 25.3125H25.313C25.8308 25.3125 26.2505 24.8928 26.2505 24.375V9.375C26.2505 8.85723 25.8308 8.4375 25.313 8.4375Z" stroke="#009DDE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19.688 8.4375V6.5625C19.688 6.06522 19.4904 5.58831 19.1388 5.23667C18.7872 4.88504 18.3103 4.6875 17.813 4.6875H12.188C11.6907 4.6875 11.2138 4.88504 10.8622 5.23667C10.5105 5.58831 10.313 6.06522 10.313 6.5625V8.4375" stroke="#009DDE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M26.2505 14.8008C22.8313 16.7782 18.9503 17.8172 15.0005 17.8125C11.0499 17.8228 7.16753 16.7834 3.75049 14.8008" stroke="#009DDE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.5942 14.0625H16.4067" stroke="#009DDE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                        <select type="text" class="form-control form-control-lg">
+                                            <option value="">التصنيف</option>
+                                        </select>
+                                    </div>
+                                    <div data-wow-delay=".6s" class="wow bounceInRight form-group col-6 col-md-4 col-xl-2 my-4">
+                                        <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.8504 21.475H5.15039C3.99108 21.4717 2.8802 21.0097 2.06044 20.19C1.24068 19.3702 0.778689 18.2593 0.775391 17.1V4.91251C0.775391 3.75218 1.23633 2.63939 2.0568 1.81891C2.87727 0.998442 3.99007 0.537506 5.15039 0.537506H22.8504C24.0107 0.537506 25.1235 0.998442 25.944 1.81891C26.7645 2.63939 27.2254 3.75218 27.2254 4.91251V17.1C27.2221 18.2593 26.7601 19.3702 25.9403 20.19C25.1206 21.0097 24.0097 21.4717 22.8504 21.475ZM5.15039 1.78751C4.32159 1.78751 3.52673 2.11675 2.94068 2.7028C2.35463 3.28885 2.02539 4.0837 2.02539 4.91251V17.1C2.02868 17.9278 2.35898 18.7207 2.94432 19.3061C3.52966 19.8914 4.3226 20.2217 5.15039 20.225H22.8504C23.6782 20.2217 24.4711 19.8914 25.0565 19.3061C25.6418 18.7207 25.9721 17.9278 25.9754 17.1V4.91251C25.9754 4.0837 25.6461 3.28885 25.0601 2.7028C24.474 2.11675 23.6792 1.78751 22.8504 1.78751H5.15039Z" fill="#009DDE"/>
+                                            <path d="M6.00068 6.33752C5.80537 6.33752 5.61445 6.2796 5.45206 6.1711C5.28966 6.06259 5.16309 5.90836 5.08835 5.72792C5.01361 5.54748 4.99406 5.34892 5.03216 5.15737C5.07026 4.96581 5.16431 4.78986 5.30242 4.65175C5.44052 4.51365 5.61648 4.4196 5.80803 4.38149C5.99959 4.34339 6.19814 4.36295 6.37858 4.43769C6.55903 4.51243 6.71325 4.639 6.82176 4.80139C6.93027 4.96379 6.98818 5.15471 6.98818 5.35002C6.98818 5.61192 6.88414 5.8631 6.69895 6.04829C6.51376 6.23348 6.26258 6.33752 6.00068 6.33752ZM6.00068 5.08752C5.93106 5.08752 5.8643 5.11518 5.81507 5.1644C5.76584 5.21363 5.73818 5.2804 5.73818 5.35002C5.73818 5.63752 6.26318 5.63752 6.27568 5.35002C6.27572 5.31447 6.26854 5.27928 6.25458 5.24659C6.24061 5.2139 6.22015 5.18439 6.19443 5.15984C6.16872 5.13529 6.13829 5.11623 6.10498 5.1038C6.07168 5.09136 6.03619 5.08583 6.00068 5.08752Z" fill="#009DDE"/>
+                                            <path d="M10.8503 6.33752C10.655 6.33752 10.4641 6.2796 10.3017 6.1711C10.1393 6.06259 10.0127 5.90836 9.93796 5.72792C9.86322 5.54748 9.84366 5.34892 9.88177 5.15737C9.91987 4.96581 10.0139 4.78986 10.152 4.65175C10.2901 4.51365 10.4661 4.4196 10.6576 4.38149C10.8492 4.34339 11.0478 4.36295 11.2282 4.43769C11.4086 4.51243 11.5629 4.639 11.6714 4.80139C11.7799 4.96379 11.8378 5.15471 11.8378 5.35002C11.8378 5.61192 11.7338 5.8631 11.5486 6.04829C11.3634 6.23348 11.1122 6.33752 10.8503 6.33752ZM10.8503 5.08752C10.8158 5.08752 10.7817 5.09431 10.7498 5.1075C10.718 5.12069 10.6891 5.14003 10.6647 5.1644C10.6403 5.18878 10.621 5.21772 10.6078 5.24956C10.5946 5.28141 10.5878 5.31555 10.5878 5.35002C10.5878 5.63752 11.1128 5.63752 11.1128 5.35002C11.1128 5.2804 11.0851 5.21363 11.0359 5.1644C10.9867 5.11518 10.9199 5.08752 10.8503 5.08752Z" fill="#009DDE"/>
+                                            <path d="M15.6882 6.33752C15.4929 6.33752 15.302 6.2796 15.1396 6.1711C14.9772 6.06259 14.8506 5.90836 14.7759 5.72792C14.7011 5.54748 14.6816 5.34892 14.7197 5.15737C14.7578 4.96581 14.8518 4.78986 14.9899 4.65175C15.128 4.51365 15.304 4.4196 15.4955 4.38149C15.6871 4.34339 15.8856 4.36295 16.0661 4.43769C16.2465 4.51243 16.4008 4.639 16.5093 4.80139C16.6178 4.96379 16.6757 5.15471 16.6757 5.35002C16.6757 5.61192 16.5716 5.8631 16.3865 6.04829C16.2013 6.23348 15.9501 6.33752 15.6882 6.33752ZM15.6882 5.08752C15.6186 5.08752 15.5518 5.11518 15.5026 5.1644C15.4533 5.21363 15.4257 5.2804 15.4257 5.35002C15.4257 5.63752 15.9507 5.63752 15.9632 5.35002C15.9632 5.31447 15.956 5.27928 15.9421 5.24659C15.9281 5.2139 15.9076 5.18439 15.8819 5.15984C15.8562 5.13529 15.8258 5.11623 15.7925 5.1038C15.7592 5.09136 15.7237 5.08583 15.6882 5.08752Z" fill="#009DDE"/>
+                                            <path d="M17.4379 16.2375C17.2758 16.2336 17.1205 16.1715 17.0004 16.0625C16.9419 16.0044 16.8954 15.9353 16.8636 15.8591C16.8319 15.7829 16.8156 15.7013 16.8156 15.6187C16.8156 15.5362 16.8319 15.4545 16.8636 15.3784C16.8954 15.3022 16.9419 15.2331 17.0004 15.175L19.0004 13.125L16.7504 10.875C16.6906 10.8189 16.643 10.7511 16.6104 10.6759C16.5778 10.6006 16.561 10.5195 16.561 10.4375C16.561 10.3555 16.5778 10.2744 16.6104 10.1991C16.643 10.1239 16.6906 10.0561 16.7504 10C16.8085 9.94142 16.8777 9.89492 16.9538 9.86319C17.03 9.83146 17.1117 9.81512 17.1942 9.81512C17.2767 9.81512 17.3584 9.83146 17.4345 9.86319C17.5107 9.89492 17.5798 9.94142 17.6379 10L20.3254 12.6875C20.4371 12.8058 20.4993 12.9623 20.4993 13.125C20.4993 13.2877 20.4371 13.4442 20.3254 13.5625L17.8254 16.0625C17.7185 16.1611 17.5826 16.2224 17.4379 16.2375Z" fill="#009DDE"/>
+                                            <path d="M11.0629 16.2375C10.9008 16.2336 10.7455 16.1715 10.6254 16.0625L8.12543 13.5625C8.06565 13.5064 8.01799 13.4386 7.98542 13.3634C7.95284 13.2881 7.93604 13.207 7.93604 13.125C7.93604 13.043 7.95284 12.9619 7.98542 12.8866C8.01799 12.8114 8.06565 12.7436 8.12543 12.6875L10.8254 10C10.8835 9.94142 10.9527 9.89492 11.0288 9.86319C11.105 9.83146 11.1867 9.81512 11.2692 9.81512C11.3517 9.81512 11.4334 9.83146 11.5095 9.86319C11.5857 9.89492 11.6548 9.94142 11.7129 10C11.8274 10.1168 11.8916 10.2739 11.8916 10.4375C11.8916 10.6011 11.8274 10.7582 11.7129 10.875L9.46293 13.125L11.5004 15.175C11.6157 15.2939 11.6802 15.4531 11.6802 15.6187C11.6802 15.7844 11.6157 15.9436 11.5004 16.0625C11.3804 16.1715 11.2251 16.2336 11.0629 16.2375Z" fill="#009DDE"/>
+                                        </svg>                                            
+                                        <select type="text" class="form-control form-control-lg">
+                                            <option value="">النوع</option>
+                                        </select>
+                                    </div>
+                                    <div data-wow-delay=".8s" class="wow bounceInRight form-group col-6 col-md-4 col-xl-3 my-md-4 my-xl-4">
+                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.4449 13.75H12.5005V20H19.4449V13.75ZM18.056 0V2.5H6.94493V0H4.16715V2.5H2.77827C1.24354 2.5 0.0143772 3.61875 0.0143772 5L0.000488281 22.5C0.000488281 23.8813 1.24354 25 2.77827 25H22.2227C23.7574 25 25.0005 23.8813 25.0005 22.5V5C25.0005 3.61875 23.7574 2.5 22.2227 2.5H20.8338V0H18.056ZM22.2227 22.5H2.77827V8.75H22.2227V22.5Z" fill="#039EDE"/>
+                                            </svg> 
+                                        <input class="datetimepicker form-control form-control-lg" type="text" value="سنة النشر" name="" id=""> 
+                                    </div>
+                                    <div data-wow-delay="1s" class="wow bounceInRight form-group form-group-lg col-6 col-md-12 col-xl-5 my-xl-4">
+                                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5005 0.25C5.28728 0.25 0.250488 5.2868 0.250488 11.5C0.250488 17.7132 5.28728 22.75 11.5005 22.75C14.1568 22.75 16.598 21.8294 18.5226 20.2899L24.3666 26.1339C24.8548 26.622 25.6462 26.622 26.1344 26.1339C26.6225 25.6457 26.6225 24.8543 26.1344 24.3661L20.2904 18.5221C21.8299 16.5975 22.7505 14.1563 22.7505 11.5C22.7505 5.2868 17.7137 0.25 11.5005 0.25ZM2.75049 11.5C2.75049 6.66751 6.668 2.75 11.5005 2.75C16.333 2.75 20.2505 6.66751 20.2505 11.5C20.2505 16.3325 16.333 20.25 11.5005 20.25C6.668 20.25 2.75049 16.3325 2.75049 11.5Z" fill="#009DDE"/>
+                                        </svg>                                            
+                                        <input type="text" class="form-control form-control-lg">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="campaigns-card wow fadeIn" data-wow-delay=".2s">
+                                    <div class="campaigns-card-header">
+                                        <div class="card-image" style="background-image: url('images/Image2.png');">
+                                            <div class="date">
+                                                14 <br> Feb
+                                            </div>
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    منذ 3 أيام
+                                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.71971 0C3.2837 0 0.488281 2.6916 0.488281 6C0.488281 9.3084 3.2837 12 6.71971 12C10.1557 12 12.9511 9.3084 12.9511 6C12.9511 2.6916 10.1557 0 6.71971 0ZM6.71971 10.8C3.97103 10.8 1.73457 8.6466 1.73457 6C1.73457 3.3534 3.97103 1.2 6.71971 1.2C9.46839 1.2 11.7049 3.3534 11.7049 6C11.7049 8.6466 9.46839 10.8 6.71971 10.8Z" fill="#555555"/>
+                                                        <path d="M7.34297 3H6.09668V6.2484L8.14869 8.2242L9.02981 7.3758L7.34297 5.7516V3Z" fill="#555555"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 x-border">
+                                                    22-05-2022
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.08632 5.4H4.33261V6.6H3.08632V5.4ZM11.8103 2.4V10.8C11.8103 11.46 11.2495 12 10.564 12H1.84004C1.5095 12 1.1925 11.8736 0.958779 11.6485C0.725055 11.4235 0.59375 11.1183 0.59375 10.8L0.599981 2.4C0.599981 1.74 1.14835 1.2 1.84004 1.2H2.46318V0H3.70946V1.2H8.69461V0H9.94089V1.2H10.564C11.2495 1.2 11.8103 1.74 11.8103 2.4ZM1.84004 3.6H10.564V2.4H1.84004V3.6ZM10.564 10.8V4.8H1.84004V10.8H10.564ZM8.07146 6.6H9.31775V5.4H8.07146V6.6ZM5.57889 6.6H6.82518V5.4H5.57889V6.6Z" fill="#555555"/>
+                                                    </svg>                                    
+                                                </div>
+                                                <div class="col-4">
+                                                    مؤسسة ضامن
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">
+                                        <h2>دورنا تجاه ذو الإحتياجات الخاصة والمناصرة الرقمية</h2>
+                                        
+                                        <a href="#"  class="btn bg-main-color text-white">تفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="campaigns-card wow fadeIn" data-wow-delay=".4s">
+                                    <div class="campaigns-card-header">
+                                        <div class="card-image" style="background-image: url('images/Image2.png');">
+                                            <div class="date">
+                                                14 <br> Feb
+                                            </div>
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    منذ 3 أيام
+                                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.71971 0C3.2837 0 0.488281 2.6916 0.488281 6C0.488281 9.3084 3.2837 12 6.71971 12C10.1557 12 12.9511 9.3084 12.9511 6C12.9511 2.6916 10.1557 0 6.71971 0ZM6.71971 10.8C3.97103 10.8 1.73457 8.6466 1.73457 6C1.73457 3.3534 3.97103 1.2 6.71971 1.2C9.46839 1.2 11.7049 3.3534 11.7049 6C11.7049 8.6466 9.46839 10.8 6.71971 10.8Z" fill="#555555"/>
+                                                        <path d="M7.34297 3H6.09668V6.2484L8.14869 8.2242L9.02981 7.3758L7.34297 5.7516V3Z" fill="#555555"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 x-border">
+                                                    22-05-2022
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.08632 5.4H4.33261V6.6H3.08632V5.4ZM11.8103 2.4V10.8C11.8103 11.46 11.2495 12 10.564 12H1.84004C1.5095 12 1.1925 11.8736 0.958779 11.6485C0.725055 11.4235 0.59375 11.1183 0.59375 10.8L0.599981 2.4C0.599981 1.74 1.14835 1.2 1.84004 1.2H2.46318V0H3.70946V1.2H8.69461V0H9.94089V1.2H10.564C11.2495 1.2 11.8103 1.74 11.8103 2.4ZM1.84004 3.6H10.564V2.4H1.84004V3.6ZM10.564 10.8V4.8H1.84004V10.8H10.564ZM8.07146 6.6H9.31775V5.4H8.07146V6.6ZM5.57889 6.6H6.82518V5.4H5.57889V6.6Z" fill="#555555"/>
+                                                    </svg>                                    
+                                                </div>
+                                                <div class="col-4">
+                                                    مؤسسة ضامن
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">
+                                        <h2>دورنا تجاه ذو الإحتياجات الخاصة والمناصرة الرقمية</h2>
+                                        
+                                        <a href="#"  class="btn bg-main-color text-white">تفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="campaigns-card wow fadeIn" data-wow-delay=".6s">
+                                    <div class="campaigns-card-header">
+                                        <div class="card-image" style="background-image: url('images/Image2.png');">
+                                            <div class="date">
+                                                14 <br> Feb
+                                            </div>
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    منذ 3 أيام
+                                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.71971 0C3.2837 0 0.488281 2.6916 0.488281 6C0.488281 9.3084 3.2837 12 6.71971 12C10.1557 12 12.9511 9.3084 12.9511 6C12.9511 2.6916 10.1557 0 6.71971 0ZM6.71971 10.8C3.97103 10.8 1.73457 8.6466 1.73457 6C1.73457 3.3534 3.97103 1.2 6.71971 1.2C9.46839 1.2 11.7049 3.3534 11.7049 6C11.7049 8.6466 9.46839 10.8 6.71971 10.8Z" fill="#555555"/>
+                                                        <path d="M7.34297 3H6.09668V6.2484L8.14869 8.2242L9.02981 7.3758L7.34297 5.7516V3Z" fill="#555555"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 x-border">
+                                                    22-05-2022
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.08632 5.4H4.33261V6.6H3.08632V5.4ZM11.8103 2.4V10.8C11.8103 11.46 11.2495 12 10.564 12H1.84004C1.5095 12 1.1925 11.8736 0.958779 11.6485C0.725055 11.4235 0.59375 11.1183 0.59375 10.8L0.599981 2.4C0.599981 1.74 1.14835 1.2 1.84004 1.2H2.46318V0H3.70946V1.2H8.69461V0H9.94089V1.2H10.564C11.2495 1.2 11.8103 1.74 11.8103 2.4ZM1.84004 3.6H10.564V2.4H1.84004V3.6ZM10.564 10.8V4.8H1.84004V10.8H10.564ZM8.07146 6.6H9.31775V5.4H8.07146V6.6ZM5.57889 6.6H6.82518V5.4H5.57889V6.6Z" fill="#555555"/>
+                                                    </svg>                                    
+                                                </div>
+                                                <div class="col-4">
+                                                    مؤسسة ضامن
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">
+                                        <h2>دورنا تجاه ذو الإحتياجات الخاصة والمناصرة الرقمية</h2>
+                                        
+                                        <a href="#"  class="btn bg-main-color text-white">تفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="campaigns-card wow fadeIn" data-wow-delay=".2s">
+                                    <div class="campaigns-card-header">
+                                        <div class="card-image" style="background-image: url('images/Image2.png');">
+                                            <div class="date">
+                                                14 <br> Feb
+                                            </div>
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    منذ 3 أيام
+                                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.71971 0C3.2837 0 0.488281 2.6916 0.488281 6C0.488281 9.3084 3.2837 12 6.71971 12C10.1557 12 12.9511 9.3084 12.9511 6C12.9511 2.6916 10.1557 0 6.71971 0ZM6.71971 10.8C3.97103 10.8 1.73457 8.6466 1.73457 6C1.73457 3.3534 3.97103 1.2 6.71971 1.2C9.46839 1.2 11.7049 3.3534 11.7049 6C11.7049 8.6466 9.46839 10.8 6.71971 10.8Z" fill="#555555"/>
+                                                        <path d="M7.34297 3H6.09668V6.2484L8.14869 8.2242L9.02981 7.3758L7.34297 5.7516V3Z" fill="#555555"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 x-border">
+                                                    22-05-2022
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.08632 5.4H4.33261V6.6H3.08632V5.4ZM11.8103 2.4V10.8C11.8103 11.46 11.2495 12 10.564 12H1.84004C1.5095 12 1.1925 11.8736 0.958779 11.6485C0.725055 11.4235 0.59375 11.1183 0.59375 10.8L0.599981 2.4C0.599981 1.74 1.14835 1.2 1.84004 1.2H2.46318V0H3.70946V1.2H8.69461V0H9.94089V1.2H10.564C11.2495 1.2 11.8103 1.74 11.8103 2.4ZM1.84004 3.6H10.564V2.4H1.84004V3.6ZM10.564 10.8V4.8H1.84004V10.8H10.564ZM8.07146 6.6H9.31775V5.4H8.07146V6.6ZM5.57889 6.6H6.82518V5.4H5.57889V6.6Z" fill="#555555"/>
+                                                    </svg>                                    
+                                                </div>
+                                                <div class="col-4">
+                                                    مؤسسة ضامن
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">
+                                        <h2>دورنا تجاه ذو الإحتياجات الخاصة والمناصرة الرقمية</h2>
+                                        
+                                        <a href="#"  class="btn bg-main-color text-white">تفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="campaigns-card wow fadeIn" data-wow-delay=".4s">
+                                    <div class="campaigns-card-header">
+                                        <div class="card-image" style="background-image: url('images/Image2.png');">
+                                            <div class="date">
+                                                14 <br> Feb
+                                            </div>
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    منذ 3 أيام
+                                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.71971 0C3.2837 0 0.488281 2.6916 0.488281 6C0.488281 9.3084 3.2837 12 6.71971 12C10.1557 12 12.9511 9.3084 12.9511 6C12.9511 2.6916 10.1557 0 6.71971 0ZM6.71971 10.8C3.97103 10.8 1.73457 8.6466 1.73457 6C1.73457 3.3534 3.97103 1.2 6.71971 1.2C9.46839 1.2 11.7049 3.3534 11.7049 6C11.7049 8.6466 9.46839 10.8 6.71971 10.8Z" fill="#555555"/>
+                                                        <path d="M7.34297 3H6.09668V6.2484L8.14869 8.2242L9.02981 7.3758L7.34297 5.7516V3Z" fill="#555555"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 x-border">
+                                                    22-05-2022
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.08632 5.4H4.33261V6.6H3.08632V5.4ZM11.8103 2.4V10.8C11.8103 11.46 11.2495 12 10.564 12H1.84004C1.5095 12 1.1925 11.8736 0.958779 11.6485C0.725055 11.4235 0.59375 11.1183 0.59375 10.8L0.599981 2.4C0.599981 1.74 1.14835 1.2 1.84004 1.2H2.46318V0H3.70946V1.2H8.69461V0H9.94089V1.2H10.564C11.2495 1.2 11.8103 1.74 11.8103 2.4ZM1.84004 3.6H10.564V2.4H1.84004V3.6ZM10.564 10.8V4.8H1.84004V10.8H10.564ZM8.07146 6.6H9.31775V5.4H8.07146V6.6ZM5.57889 6.6H6.82518V5.4H5.57889V6.6Z" fill="#555555"/>
+                                                    </svg>                                    
+                                                </div>
+                                                <div class="col-4">
+                                                    مؤسسة ضامن
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">
+                                        <h2>دورنا تجاه ذو الإحتياجات الخاصة والمناصرة الرقمية</h2>
+                                        
+                                        <a href="#"  class="btn bg-main-color text-white">تفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="campaigns-card wow fadeIn" data-wow-delay=".6s">
+                                    <div class="campaigns-card-header">
+                                        <div class="card-image" style="background-image: url('images/Image2.png');">
+                                            <div class="date">
+                                                14 <br> Feb
+                                            </div>
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    منذ 3 أيام
+                                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.71971 0C3.2837 0 0.488281 2.6916 0.488281 6C0.488281 9.3084 3.2837 12 6.71971 12C10.1557 12 12.9511 9.3084 12.9511 6C12.9511 2.6916 10.1557 0 6.71971 0ZM6.71971 10.8C3.97103 10.8 1.73457 8.6466 1.73457 6C1.73457 3.3534 3.97103 1.2 6.71971 1.2C9.46839 1.2 11.7049 3.3534 11.7049 6C11.7049 8.6466 9.46839 10.8 6.71971 10.8Z" fill="#555555"/>
+                                                        <path d="M7.34297 3H6.09668V6.2484L8.14869 8.2242L9.02981 7.3758L7.34297 5.7516V3Z" fill="#555555"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 x-border">
+                                                    22-05-2022
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.08632 5.4H4.33261V6.6H3.08632V5.4ZM11.8103 2.4V10.8C11.8103 11.46 11.2495 12 10.564 12H1.84004C1.5095 12 1.1925 11.8736 0.958779 11.6485C0.725055 11.4235 0.59375 11.1183 0.59375 10.8L0.599981 2.4C0.599981 1.74 1.14835 1.2 1.84004 1.2H2.46318V0H3.70946V1.2H8.69461V0H9.94089V1.2H10.564C11.2495 1.2 11.8103 1.74 11.8103 2.4ZM1.84004 3.6H10.564V2.4H1.84004V3.6ZM10.564 10.8V4.8H1.84004V10.8H10.564ZM8.07146 6.6H9.31775V5.4H8.07146V6.6ZM5.57889 6.6H6.82518V5.4H5.57889V6.6Z" fill="#555555"/>
+                                                    </svg>                                    
+                                                </div>
+                                                <div class="col-4">
+                                                    مؤسسة ضامن
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">
+                                        <h2>دورنا تجاه ذو الإحتياجات الخاصة والمناصرة الرقمية</h2>
+                                        
+                                        <a href="#"  class="btn bg-main-color text-white">تفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="campaigns-card wow fadeIn" data-wow-delay=".2s">
+                                    <div class="campaigns-card-header">
+                                        <div class="card-image" style="background-image: url('images/Image2.png');">
+                                            <div class="date">
+                                                14 <br> Feb
+                                            </div>
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    منذ 3 أيام
+                                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.71971 0C3.2837 0 0.488281 2.6916 0.488281 6C0.488281 9.3084 3.2837 12 6.71971 12C10.1557 12 12.9511 9.3084 12.9511 6C12.9511 2.6916 10.1557 0 6.71971 0ZM6.71971 10.8C3.97103 10.8 1.73457 8.6466 1.73457 6C1.73457 3.3534 3.97103 1.2 6.71971 1.2C9.46839 1.2 11.7049 3.3534 11.7049 6C11.7049 8.6466 9.46839 10.8 6.71971 10.8Z" fill="#555555"/>
+                                                        <path d="M7.34297 3H6.09668V6.2484L8.14869 8.2242L9.02981 7.3758L7.34297 5.7516V3Z" fill="#555555"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 x-border">
+                                                    22-05-2022
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.08632 5.4H4.33261V6.6H3.08632V5.4ZM11.8103 2.4V10.8C11.8103 11.46 11.2495 12 10.564 12H1.84004C1.5095 12 1.1925 11.8736 0.958779 11.6485C0.725055 11.4235 0.59375 11.1183 0.59375 10.8L0.599981 2.4C0.599981 1.74 1.14835 1.2 1.84004 1.2H2.46318V0H3.70946V1.2H8.69461V0H9.94089V1.2H10.564C11.2495 1.2 11.8103 1.74 11.8103 2.4ZM1.84004 3.6H10.564V2.4H1.84004V3.6ZM10.564 10.8V4.8H1.84004V10.8H10.564ZM8.07146 6.6H9.31775V5.4H8.07146V6.6ZM5.57889 6.6H6.82518V5.4H5.57889V6.6Z" fill="#555555"/>
+                                                    </svg>                                    
+                                                </div>
+                                                <div class="col-4">
+                                                    مؤسسة ضامن
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">
+                                        <h2>دورنا تجاه ذو الإحتياجات الخاصة والمناصرة الرقمية</h2>
+                                        
+                                        <a href="#"  class="btn bg-main-color text-white">تفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="campaigns-card wow fadeIn" data-wow-delay=".4s">
+                                    <div class="campaigns-card-header">
+                                        <div class="card-image" style="background-image: url('images/Image2.png');">
+                                            <div class="date">
+                                                14 <br> Feb
+                                            </div>
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    منذ 3 أيام
+                                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.71971 0C3.2837 0 0.488281 2.6916 0.488281 6C0.488281 9.3084 3.2837 12 6.71971 12C10.1557 12 12.9511 9.3084 12.9511 6C12.9511 2.6916 10.1557 0 6.71971 0ZM6.71971 10.8C3.97103 10.8 1.73457 8.6466 1.73457 6C1.73457 3.3534 3.97103 1.2 6.71971 1.2C9.46839 1.2 11.7049 3.3534 11.7049 6C11.7049 8.6466 9.46839 10.8 6.71971 10.8Z" fill="#555555"/>
+                                                        <path d="M7.34297 3H6.09668V6.2484L8.14869 8.2242L9.02981 7.3758L7.34297 5.7516V3Z" fill="#555555"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 x-border">
+                                                    22-05-2022
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.08632 5.4H4.33261V6.6H3.08632V5.4ZM11.8103 2.4V10.8C11.8103 11.46 11.2495 12 10.564 12H1.84004C1.5095 12 1.1925 11.8736 0.958779 11.6485C0.725055 11.4235 0.59375 11.1183 0.59375 10.8L0.599981 2.4C0.599981 1.74 1.14835 1.2 1.84004 1.2H2.46318V0H3.70946V1.2H8.69461V0H9.94089V1.2H10.564C11.2495 1.2 11.8103 1.74 11.8103 2.4ZM1.84004 3.6H10.564V2.4H1.84004V3.6ZM10.564 10.8V4.8H1.84004V10.8H10.564ZM8.07146 6.6H9.31775V5.4H8.07146V6.6ZM5.57889 6.6H6.82518V5.4H5.57889V6.6Z" fill="#555555"/>
+                                                    </svg>                                    
+                                                </div>
+                                                <div class="col-4">
+                                                    مؤسسة ضامن
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">
+                                        <h2>دورنا تجاه ذو الإحتياجات الخاصة والمناصرة الرقمية</h2>
+                                        
+                                        <a href="#"  class="btn bg-main-color text-white">تفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="campaigns-card wow fadeIn" data-wow-delay=".6s">
+                                    <div class="campaigns-card-header">
+                                        <div class="card-image" style="background-image: url('images/Image2.png');">
+                                            <div class="date">
+                                                14 <br> Feb
+                                            </div>
+                                        </div>
+                                        <div class="card-details">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    منذ 3 أيام
+                                                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.71971 0C3.2837 0 0.488281 2.6916 0.488281 6C0.488281 9.3084 3.2837 12 6.71971 12C10.1557 12 12.9511 9.3084 12.9511 6C12.9511 2.6916 10.1557 0 6.71971 0ZM6.71971 10.8C3.97103 10.8 1.73457 8.6466 1.73457 6C1.73457 3.3534 3.97103 1.2 6.71971 1.2C9.46839 1.2 11.7049 3.3534 11.7049 6C11.7049 8.6466 9.46839 10.8 6.71971 10.8Z" fill="#555555"/>
+                                                        <path d="M7.34297 3H6.09668V6.2484L8.14869 8.2242L9.02981 7.3758L7.34297 5.7516V3Z" fill="#555555"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="col-4 x-border">
+                                                    22-05-2022
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.08632 5.4H4.33261V6.6H3.08632V5.4ZM11.8103 2.4V10.8C11.8103 11.46 11.2495 12 10.564 12H1.84004C1.5095 12 1.1925 11.8736 0.958779 11.6485C0.725055 11.4235 0.59375 11.1183 0.59375 10.8L0.599981 2.4C0.599981 1.74 1.14835 1.2 1.84004 1.2H2.46318V0H3.70946V1.2H8.69461V0H9.94089V1.2H10.564C11.2495 1.2 11.8103 1.74 11.8103 2.4ZM1.84004 3.6H10.564V2.4H1.84004V3.6ZM10.564 10.8V4.8H1.84004V10.8H10.564ZM8.07146 6.6H9.31775V5.4H8.07146V6.6ZM5.57889 6.6H6.82518V5.4H5.57889V6.6Z" fill="#555555"/>
+                                                    </svg>                                    
+                                                </div>
+                                                <div class="col-4">
+                                                    مؤسسة ضامن
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">
+                                        <h2>دورنا تجاه ذو الإحتياجات الخاصة والمناصرة الرقمية</h2>
+                                        
+                                        <a href="#"  class="btn bg-main-color text-white">تفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- start side calcs -->
+            <div class="col-12 col-lg-3">
+                <div class="side-calcs container">
+                    <div class="row">
+                        <div class="col-6 col-lg-12">
+                            <div class="types">
+                                <span class="types-title">
+                                    الأصناف
+                                </span>
+                                <ul>
+                                    <li>
+                                        <div class="row wow fadeInDown" data-wow-delay=".2s">
+                                            <div class="col-10">المبادرات</div>
+                                            <div class="col-2">09</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row wow fadeInDown" data-wow-delay=".4s">
+                                            <div class="col-10">أحدث المناصرات</div>
+                                            <div class="col-2">05</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row wow fadeInDown" data-wow-delay=".6s">
+                                            <div class="col-10">التقنيات</div>
+                                            <div class="col-2">09</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row wow fadeInDown" data-wow-delay=".8s">
+                                            <div class="col-10">أعمال تطوعية</div>
+                                            <div class="col-2">10</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row wow fadeInDown" data-wow-delay="1s">
+                                            <div class="col-10">أفكار ريادية</div>
+                                            <div class="col-2">03</div>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-12">
+                            <div class="geniral-calcs">
+                                <span class="types-title">
+                                    الإحصائيات العامة
+                                </span>
+                                <div class="row">
+                                    <div class="col-6 wow fadeIn" data-wow-delay=".2s">
+                                        <div class="main-calcs">
+                                            <strong>480</strong>
+                                            <p>مجموع المبادرات</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 wow fadeIn" data-wow-delay=".4s">
+                                        <div class="main-calcs">
+                                            <strong>14</strong>
+                                            <p>الأخبار الجديدة</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 wow fadeIn" data-wow-delay=".6s">
+                                        <div class="main-calcs">
+                                            <strong>138</strong>
+                                            <p>عدد البلوجات</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 wow fadeIn" data-wow-delay=".8s">
+                                        <div class="main-calcs">
+                                            <strong>29</strong>
+                                            <p>عدد المشاركات</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-12">
+                            <div class="social-photo">
+                                <span class="types-title">
+                                    صور من مواقع التواصل
+                                </span>
+                                <div class="row">
+                                    <div class="col-4 wow fadeInLeft" data-wow-delay=".2s">
+                                        <div class="bg-div social-img" style="background-image: url('images/Image.png');">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.9212 4.88921C12.714 4.88921 12.5114 4.82777 12.3391 4.71266C12.1669 4.59754 12.0326 4.43392 11.9533 4.24249C11.874 4.05106 11.8532 3.84042 11.8937 3.6372C11.9341 3.43398 12.0339 3.2473 12.1804 3.10079C12.3269 2.95428 12.5136 2.8545 12.7168 2.81408C12.92 2.77365 13.1307 2.7944 13.3221 2.87369C13.5135 2.95299 13.6771 3.08726 13.7922 3.25955C13.9074 3.43183 13.9688 3.63438 13.9688 3.84158C13.9691 3.97924 13.9422 4.1156 13.8897 4.24284C13.8371 4.37008 13.76 4.48569 13.6626 4.58303C13.5653 4.68037 13.4497 4.75753 13.3224 4.81007C13.1952 4.86261 13.0588 4.88951 12.9212 4.88921Z" fill="#FDF7F4"/>
+                                                <path d="M8.38146 5.58715C8.93402 5.58715 9.47418 5.75101 9.93362 6.05799C10.3931 6.36498 10.7511 6.80132 10.9626 7.31182C11.1741 7.82232 11.2294 8.38407 11.1216 8.92601C11.0138 9.46796 10.7477 9.96577 10.357 10.3565C9.96626 10.7472 9.46845 11.0133 8.9265 11.1211C8.38456 11.2289 7.82281 11.1736 7.31231 10.9621C6.80181 10.7507 6.36547 10.3926 6.05848 9.93313C5.7515 9.47369 5.58764 8.93353 5.58764 8.38097C5.58843 7.64024 5.88303 6.93009 6.40681 6.40632C6.93058 5.88255 7.64073 5.58794 8.38146 5.58715ZM8.38146 4.19043C7.55265 4.19043 6.74245 4.4362 6.05332 4.89666C5.36419 5.35712 4.82708 6.0116 4.50991 6.77732C4.19273 7.54304 4.10975 8.38562 4.27144 9.1985C4.43313 10.0114 4.83224 10.7581 5.4183 11.3441C6.00436 11.9302 6.75104 12.3293 7.56392 12.491C8.37681 12.6527 9.21938 12.5697 9.98511 12.2525C10.7508 11.9353 11.4053 11.3982 11.8658 10.7091C12.3262 10.02 12.572 9.20978 12.572 8.38097C12.572 7.26957 12.1305 6.20369 11.3446 5.41781C10.5587 4.63193 9.49286 4.19043 8.38146 4.19043Z" fill="#FDF7F4"/>
+                                                <path d="M11.5612 1.36003C12.4622 1.36272 13.3256 1.72186 13.9628 2.35902C14.5999 2.99618 14.9591 3.85958 14.9618 4.76065V11.5612C14.9591 12.4622 14.5999 13.3256 13.9628 13.9628C13.3256 14.5999 12.4622 14.9591 11.5612 14.9618H4.76065C3.85958 14.9591 2.99618 14.5999 2.35902 13.9628C1.72186 13.3256 1.36272 12.4622 1.36003 11.5612V4.76065C1.36272 3.85958 1.72186 2.99618 2.35902 2.35902C2.99618 1.72186 3.85958 1.36272 4.76065 1.36003H11.5612ZM11.5612 0H4.76065C2.14224 0 0 2.14224 0 4.76065V11.5612C0 14.1796 2.14224 16.3218 4.76065 16.3218H11.5612C14.1796 16.3218 16.3218 14.1796 16.3218 11.5612V4.76065C16.3218 2.14224 14.1796 0 11.5612 0Z" fill="#FDF7F4"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 wow fadeInLeft" data-wow-delay=".4s">
+                                        <div class="bg-div social-img" style="background-image: url('images/Image2.png');">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.9212 4.88921C12.714 4.88921 12.5114 4.82777 12.3391 4.71266C12.1669 4.59754 12.0326 4.43392 11.9533 4.24249C11.874 4.05106 11.8532 3.84042 11.8937 3.6372C11.9341 3.43398 12.0339 3.2473 12.1804 3.10079C12.3269 2.95428 12.5136 2.8545 12.7168 2.81408C12.92 2.77365 13.1307 2.7944 13.3221 2.87369C13.5135 2.95299 13.6771 3.08726 13.7922 3.25955C13.9074 3.43183 13.9688 3.63438 13.9688 3.84158C13.9691 3.97924 13.9422 4.1156 13.8897 4.24284C13.8371 4.37008 13.76 4.48569 13.6626 4.58303C13.5653 4.68037 13.4497 4.75753 13.3224 4.81007C13.1952 4.86261 13.0588 4.88951 12.9212 4.88921Z" fill="#FDF7F4"/>
+                                                <path d="M8.38146 5.58715C8.93402 5.58715 9.47418 5.75101 9.93362 6.05799C10.3931 6.36498 10.7511 6.80132 10.9626 7.31182C11.1741 7.82232 11.2294 8.38407 11.1216 8.92601C11.0138 9.46796 10.7477 9.96577 10.357 10.3565C9.96626 10.7472 9.46845 11.0133 8.9265 11.1211C8.38456 11.2289 7.82281 11.1736 7.31231 10.9621C6.80181 10.7507 6.36547 10.3926 6.05848 9.93313C5.7515 9.47369 5.58764 8.93353 5.58764 8.38097C5.58843 7.64024 5.88303 6.93009 6.40681 6.40632C6.93058 5.88255 7.64073 5.58794 8.38146 5.58715ZM8.38146 4.19043C7.55265 4.19043 6.74245 4.4362 6.05332 4.89666C5.36419 5.35712 4.82708 6.0116 4.50991 6.77732C4.19273 7.54304 4.10975 8.38562 4.27144 9.1985C4.43313 10.0114 4.83224 10.7581 5.4183 11.3441C6.00436 11.9302 6.75104 12.3293 7.56392 12.491C8.37681 12.6527 9.21938 12.5697 9.98511 12.2525C10.7508 11.9353 11.4053 11.3982 11.8658 10.7091C12.3262 10.02 12.572 9.20978 12.572 8.38097C12.572 7.26957 12.1305 6.20369 11.3446 5.41781C10.5587 4.63193 9.49286 4.19043 8.38146 4.19043Z" fill="#FDF7F4"/>
+                                                <path d="M11.5612 1.36003C12.4622 1.36272 13.3256 1.72186 13.9628 2.35902C14.5999 2.99618 14.9591 3.85958 14.9618 4.76065V11.5612C14.9591 12.4622 14.5999 13.3256 13.9628 13.9628C13.3256 14.5999 12.4622 14.9591 11.5612 14.9618H4.76065C3.85958 14.9591 2.99618 14.5999 2.35902 13.9628C1.72186 13.3256 1.36272 12.4622 1.36003 11.5612V4.76065C1.36272 3.85958 1.72186 2.99618 2.35902 2.35902C2.99618 1.72186 3.85958 1.36272 4.76065 1.36003H11.5612ZM11.5612 0H4.76065C2.14224 0 0 2.14224 0 4.76065V11.5612C0 14.1796 2.14224 16.3218 4.76065 16.3218H11.5612C14.1796 16.3218 16.3218 14.1796 16.3218 11.5612V4.76065C16.3218 2.14224 14.1796 0 11.5612 0Z" fill="#FDF7F4"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 wow fadeInLeft" data-wow-delay=".6s">
+                                        <div class="bg-div social-img" style="background-image: url('images/people.jpg')">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.9212 4.88921C12.714 4.88921 12.5114 4.82777 12.3391 4.71266C12.1669 4.59754 12.0326 4.43392 11.9533 4.24249C11.874 4.05106 11.8532 3.84042 11.8937 3.6372C11.9341 3.43398 12.0339 3.2473 12.1804 3.10079C12.3269 2.95428 12.5136 2.8545 12.7168 2.81408C12.92 2.77365 13.1307 2.7944 13.3221 2.87369C13.5135 2.95299 13.6771 3.08726 13.7922 3.25955C13.9074 3.43183 13.9688 3.63438 13.9688 3.84158C13.9691 3.97924 13.9422 4.1156 13.8897 4.24284C13.8371 4.37008 13.76 4.48569 13.6626 4.58303C13.5653 4.68037 13.4497 4.75753 13.3224 4.81007C13.1952 4.86261 13.0588 4.88951 12.9212 4.88921Z" fill="#FDF7F4"/>
+                                                <path d="M8.38146 5.58715C8.93402 5.58715 9.47418 5.75101 9.93362 6.05799C10.3931 6.36498 10.7511 6.80132 10.9626 7.31182C11.1741 7.82232 11.2294 8.38407 11.1216 8.92601C11.0138 9.46796 10.7477 9.96577 10.357 10.3565C9.96626 10.7472 9.46845 11.0133 8.9265 11.1211C8.38456 11.2289 7.82281 11.1736 7.31231 10.9621C6.80181 10.7507 6.36547 10.3926 6.05848 9.93313C5.7515 9.47369 5.58764 8.93353 5.58764 8.38097C5.58843 7.64024 5.88303 6.93009 6.40681 6.40632C6.93058 5.88255 7.64073 5.58794 8.38146 5.58715ZM8.38146 4.19043C7.55265 4.19043 6.74245 4.4362 6.05332 4.89666C5.36419 5.35712 4.82708 6.0116 4.50991 6.77732C4.19273 7.54304 4.10975 8.38562 4.27144 9.1985C4.43313 10.0114 4.83224 10.7581 5.4183 11.3441C6.00436 11.9302 6.75104 12.3293 7.56392 12.491C8.37681 12.6527 9.21938 12.5697 9.98511 12.2525C10.7508 11.9353 11.4053 11.3982 11.8658 10.7091C12.3262 10.02 12.572 9.20978 12.572 8.38097C12.572 7.26957 12.1305 6.20369 11.3446 5.41781C10.5587 4.63193 9.49286 4.19043 8.38146 4.19043Z" fill="#FDF7F4"/>
+                                                <path d="M11.5612 1.36003C12.4622 1.36272 13.3256 1.72186 13.9628 2.35902C14.5999 2.99618 14.9591 3.85958 14.9618 4.76065V11.5612C14.9591 12.4622 14.5999 13.3256 13.9628 13.9628C13.3256 14.5999 12.4622 14.9591 11.5612 14.9618H4.76065C3.85958 14.9591 2.99618 14.5999 2.35902 13.9628C1.72186 13.3256 1.36272 12.4622 1.36003 11.5612V4.76065C1.36272 3.85958 1.72186 2.99618 2.35902 2.35902C2.99618 1.72186 3.85958 1.36272 4.76065 1.36003H11.5612ZM11.5612 0H4.76065C2.14224 0 0 2.14224 0 4.76065V11.5612C0 14.1796 2.14224 16.3218 4.76065 16.3218H11.5612C14.1796 16.3218 16.3218 14.1796 16.3218 11.5612V4.76065C16.3218 2.14224 14.1796 0 11.5612 0Z" fill="#FDF7F4"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 wow fadeInLeft" data-wow-delay=".8s">
+                                        <div class="bg-div social-img" style="background-image: url('images/Rectangle.png');">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.9212 4.88921C12.714 4.88921 12.5114 4.82777 12.3391 4.71266C12.1669 4.59754 12.0326 4.43392 11.9533 4.24249C11.874 4.05106 11.8532 3.84042 11.8937 3.6372C11.9341 3.43398 12.0339 3.2473 12.1804 3.10079C12.3269 2.95428 12.5136 2.8545 12.7168 2.81408C12.92 2.77365 13.1307 2.7944 13.3221 2.87369C13.5135 2.95299 13.6771 3.08726 13.7922 3.25955C13.9074 3.43183 13.9688 3.63438 13.9688 3.84158C13.9691 3.97924 13.9422 4.1156 13.8897 4.24284C13.8371 4.37008 13.76 4.48569 13.6626 4.58303C13.5653 4.68037 13.4497 4.75753 13.3224 4.81007C13.1952 4.86261 13.0588 4.88951 12.9212 4.88921Z" fill="#FDF7F4"/>
+                                                <path d="M8.38146 5.58715C8.93402 5.58715 9.47418 5.75101 9.93362 6.05799C10.3931 6.36498 10.7511 6.80132 10.9626 7.31182C11.1741 7.82232 11.2294 8.38407 11.1216 8.92601C11.0138 9.46796 10.7477 9.96577 10.357 10.3565C9.96626 10.7472 9.46845 11.0133 8.9265 11.1211C8.38456 11.2289 7.82281 11.1736 7.31231 10.9621C6.80181 10.7507 6.36547 10.3926 6.05848 9.93313C5.7515 9.47369 5.58764 8.93353 5.58764 8.38097C5.58843 7.64024 5.88303 6.93009 6.40681 6.40632C6.93058 5.88255 7.64073 5.58794 8.38146 5.58715ZM8.38146 4.19043C7.55265 4.19043 6.74245 4.4362 6.05332 4.89666C5.36419 5.35712 4.82708 6.0116 4.50991 6.77732C4.19273 7.54304 4.10975 8.38562 4.27144 9.1985C4.43313 10.0114 4.83224 10.7581 5.4183 11.3441C6.00436 11.9302 6.75104 12.3293 7.56392 12.491C8.37681 12.6527 9.21938 12.5697 9.98511 12.2525C10.7508 11.9353 11.4053 11.3982 11.8658 10.7091C12.3262 10.02 12.572 9.20978 12.572 8.38097C12.572 7.26957 12.1305 6.20369 11.3446 5.41781C10.5587 4.63193 9.49286 4.19043 8.38146 4.19043Z" fill="#FDF7F4"/>
+                                                <path d="M11.5612 1.36003C12.4622 1.36272 13.3256 1.72186 13.9628 2.35902C14.5999 2.99618 14.9591 3.85958 14.9618 4.76065V11.5612C14.9591 12.4622 14.5999 13.3256 13.9628 13.9628C13.3256 14.5999 12.4622 14.9591 11.5612 14.9618H4.76065C3.85958 14.9591 2.99618 14.5999 2.35902 13.9628C1.72186 13.3256 1.36272 12.4622 1.36003 11.5612V4.76065C1.36272 3.85958 1.72186 2.99618 2.35902 2.35902C2.99618 1.72186 3.85958 1.36272 4.76065 1.36003H11.5612ZM11.5612 0H4.76065C2.14224 0 0 2.14224 0 4.76065V11.5612C0 14.1796 2.14224 16.3218 4.76065 16.3218H11.5612C14.1796 16.3218 16.3218 14.1796 16.3218 11.5612V4.76065C16.3218 2.14224 14.1796 0 11.5612 0Z" fill="#FDF7F4"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 wow fadeInLeft" data-wow-delay="1s">
+                                        <div class="bg-div social-img" style="background-image: url('images/Image.png');">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.9212 4.88921C12.714 4.88921 12.5114 4.82777 12.3391 4.71266C12.1669 4.59754 12.0326 4.43392 11.9533 4.24249C11.874 4.05106 11.8532 3.84042 11.8937 3.6372C11.9341 3.43398 12.0339 3.2473 12.1804 3.10079C12.3269 2.95428 12.5136 2.8545 12.7168 2.81408C12.92 2.77365 13.1307 2.7944 13.3221 2.87369C13.5135 2.95299 13.6771 3.08726 13.7922 3.25955C13.9074 3.43183 13.9688 3.63438 13.9688 3.84158C13.9691 3.97924 13.9422 4.1156 13.8897 4.24284C13.8371 4.37008 13.76 4.48569 13.6626 4.58303C13.5653 4.68037 13.4497 4.75753 13.3224 4.81007C13.1952 4.86261 13.0588 4.88951 12.9212 4.88921Z" fill="#FDF7F4"/>
+                                                <path d="M8.38146 5.58715C8.93402 5.58715 9.47418 5.75101 9.93362 6.05799C10.3931 6.36498 10.7511 6.80132 10.9626 7.31182C11.1741 7.82232 11.2294 8.38407 11.1216 8.92601C11.0138 9.46796 10.7477 9.96577 10.357 10.3565C9.96626 10.7472 9.46845 11.0133 8.9265 11.1211C8.38456 11.2289 7.82281 11.1736 7.31231 10.9621C6.80181 10.7507 6.36547 10.3926 6.05848 9.93313C5.7515 9.47369 5.58764 8.93353 5.58764 8.38097C5.58843 7.64024 5.88303 6.93009 6.40681 6.40632C6.93058 5.88255 7.64073 5.58794 8.38146 5.58715ZM8.38146 4.19043C7.55265 4.19043 6.74245 4.4362 6.05332 4.89666C5.36419 5.35712 4.82708 6.0116 4.50991 6.77732C4.19273 7.54304 4.10975 8.38562 4.27144 9.1985C4.43313 10.0114 4.83224 10.7581 5.4183 11.3441C6.00436 11.9302 6.75104 12.3293 7.56392 12.491C8.37681 12.6527 9.21938 12.5697 9.98511 12.2525C10.7508 11.9353 11.4053 11.3982 11.8658 10.7091C12.3262 10.02 12.572 9.20978 12.572 8.38097C12.572 7.26957 12.1305 6.20369 11.3446 5.41781C10.5587 4.63193 9.49286 4.19043 8.38146 4.19043Z" fill="#FDF7F4"/>
+                                                <path d="M11.5612 1.36003C12.4622 1.36272 13.3256 1.72186 13.9628 2.35902C14.5999 2.99618 14.9591 3.85958 14.9618 4.76065V11.5612C14.9591 12.4622 14.5999 13.3256 13.9628 13.9628C13.3256 14.5999 12.4622 14.9591 11.5612 14.9618H4.76065C3.85958 14.9591 2.99618 14.5999 2.35902 13.9628C1.72186 13.3256 1.36272 12.4622 1.36003 11.5612V4.76065C1.36272 3.85958 1.72186 2.99618 2.35902 2.35902C2.99618 1.72186 3.85958 1.36272 4.76065 1.36003H11.5612ZM11.5612 0H4.76065C2.14224 0 0 2.14224 0 4.76065V11.5612C0 14.1796 2.14224 16.3218 4.76065 16.3218H11.5612C14.1796 16.3218 16.3218 14.1796 16.3218 11.5612V4.76065C16.3218 2.14224 14.1796 0 11.5612 0Z" fill="#FDF7F4"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 wow fadeInLeft" data-wow-delay="1.2s">
+                                        <div class="bg-div social-img" style="background-image: url('images/Image2.png');">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.9212 4.88921C12.714 4.88921 12.5114 4.82777 12.3391 4.71266C12.1669 4.59754 12.0326 4.43392 11.9533 4.24249C11.874 4.05106 11.8532 3.84042 11.8937 3.6372C11.9341 3.43398 12.0339 3.2473 12.1804 3.10079C12.3269 2.95428 12.5136 2.8545 12.7168 2.81408C12.92 2.77365 13.1307 2.7944 13.3221 2.87369C13.5135 2.95299 13.6771 3.08726 13.7922 3.25955C13.9074 3.43183 13.9688 3.63438 13.9688 3.84158C13.9691 3.97924 13.9422 4.1156 13.8897 4.24284C13.8371 4.37008 13.76 4.48569 13.6626 4.58303C13.5653 4.68037 13.4497 4.75753 13.3224 4.81007C13.1952 4.86261 13.0588 4.88951 12.9212 4.88921Z" fill="#FDF7F4"/>
+                                                <path d="M8.38146 5.58715C8.93402 5.58715 9.47418 5.75101 9.93362 6.05799C10.3931 6.36498 10.7511 6.80132 10.9626 7.31182C11.1741 7.82232 11.2294 8.38407 11.1216 8.92601C11.0138 9.46796 10.7477 9.96577 10.357 10.3565C9.96626 10.7472 9.46845 11.0133 8.9265 11.1211C8.38456 11.2289 7.82281 11.1736 7.31231 10.9621C6.80181 10.7507 6.36547 10.3926 6.05848 9.93313C5.7515 9.47369 5.58764 8.93353 5.58764 8.38097C5.58843 7.64024 5.88303 6.93009 6.40681 6.40632C6.93058 5.88255 7.64073 5.58794 8.38146 5.58715ZM8.38146 4.19043C7.55265 4.19043 6.74245 4.4362 6.05332 4.89666C5.36419 5.35712 4.82708 6.0116 4.50991 6.77732C4.19273 7.54304 4.10975 8.38562 4.27144 9.1985C4.43313 10.0114 4.83224 10.7581 5.4183 11.3441C6.00436 11.9302 6.75104 12.3293 7.56392 12.491C8.37681 12.6527 9.21938 12.5697 9.98511 12.2525C10.7508 11.9353 11.4053 11.3982 11.8658 10.7091C12.3262 10.02 12.572 9.20978 12.572 8.38097C12.572 7.26957 12.1305 6.20369 11.3446 5.41781C10.5587 4.63193 9.49286 4.19043 8.38146 4.19043Z" fill="#FDF7F4"/>
+                                                <path d="M11.5612 1.36003C12.4622 1.36272 13.3256 1.72186 13.9628 2.35902C14.5999 2.99618 14.9591 3.85958 14.9618 4.76065V11.5612C14.9591 12.4622 14.5999 13.3256 13.9628 13.9628C13.3256 14.5999 12.4622 14.9591 11.5612 14.9618H4.76065C3.85958 14.9591 2.99618 14.5999 2.35902 13.9628C1.72186 13.3256 1.36272 12.4622 1.36003 11.5612V4.76065C1.36272 3.85958 1.72186 2.99618 2.35902 2.35902C2.99618 1.72186 3.85958 1.36272 4.76065 1.36003H11.5612ZM11.5612 0H4.76065C2.14224 0 0 2.14224 0 4.76065V11.5612C0 14.1796 2.14224 16.3218 4.76065 16.3218H11.5612C14.1796 16.3218 16.3218 14.1796 16.3218 11.5612V4.76065C16.3218 2.14224 14.1796 0 11.5612 0Z" fill="#FDF7F4"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 wow fadeInLeft" data-wow-delay="1.4s">
+                                        <div class="bg-div social-img" style="background-image: url('images/people.jpg')">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.9212 4.88921C12.714 4.88921 12.5114 4.82777 12.3391 4.71266C12.1669 4.59754 12.0326 4.43392 11.9533 4.24249C11.874 4.05106 11.8532 3.84042 11.8937 3.6372C11.9341 3.43398 12.0339 3.2473 12.1804 3.10079C12.3269 2.95428 12.5136 2.8545 12.7168 2.81408C12.92 2.77365 13.1307 2.7944 13.3221 2.87369C13.5135 2.95299 13.6771 3.08726 13.7922 3.25955C13.9074 3.43183 13.9688 3.63438 13.9688 3.84158C13.9691 3.97924 13.9422 4.1156 13.8897 4.24284C13.8371 4.37008 13.76 4.48569 13.6626 4.58303C13.5653 4.68037 13.4497 4.75753 13.3224 4.81007C13.1952 4.86261 13.0588 4.88951 12.9212 4.88921Z" fill="#FDF7F4"/>
+                                                <path d="M8.38146 5.58715C8.93402 5.58715 9.47418 5.75101 9.93362 6.05799C10.3931 6.36498 10.7511 6.80132 10.9626 7.31182C11.1741 7.82232 11.2294 8.38407 11.1216 8.92601C11.0138 9.46796 10.7477 9.96577 10.357 10.3565C9.96626 10.7472 9.46845 11.0133 8.9265 11.1211C8.38456 11.2289 7.82281 11.1736 7.31231 10.9621C6.80181 10.7507 6.36547 10.3926 6.05848 9.93313C5.7515 9.47369 5.58764 8.93353 5.58764 8.38097C5.58843 7.64024 5.88303 6.93009 6.40681 6.40632C6.93058 5.88255 7.64073 5.58794 8.38146 5.58715ZM8.38146 4.19043C7.55265 4.19043 6.74245 4.4362 6.05332 4.89666C5.36419 5.35712 4.82708 6.0116 4.50991 6.77732C4.19273 7.54304 4.10975 8.38562 4.27144 9.1985C4.43313 10.0114 4.83224 10.7581 5.4183 11.3441C6.00436 11.9302 6.75104 12.3293 7.56392 12.491C8.37681 12.6527 9.21938 12.5697 9.98511 12.2525C10.7508 11.9353 11.4053 11.3982 11.8658 10.7091C12.3262 10.02 12.572 9.20978 12.572 8.38097C12.572 7.26957 12.1305 6.20369 11.3446 5.41781C10.5587 4.63193 9.49286 4.19043 8.38146 4.19043Z" fill="#FDF7F4"/>
+                                                <path d="M11.5612 1.36003C12.4622 1.36272 13.3256 1.72186 13.9628 2.35902C14.5999 2.99618 14.9591 3.85958 14.9618 4.76065V11.5612C14.9591 12.4622 14.5999 13.3256 13.9628 13.9628C13.3256 14.5999 12.4622 14.9591 11.5612 14.9618H4.76065C3.85958 14.9591 2.99618 14.5999 2.35902 13.9628C1.72186 13.3256 1.36272 12.4622 1.36003 11.5612V4.76065C1.36272 3.85958 1.72186 2.99618 2.35902 2.35902C2.99618 1.72186 3.85958 1.36272 4.76065 1.36003H11.5612ZM11.5612 0H4.76065C2.14224 0 0 2.14224 0 4.76065V11.5612C0 14.1796 2.14224 16.3218 4.76065 16.3218H11.5612C14.1796 16.3218 16.3218 14.1796 16.3218 11.5612V4.76065C16.3218 2.14224 14.1796 0 11.5612 0Z" fill="#FDF7F4"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 wow fadeInLeft" data-wow-delay="1.6s">
+                                        <div class="bg-div social-img" style="background-image: url('images/Rectangle.png');">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.9212 4.88921C12.714 4.88921 12.5114 4.82777 12.3391 4.71266C12.1669 4.59754 12.0326 4.43392 11.9533 4.24249C11.874 4.05106 11.8532 3.84042 11.8937 3.6372C11.9341 3.43398 12.0339 3.2473 12.1804 3.10079C12.3269 2.95428 12.5136 2.8545 12.7168 2.81408C12.92 2.77365 13.1307 2.7944 13.3221 2.87369C13.5135 2.95299 13.6771 3.08726 13.7922 3.25955C13.9074 3.43183 13.9688 3.63438 13.9688 3.84158C13.9691 3.97924 13.9422 4.1156 13.8897 4.24284C13.8371 4.37008 13.76 4.48569 13.6626 4.58303C13.5653 4.68037 13.4497 4.75753 13.3224 4.81007C13.1952 4.86261 13.0588 4.88951 12.9212 4.88921Z" fill="#FDF7F4"/>
+                                                <path d="M8.38146 5.58715C8.93402 5.58715 9.47418 5.75101 9.93362 6.05799C10.3931 6.36498 10.7511 6.80132 10.9626 7.31182C11.1741 7.82232 11.2294 8.38407 11.1216 8.92601C11.0138 9.46796 10.7477 9.96577 10.357 10.3565C9.96626 10.7472 9.46845 11.0133 8.9265 11.1211C8.38456 11.2289 7.82281 11.1736 7.31231 10.9621C6.80181 10.7507 6.36547 10.3926 6.05848 9.93313C5.7515 9.47369 5.58764 8.93353 5.58764 8.38097C5.58843 7.64024 5.88303 6.93009 6.40681 6.40632C6.93058 5.88255 7.64073 5.58794 8.38146 5.58715ZM8.38146 4.19043C7.55265 4.19043 6.74245 4.4362 6.05332 4.89666C5.36419 5.35712 4.82708 6.0116 4.50991 6.77732C4.19273 7.54304 4.10975 8.38562 4.27144 9.1985C4.43313 10.0114 4.83224 10.7581 5.4183 11.3441C6.00436 11.9302 6.75104 12.3293 7.56392 12.491C8.37681 12.6527 9.21938 12.5697 9.98511 12.2525C10.7508 11.9353 11.4053 11.3982 11.8658 10.7091C12.3262 10.02 12.572 9.20978 12.572 8.38097C12.572 7.26957 12.1305 6.20369 11.3446 5.41781C10.5587 4.63193 9.49286 4.19043 8.38146 4.19043Z" fill="#FDF7F4"/>
+                                                <path d="M11.5612 1.36003C12.4622 1.36272 13.3256 1.72186 13.9628 2.35902C14.5999 2.99618 14.9591 3.85958 14.9618 4.76065V11.5612C14.9591 12.4622 14.5999 13.3256 13.9628 13.9628C13.3256 14.5999 12.4622 14.9591 11.5612 14.9618H4.76065C3.85958 14.9591 2.99618 14.5999 2.35902 13.9628C1.72186 13.3256 1.36272 12.4622 1.36003 11.5612V4.76065C1.36272 3.85958 1.72186 2.99618 2.35902 2.35902C2.99618 1.72186 3.85958 1.36272 4.76065 1.36003H11.5612ZM11.5612 0H4.76065C2.14224 0 0 2.14224 0 4.76065V11.5612C0 14.1796 2.14224 16.3218 4.76065 16.3218H11.5612C14.1796 16.3218 16.3218 14.1796 16.3218 11.5612V4.76065C16.3218 2.14224 14.1796 0 11.5612 0Z" fill="#FDF7F4"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 wow fadeInLeft" data-wow-delay="1.8s">
+                                        <div class="bg-div social-img" style="background-image: url('images/people.jpg')">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.9212 4.88921C12.714 4.88921 12.5114 4.82777 12.3391 4.71266C12.1669 4.59754 12.0326 4.43392 11.9533 4.24249C11.874 4.05106 11.8532 3.84042 11.8937 3.6372C11.9341 3.43398 12.0339 3.2473 12.1804 3.10079C12.3269 2.95428 12.5136 2.8545 12.7168 2.81408C12.92 2.77365 13.1307 2.7944 13.3221 2.87369C13.5135 2.95299 13.6771 3.08726 13.7922 3.25955C13.9074 3.43183 13.9688 3.63438 13.9688 3.84158C13.9691 3.97924 13.9422 4.1156 13.8897 4.24284C13.8371 4.37008 13.76 4.48569 13.6626 4.58303C13.5653 4.68037 13.4497 4.75753 13.3224 4.81007C13.1952 4.86261 13.0588 4.88951 12.9212 4.88921Z" fill="#FDF7F4"/>
+                                                <path d="M8.38146 5.58715C8.93402 5.58715 9.47418 5.75101 9.93362 6.05799C10.3931 6.36498 10.7511 6.80132 10.9626 7.31182C11.1741 7.82232 11.2294 8.38407 11.1216 8.92601C11.0138 9.46796 10.7477 9.96577 10.357 10.3565C9.96626 10.7472 9.46845 11.0133 8.9265 11.1211C8.38456 11.2289 7.82281 11.1736 7.31231 10.9621C6.80181 10.7507 6.36547 10.3926 6.05848 9.93313C5.7515 9.47369 5.58764 8.93353 5.58764 8.38097C5.58843 7.64024 5.88303 6.93009 6.40681 6.40632C6.93058 5.88255 7.64073 5.58794 8.38146 5.58715ZM8.38146 4.19043C7.55265 4.19043 6.74245 4.4362 6.05332 4.89666C5.36419 5.35712 4.82708 6.0116 4.50991 6.77732C4.19273 7.54304 4.10975 8.38562 4.27144 9.1985C4.43313 10.0114 4.83224 10.7581 5.4183 11.3441C6.00436 11.9302 6.75104 12.3293 7.56392 12.491C8.37681 12.6527 9.21938 12.5697 9.98511 12.2525C10.7508 11.9353 11.4053 11.3982 11.8658 10.7091C12.3262 10.02 12.572 9.20978 12.572 8.38097C12.572 7.26957 12.1305 6.20369 11.3446 5.41781C10.5587 4.63193 9.49286 4.19043 8.38146 4.19043Z" fill="#FDF7F4"/>
+                                                <path d="M11.5612 1.36003C12.4622 1.36272 13.3256 1.72186 13.9628 2.35902C14.5999 2.99618 14.9591 3.85958 14.9618 4.76065V11.5612C14.9591 12.4622 14.5999 13.3256 13.9628 13.9628C13.3256 14.5999 12.4622 14.9591 11.5612 14.9618H4.76065C3.85958 14.9591 2.99618 14.5999 2.35902 13.9628C1.72186 13.3256 1.36272 12.4622 1.36003 11.5612V4.76065C1.36272 3.85958 1.72186 2.99618 2.35902 2.35902C2.99618 1.72186 3.85958 1.36272 4.76065 1.36003H11.5612ZM11.5612 0H4.76065C2.14224 0 0 2.14224 0 4.76065V11.5612C0 14.1796 2.14224 16.3218 4.76065 16.3218H11.5612C14.1796 16.3218 16.3218 14.1796 16.3218 11.5612V4.76065C16.3218 2.14224 14.1796 0 11.5612 0Z" fill="#FDF7F4"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-12">
+                            <div class="hashtags">
+                                <span class="types-title">
+                                    الجديد من ال #
+                                </span>
+                                <div class="tags-coll">
+                                    <span class="side-tag"><a href="#">Travel</a></span>
+                                    <span class="side-tag"><a href="#">lifestyle</a></span>
+                                    <span class="side-tag"><a href="#">fashion</a></span>
+                                    <span class="side-tag"><a href="#">technology</a></span>
+                                    <span class="side-tag"><a href="#">business</a></span>
+                                    <span class="side-tag"><a href="#">design</a></span>
+                                    <span class="side-tag"><a href="#">health</a></span>
+                                    <span class="side-tag"><a href="#">food</a></span>
+                                    <span class="side-tag"><a href="#">art</a></span>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- start Pagination -->
+        <div class="pagination">
+            <ul>
+                <li>
+                    <a href="#">
+                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64644L7.17157 0.464465C6.97631 0.269203 6.65973 0.269203 6.46447 0.464465C6.2692 0.659727 6.2692 0.97631 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.73079 6.97631 7.73079 7.17157 7.53553L10.3536 4.35355ZM8.74228e-08 4.5L10 4.5L10 3.5L-8.74228e-08 3.5L8.74228e-08 4.5Z"/>
+                        </svg>
+                        السابق 
+                    </a>                       
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li>
+                    <a href="#">التالي
+                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.646935 3.64645C0.451673 3.84171 0.451673 4.15829 0.646934 4.35355L3.82892 7.53553C4.02418 7.7308 4.34076 7.7308 4.53602 7.53553C4.73128 7.34027 4.73128 7.02369 4.53602 6.82843L1.70759 4L4.53602 1.17157C4.73128 0.97631 4.73128 0.659728 4.53602 0.464466C4.34076 0.269203 4.02418 0.269203 3.82892 0.464465L0.646935 3.64645ZM11.0005 3.5L1.00049 3.5L1.00049 4.5L11.0005 4.5L11.0005 3.5Z"/>
+                        </svg> 
+                    </a>                       
+                </li>
+            </ul>
+        </div>
+        <!-- end Pagination -->
+    </div>
+    
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-xl-4">
+                    <img src="images/footer-logo.png" alt="" srcset="">
+                    <p>
+                        وصلة برنامج ومنصة رقمية تهتم بالمناصرات ومناصرة القضاياالتي تهتم بالشباب وبالأشخاصال مُهمشين
+                    </p>                        
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-xl-4">
+                    <strong>الرئيسية</strong>
+                    <div class="row footer-links">
+                        <div class="col-4">
+                            <a href="#"><p>مدونة وصلة</p></a>
+                            <a href="#"><p>إنفوجرافيك</p></a>
+                            <a href="#"><p>من نحن</p></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#"><p>مكتبة المصادر</p></a>
+                            <a href="#"><p>مكتبة المصادر</p></a>
+                            <a href="#"><p>تواصل معنا</p></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#"><p>سجل مع وصلة</p></a>
+                            <a href="#"><p>تسجيل الدخول</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-xl-4">
+                    <div class="send-email">
+                        <strong>تواصل معنا وارسل الايميل</strong>
+                        <div class="input-group my-4">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="" aria-describedby="basic-addon1">
+                            <div class="input-group-prepend">
+                            <button type="button" class="btn bg-main-color text-white" id="basic-addon1">
+                                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.375 25.6623L23.8991 13.0655L0.375 0.46875V10.2662L17.2264 13.0655L0.375 15.8648V25.6623Z"
+                                        fill="#fff" />
+                                </svg>
+                                <span class="mx-5">
+                                    أرسل
+                                </span>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <strong>تواصل معنا</strong>
+                        <div>
+                            <a href="#" class="facebook">
+                                <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.315 3.9578C9.6917 3.83314 8.84983 3.74 8.32037 3.74C6.8867 3.74 6.79358 4.36333 6.79358 5.36066V7.13607H10.3774L10.065 10.8137H6.79358V22H2.30632V10.8137H0L0 7.13607H2.30632V4.86127C2.30632 1.74533 3.77079 0 7.44771 0C8.72517 0 9.66017 0.187001 10.8753 0.436334L10.315 3.9578Z" fill="white"/>
+                                </svg>                                    
+                            </a>
+                            <a href="#" class="linkedin">
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.77475 2.28389C4.77475 3.52898 3.82671 4.5366 2.34415 4.5366C0.919355 4.5366 -0.0286772 3.52898 0.000662254 2.28389C-0.0286772 0.978283 0.919332 0 2.37255 0C3.82669 0 4.74633 0.978283 4.77475 2.28389ZM0.119858 20.8191V6.31621H4.62712V20.8181H0.119858V20.8191Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.23931 10.9446C8.23931 9.13566 8.17971 7.5935 8.12012 6.31816H12.0351L12.2432 8.30499H12.3322C12.9254 7.38538 14.4079 5.99268 16.8101 5.99268C19.7752 5.99268 21.9995 7.95016 21.9995 12.219V20.821H17.4922V12.7838C17.4922 10.9144 16.8404 9.63993 15.2093 9.63993C13.9633 9.63993 13.2224 10.4999 12.9263 11.3297C12.8071 11.6268 12.7484 12.0412 12.7484 12.4574V20.821H8.24113V10.9446H8.23931Z" fill="white"/>
+                                </svg>                                    
+                            </a>
+                            <a href="#" class="twitter">
+                                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 2.30865C23.1177 2.70062 22.1681 2.9646 21.1722 3.08379C22.1889 2.47423 22.9697 1.5095 23.3368 0.359974C22.3865 0.924736 21.3314 1.33351 20.2107 1.5551C19.3123 0.59836 18.0316 0 16.6165 0C13.8975 0 11.6928 2.20465 11.6928 4.92367C11.6928 5.30924 11.7368 5.68522 11.8208 6.046C7.72829 5.84121 4.10053 3.88054 1.67189 0.901539C1.24792 1.62869 1.00553 2.47424 1.00553 3.37658C1.00553 5.08447 1.87347 6.59157 3.19579 7.47471C2.38784 7.44911 1.62949 7.22752 0.964734 6.85875V6.92034C0.964734 9.30658 2.66302 11.296 4.91407 11.7496C4.5013 11.8616 4.06613 11.9224 3.61736 11.9224C3.29978 11.9224 2.991 11.8912 2.69022 11.8336C3.31658 13.7895 5.13566 15.2134 7.28991 15.2534C5.60523 16.5733 3.48217 17.3612 1.17512 17.3612C0.776747 17.3612 0.384774 17.338 0 17.2916C2.17905 18.6884 4.76688 19.5043 7.5475 19.5043C16.6037 19.5043 21.5562 12.0016 21.5562 5.49563C21.5562 5.28204 21.5522 5.06927 21.5418 4.85888C22.5049 4.16293 23.34 3.29578 24 2.30865Z" fill="white"/>
+                                </svg>                                    
+                            </a>
+                            <a href="#" class="inestgram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2.16215C15.2041 2.16215 15.5837 2.17439 16.849 2.23212C18.019 2.28547 18.6544 2.48096 19.0773 2.6453C19.6374 2.86299 20.0371 3.12302 20.457 3.54291C20.877 3.96286 21.137 4.3626 21.3547 4.92273C21.519 5.34557 21.7145 5.98096 21.7679 7.15095C21.8256 8.41629 21.8378 8.79584 21.8378 11.9999C21.8378 15.2041 21.8256 15.5836 21.7679 16.849C21.7145 18.019 21.519 18.6543 21.3547 19.0772C21.137 19.6373 20.877 20.0371 20.4571 20.457C20.0371 20.8769 19.6374 21.1369 19.0773 21.3546C18.6544 21.519 18.019 21.7144 16.849 21.7678C15.5839 21.8255 15.2044 21.8378 12 21.8378C8.79563 21.8378 8.41618 21.8255 7.15097 21.7678C5.98098 21.7144 5.34559 21.519 4.92274 21.3546C4.36261 21.1369 3.96287 20.8769 3.54297 20.457C3.12308 20.0371 2.863 19.6373 2.64531 19.0772C2.48097 18.6543 2.28548 18.019 2.23213 16.849C2.1744 15.5836 2.16216 15.2041 2.16216 11.9999C2.16216 8.79584 2.1744 8.41629 2.23213 7.15095C2.28548 5.98096 2.48097 5.34557 2.64531 4.92273C2.863 4.3626 3.12303 3.96286 3.54297 3.54296C3.96287 3.12302 4.36261 2.86299 4.92274 2.6453C5.34559 2.48096 5.98098 2.28547 7.15097 2.23212C8.41632 2.17439 8.79587 2.16215 12 2.16215ZM12 0C8.741 0 8.33234 0.0138138 7.05241 0.072213C5.77516 0.130469 4.90283 0.333342 4.13954 0.629958C3.35044 0.936626 2.68123 1.34694 2.01406 2.01406C1.34695 2.68122 0.936629 3.35043 0.630008 4.13953C0.333343 4.90282 0.13047 5.77514 0.0722133 7.05239C0.0138139 8.33231 0 8.74096 0 11.9999C0 15.259 0.0138139 15.6676 0.0722133 16.9475C0.13047 18.2248 0.333343 19.0971 0.630008 19.8604C0.936629 20.6495 1.34695 21.3187 2.01406 21.9859C2.68123 22.653 3.35044 23.0633 4.13954 23.3699C4.90283 23.6666 5.77516 23.8694 7.05241 23.9277C8.33234 23.9861 8.741 23.9999 12 23.9999C15.259 23.9999 15.6677 23.9861 16.9476 23.9277C18.2248 23.8694 19.0972 23.6666 19.8605 23.3699C20.6496 23.0633 21.3188 22.653 21.9859 21.9859C22.653 21.3187 23.0634 20.6495 23.37 19.8604C23.6667 19.0971 23.8695 18.2248 23.9278 16.9475C23.9862 15.6676 24 15.259 24 11.9999C24 8.74096 23.9862 8.33231 23.9278 7.05239C23.8695 5.77514 23.6667 4.90282 23.37 4.13953C23.0634 3.35043 22.653 2.68122 21.9859 2.01406C21.3188 1.34694 20.6496 0.936626 19.8605 0.629958C19.0972 0.333342 18.2248 0.130469 16.9476 0.072213C15.6677 0.0138138 15.259 0 12 0Z" fill="white"/>
+                                    <path d="M12.0059 5.84341C8.60262 5.84341 5.84375 8.60228 5.84375 12.0055C5.84375 15.4088 8.60262 18.1677 12.0059 18.1677C15.4092 18.1677 18.1681 15.4088 18.1681 12.0055C18.1681 8.60228 15.4092 5.84341 12.0059 5.84341ZM12.0059 16.0055C9.79676 16.0055 8.00591 14.2147 8.00591 12.0055C8.00591 9.79641 9.79676 8.00557 12.0059 8.00557C14.2151 8.00557 16.0059 9.79641 16.0059 12.0055C16.0059 14.2147 14.2151 16.0055 12.0059 16.0055Z" fill="white"/>
+                                    <path d="M19.8507 5.59615C19.8507 6.3914 19.206 7.03613 18.4107 7.03613C17.6154 7.03613 16.9707 6.3914 16.9707 5.59615C16.9707 4.80085 17.6154 4.15613 18.4107 4.15613C19.206 4.15613 19.8507 4.80085 19.8507 5.59615Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="youtube">
+                                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3005 1.37807C24.6996 1.77717 24.9872 2.27386 25.1346 2.81868C25.9835 6.23572 25.7873 11.6324 25.1511 15.1813C25.0037 15.7261 24.7161 16.2228 24.317 16.6219C23.9179 17.021 23.4212 17.3086 22.8764 17.456C20.8819 18 12.8544 18 12.8544 18C12.8544 18 4.82691 18 2.8324 17.456C2.28759 17.3086 1.79089 17.021 1.39179 16.6219C0.992691 16.2228 0.705107 15.7261 0.557679 15.1813C-0.296167 11.7791 -0.0620999 6.37912 0.541197 2.83517C0.688622 2.29035 0.976206 1.79365 1.37531 1.39455C1.77441 0.99545 2.2711 0.707864 2.81592 0.560444C4.81043 0.0164795 12.8379 0 12.8379 0C12.8379 0 20.8654 0 22.8599 0.543954C23.4047 0.691384 23.9014 0.97897 24.3005 1.37807ZM16.9423 8.99999L10.283 12.8571V5.14285L16.9423 8.99999Z" fill="white"/>
+                                </svg>                                    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rights">
+            جميع الحقوق محفوظة لمنصة وصلة لاب 2023 - <a href="#">تطوير شركة شفت</a>
+        </div>
+    </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+  <script src="js/app.js"></script>
+  <script>
+    
+    $(document).ready(function(){
+        $('#main-carousel').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout:2000,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+        $('#partners-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout:2000,
+            responsive:{
+                0:{
+                    items:2
+                },
+                600:{
+                    items:5
+                },
+                1000:{
+                    items:5
+                }
+            }
+        });
+        $('#header-carousel').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout:2000,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+        $('#blog-carousel').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout:2000,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+    });
+  </script>
+</body>
+</html>
