@@ -75,8 +75,8 @@ body{
 }
 .scroll-top{
     position: fixed;
-    bottom: 70px;
-    right: 100px;
+    bottom: 50px;
+    right: 50px;
     display: none;
     z-index: 99;
 }
@@ -102,9 +102,9 @@ body{
     left: 0;
     background: radial-gradient(circle, rgba(3,158,222,0.5887605042016807) 35%, rgba(251,251,251,0) 100%);
 }
-[type=email]{
+/* [type=email]{
     direction: rtl;
-}
+} */
 
 ::-webkit-calendar-picker-indicator{
     position: absolute;
