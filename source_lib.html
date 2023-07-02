@@ -64,17 +64,11 @@
     </nav>
 <div class="sources-page">
     <section class="source-lib-header">
-        <div class="bg-div sourec-bg" style="background-image: url(images/dd.svg);"></div>
-        <img src="images/source-.png" class="wow fadeIn" data-wow-delay=".6s" alt="">
-        <svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            version="1.1">
-            <path
-                d="M0 373L37.5 388.8C75 404.7 150 436.3 225 448C300 459.7 375 451.3 450 442.7C525 434 600 425 675 425.8C750 426.7 825 437.3 862.5 442.7L900 448L900 601L862.5 601C825 601 750 601 675 601C600 601 525 601 450 601C375 601 300 601 225 601C150 601 75 601 37.5 601L0 601Z"
-                fill="#BBDEFB" stroke-linecap="round" stroke-linejoin="miter">
-            </path>
-        </svg>
+        <div class="bg-div source-bg" style="background-image: url(images/dd.svg);"></div>
+        <!-- <img src="images/source-.png" class="wow fadeIn" data-wow-delay=".6s" alt=""> -->
+        
         <div class="container">
-            <div class="row" dir="ltr">
+            <div class="row">
                 <div class="col-6 col-lg-5 wow fadeInLeft" data-wow-delay=".4s" dir="rtl" style="margin-top: 10%;">
                     <div class="text">
                         <h2>
@@ -85,8 +79,23 @@
                         </p>
                     </div>
                 </div>
+                <div class="col col-sm-12 col-lg-7 main-img-slider" dir="ltr">
+                    <div class="header-img">
+                        <div id="header-carousel" class="owl-carousel owl-theme">
+                            <div class="bg-div img-container" style="background-image: url('images/source-.png');"></div>
+                            <div class="bg-div img-container" style="background-image: url('images/website-01-1536x1106.png');"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <svg id="visual" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1">
+            <path
+                d="M0 373L37.5 388.8C75 404.7 150 436.3 225 448C300 459.7 375 451.3 450 442.7C525 434 600 425 675 425.8C750 426.7 825 437.3 862.5 442.7L900 448L900 601L862.5 601C825 601 750 601 675 601C600 601 525 601 450 601C375 601 300 601 225 601C150 601 75 601 37.5 601L0 601Z"
+                fill="#BBDEFB" stroke-linecap="round" stroke-linejoin="miter">
+            </path>
+        </svg>
     </section>
     <section class="source-cards">
         <svg id="dots-svg" width="125" height="230" viewBox="0 0 125 230" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,6 +181,7 @@
         <div class="container">
             <div class="search" style="width: 675px;margin: auto;">
                 <div class="input-group input-group-lg my-4">
+                    <input type="text" class="form-control" placeholder="ابحث في المدونة" aria-label="" aria-describedby="basic-addon1">
                     <div class="input-group-prepend">
                         <button type="button" class="btn btn-lg bg-main-color text-white" id="basic-addon1">
                             <span class="mx-5">
@@ -179,7 +189,6 @@
                             </span>
                         </button>
                     </div>
-                    <input type="text" class="form-control" placeholder="ابحث في المدونة" aria-label="" aria-describedby="basic-addon1">
                 </div>
             </div>
 

@@ -5,7 +5,7 @@ $(function () {
 
   // loader-screen
   $(document).ready(function(){
-    $('.loader-screen').delay(3000).fadeOut(300);
+    $('.loader-screen').delay(100).fadeOut(300);
   });
 
 
@@ -14,7 +14,7 @@ $(function () {
     $('.scroll-top').click(function () {
       $('html, body').animate({
           scrollTop: 0
-      }, 1000);
+      }, 100);
     });
     /// hide & show scroll to top
 
@@ -28,6 +28,16 @@ $(function () {
       
     });
 
+    // set image of carousel dots
+    $(document).ready(function(){
+      $('#campaings-carousel .owl-dot').each(function(){
+        var index = $(this).index();
+        var img = $('.campaing-item:nth('+index+') .bg-div').attr('data-img');
+        console.log(img);
+        $(this).append('<img src="'+img+'">');
+        // button.html(content);
+      });
+    });
     // stop video paly in modal fade out
     $('#videoModal').modal({
         show: false
