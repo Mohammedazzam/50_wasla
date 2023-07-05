@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>وصلة</title>
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
-      
+        <link rel="icon" href="images/logo.svg">
         <link rel="stylesheet" href="css/owl.carousel.min.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
         <!-- slider css -->
         <link rel="stylesheet" href="css/slider.css">
         <link rel="stylesheet" href="css/animate.css"/>
@@ -52,7 +51,7 @@
                     <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".7s" href="aboute_us.html">من نحن</a>
                     <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".8s" href="#">تواصل معنا</a>
                 </div>
-                <a href="#" class="btn bg-main-color text-white wow fadeIn" data-wow-delay="1s">
+                <a href="login.html" class="btn bg-main-color text-white wow fadeIn" data-wow-delay="1s">
                     دخول
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.5 8.25H4.5C4.08579 8.25 3.75 8.58579 3.75 9V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V9C20.25 8.58579 19.9142 8.25 19.5 8.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -78,10 +77,6 @@
                             <svg id="heart-unchecked" class="heart" width="47" height="36" viewBox="0 0 47 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M43.0458 3.55828L43.046 3.55843C44.1461 4.52403 45.0147 5.66695 45.6059 6.91992C46.197 8.17263 46.5 9.51253 46.5 10.8637C46.5 12.2149 46.197 13.5548 45.6059 14.8075C45.0147 16.0605 44.1461 17.2034 43.046 18.169L43.0459 18.1691L40.6626 20.2622L23.4994 35.3346L6.33624 20.2622L3.95287 18.1691C1.73249 16.2192 0.5 13.5896 0.5 10.8637C0.5 8.13789 1.73249 5.50826 3.95287 3.55836C6.17533 1.60663 9.20204 0.501056 12.3695 0.501056C15.5369 0.501056 18.5636 1.60663 20.7861 3.55836L23.1695 5.6514C23.3582 5.81714 23.6406 5.81714 23.8293 5.6514L26.2127 3.55836L26.2128 3.55828C27.3124 2.59213 28.6215 1.82283 30.0665 1.29703C31.5115 0.771221 33.0621 0.5 34.6293 0.5C36.1965 0.5 37.7472 0.771221 39.1922 1.29703C40.6372 1.82283 41.9462 2.59213 43.0458 3.55828Z" stroke="#17396B" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            
-                            <svg id="heart-checked" class="heart" width="47" height="36" viewBox="0 0 47 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M43.3759 3.18266C42.2274 2.17367 40.8639 1.37326 39.3631 0.827166C37.8624 0.281074 36.2538 0 34.6293 0C33.0048 0 31.3963 0.281074 29.8955 0.827166C28.3947 1.37326 27.0312 2.17367 25.8828 3.18266L23.4994 5.2757L21.116 3.18266C18.7963 1.14551 15.6501 0.00105592 12.3695 0.00105595C9.08889 0.00105597 5.94266 1.14551 3.62294 3.18266C1.30321 5.21981 2.44423e-08 7.98277 0 10.8637C-2.44423e-08 13.7447 1.30321 16.5077 3.62294 18.5448L6.00631 20.6379L23.4994 36L40.9925 20.6379L43.3759 18.5448C44.5248 17.5363 45.4363 16.3388 46.0581 15.0209C46.6799 13.703 47 12.2903 47 10.8637C47 9.43713 46.6799 8.02451 46.0581 6.70657C45.4363 5.38862 44.5248 4.19118 43.3759 3.18266Z" fill="#17396B"/>
-                            </svg>                                
                         </div>
                         <div class="col-10 col-lg-9">
                             <div class="card-details">
@@ -745,19 +740,19 @@
                     <div class="send-email">
                         <strong>تواصل معنا وارسل الايميل</strong>
                         <div class="input-group my-4">
-                            <input type="email" class="form-control" placeholder="Your Email" aria-label="" aria-describedby="basic-addon1">
                             <div class="input-group-prepend">
-                            <button type="button" class="btn bg-main-color text-white" id="basic-addon1">
-                                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.375 25.6623L23.8991 13.0655L0.375 0.46875V10.2662L17.2264 13.0655L0.375 15.8648V25.6623Z"
-                                        fill="#fff" />
-                                </svg>
-                                <span class="mx-5">
-                                    أرسل
-                                </span>
-                            </button>
+                                <button type="button" class="btn bg-main-color text-white" style="margin-right: -10px;" id="basic-addon1">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.375 25.6623L23.8991 13.0655L0.375 0.46875V10.2662L17.2264 13.0655L0.375 15.8648V25.6623Z"
+                                            fill="#fff" />
+                                    </svg>
+                                    <span class="mx-3">
+                                        أرسل
+                                    </span>
+                                </button>
                             </div>
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="" aria-describedby="basic-addon1">
                         </div>
                     </div>
                     <div class="social-links">
@@ -803,108 +798,16 @@
 
   
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/locales/bootstrap-datepicker.ar.min.js" charset="UTF-8"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
     <script src="js/app.js"></script>
-  <script>
-    
-    $(document).ready(function(){
-        $('#main-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-            }
-        });
-        $('#partners-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:2
-                },
-                600:{
-                    items:5
-                },
-                1000:{
-                    items:5
-                }
-            }
-        });
-        $('#header-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        });
-        $('#blog-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        });
-        $('#news-carousel').owlCarousel({
-            loop:true,
-            margin:15,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:2
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:3
-                }
-            }
-        });
-    });
-  </script>
+
 </body>
 </html>

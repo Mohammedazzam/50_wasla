@@ -72,11 +72,24 @@
     text-decoration: none;
     color: var(--main-color);
 }
-
-#heart-checked {
-    display: none;
+.star,
+.heart{
+    transform: scale(.9);
+    transition: all .2s ease-in-out;
+    stroke: var(--second-color);
+    cursor: pointer;
+}
+.heart.checked {
+    fill: var(--second-color);
+}
+.star.checked {
+    fill: #FAFF00
 }
 
+.star.checked:hover,
+.heart.checked:hover{
+    transform: scale(1.1);
+}
 
 body {
     font-family: 'nato_sans';
@@ -184,6 +197,9 @@ button.close {
 
 [type=email]{
     direction: rtl;
+}
+footer [type=email]{
+    direction: ltr;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -597,12 +613,21 @@ header .owl-carousel.owl-drag .owl-item {
 #campaings-carousel .owl-nav button:first-of-type {
     left: -40px;
 }
+#campaings-carousel.center-carousel .owl-nav button:first-of-type{
+    left: 20px;
+}
 
 #campaings-carousel .owl-nav button:last-of-type {
     right: -40px;
 }
+#campaings-carousel .owl-nav button.disabled{
+    opacity: .3;
+}
+#campaings-carousel.center-carousel .owl-nav button:last-of-type {
+    right: 20px;
+}
 
-#campaings-carousel .owl-dots {
+#campaings-carousel:not(.center-carousel ) .owl-dots {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -615,7 +640,7 @@ header .owl-carousel.owl-drag .owl-item {
 
 }
 
-#campaings-carousel .owl-dots button {
+#campaings-carousel:not(.center-carousel ) .owl-dots button {
     height: 120px;
     overflow: hidden;
     margin: 3px;
@@ -625,16 +650,31 @@ header .owl-carousel.owl-drag .owl-item {
     transition: all .2s ease;
 }
 
-#campaings-carousel .owl-dots button:hover,
-#campaings-carousel .owl-dots button.active {
-    opacity: 1;
-}
+
 
 #campaings-carousel .owl-dots button img {
     width: 100%;
     min-height: 100%;
 }
+#campaings-carousel.center-carousel  .owl-dots{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+#campaings-carousel.center-carousel .owl-dots button{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: .6;
+    margin: 5px;
+}
+#campaings-carousel .owl-dots button:hover,
+#campaings-carousel .owl-dots button.active {
+    opacity: 1;
+}
 .campaing-item {
     /* padding: 20px; */
     background-color: #fff;
@@ -682,6 +722,7 @@ header .owl-carousel.owl-drag .owl-item {
     margin-right: 5%;
     height: 270px;
     position: relative;
+    overflow: hidden;
 }
 
 .campaigns-card .campaigns-card-header .card-image .date {
@@ -706,6 +747,20 @@ header .owl-carousel.owl-drag .owl-item {
     overflow: hidden;
 }
 
+.campaigns-card .campaigns-card-header .campaigns-favorit{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    background-color: var(--main-color);
+    width: 60px;
+    height: 60px;
+    transform: rotate(45deg);
+}
+.campaigns-card .campaigns-card-header .campaigns-favorit svg{
+    position: absolute;
+    bottom: 5px;
+    left: 35%;
+}
 .campaigns-card .card-image img {
     width: 100%;
     height: 100%;
@@ -1060,7 +1115,7 @@ footer .rights a {
 
 .blog-header .blog-crousel {
     width: 100%;
-    height: 82vh;
+    height: 86vh;
     box-shadow: inset 10px -12px 150px 190px #000000ab;
     padding: 70px;
 }
@@ -1351,9 +1406,15 @@ footer .rights a {
 /* **************************************** End Blog Bage ************************************************* */
 
 /* **************************************** start search Blog Bage ************************************************* */
-.blog-search-card .blog-search-card-img {
-    height: 260px;
+.blog-search-card{
+    background-color: #fff;
     border-radius: 15px;
+    margin: 10px auto;
+
+}
+.blog-search-card .blog-search-card-img {
+    height: 200px;
+    border-radius: 15px 15px 0 0;
     position: relative;
 }
 
@@ -1368,25 +1429,40 @@ footer .rights a {
     font-size: 16px;
 }
 
-.blog-search-card .card-title {
-    margin: 15px 10px;
-}
 
+.blog-search-card .card-title {
+    padding: 10px 20px;
+    margin: 0;
+}
 .blog-search-card .card-title h2 {
     font-family: 'nato_bold';
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .blog-search-card .card-title p {
     color: #777777;
     font-size: 12px;
-    padding-top: 8px;
+    margin: 0;
 }
 
-.blog-search-card .card-title a {
-    border-radius: 9px;
+.blog-search-card .card-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
     width: 100%;
+    background-color:#fdfdfd;
+    color: var(--main-color);
+    border-radius: 0 0 8px 8px;
+    border-top: 1px solid #f4f4f4;
+    transition: all .1s ease-in-out;
+}
+
+.blog-search-card .card-button:hover {
+    text-decoration: none;
+    background-color: var(--second-color);
+    color: #fff;
+
 }
 
 .search-filter {
@@ -2361,6 +2437,9 @@ footer .rights a {
     padding: 20px 0;
 }
 
+.wasla-center .social-sec .last-blogs-title{
+    margin-bottom: 20px;
+}
 .wasla-center .social-sec .social-link {
     height: 60px;
     width: 250px;
@@ -2371,20 +2450,78 @@ footer .rights a {
     color: #fff;
 }
 
-.wasla-center .social-sec img {
-    width: 100%;
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px;
-}
 
 .wasla-center .social-sec .social-window {
     width: 100%;
     min-height: 200px;
 
 }
-
+.wasla-center .social-sec .socail_item{
+    background: rgb(34,193,195);
+    background: linear-gradient(270deg, rgba(34,193,195,0.15) 0%, rgba(160,45,253,0.15) 100%);
+    border-radius: 15px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.wasla-center .social-sec .socail_item::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .25;
+    transition: all .2s ease-in-out;
+    z-index: 2;
+}
+.wasla-center .social-sec .socail_item img{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    z-index: 1;
+}
+.wasla-center .social-sec .socail_item .text_overley{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.wasla-center .social-sec .socail_item .text_overley *{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .2s ease-in-out;
+    visibility: hidden;
+}
+.wasla-center .social-sec .socail_item .text_overley strong{
+    color: #777;
+    top: 10%;
+}
+.wasla-center .social-sec .socail_item .text_overley p{
+    color: #d6d6d6;
+    bottom: 10%;
+}
+.wasla-center .social-sec .socail_item .text_overley:hover strong{
+    top: 30%;
+    visibility: visible;
+}
+.wasla-center .social-sec .socail_item .text_overley:hover p{
+    bottom: 40%;
+    visibility: visible;
+}
+.wasla-center .social-sec .socail_item:hover::after{
+    opacity: .8;
+}
 /* **************************************** End wasla-center  Bage ******************************************* */
 /* **************************************** start about us  Bage ******************************************* */
 .about-us section {

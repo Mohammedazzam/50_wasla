@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>وصلة</title>
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
-      
+        <link rel="icon" href="images/logo.svg">
         <link rel="stylesheet" href="css/owl.carousel.min.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
         <!-- slider css -->
         <link rel="stylesheet" href="css/slider.css">
         <link rel="stylesheet" href="css/animate.css"/>
@@ -51,7 +50,7 @@
                     <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".7s" href="aboute_us.html">من نحن</a>
                     <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".8s" href="#">تواصل معنا</a>
                 </div>
-                <a href="#" class="btn bg-main-color text-white wow fadeIn" data-wow-delay="1s">
+                <a href="login.html" class="btn bg-main-color text-white wow fadeIn" data-wow-delay="1s">
                     دخول
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.5 8.25H4.5C4.08579 8.25 3.75 8.58579 3.75 9V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V9C20.25 8.58579 19.9142 8.25 19.5 8.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -284,53 +283,33 @@
             </div>
         </section>
 
-        <section>
+        <section class="contact mb-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-6 col-lg-4 wow fadeInUp"  data-wow-delay=".4s">
-                        <div class="full-img-card">
-                            <div class="bg-div" style="background-image: url(images/Image.png);"></div>
-                            <div class="card-text">
-                                <h2>
-                                    نسعى لتقديم جيل شبابي واعي وواعد
-                                </h2>
-                                <p>
-                                    منصة رقمية تهتم بالشباب تسعى لمناصرة القضايا الشبابية ودورهم في المجتمع منصة رقمية تهتم بالشباب تسعى لمناصرة القضايا الشبابية ودورهم في المجتمع 
-                                </p>
+                <div class="jon-email py-4 px-5">
+                    <div class="row">
+                        <div class="col-7">
+                            <h2 class="fs-1">سجل الآن</h2>
+                            <p>
+                                لتصلك أحدث المصادر عبر بريدك الإلكتروني
+                            </p>
+                        </div>
+                        <div class="col-5">
+                            <div class="input-group my-4">
+                                <div class="input-group-prepend">
+                                    <button type="button" class="btn btn-lg btn-dark text-white" id="basic-addon1">
+                                        <span class="mx-3">
+                                            اشترك الآن
+                                        </span>
+                                    </button>
+                                </div>
+                                <input type="email" class="form-control form-control-lg" placeholder="أدخل بريدك الإلكتروني" aria-label="" aria-describedby="basic-addon1">
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-4 wow fadeInUp"  data-wow-delay=".6s">
-                        <div class="full-img-card">
-                            <div class="bg-div" style="background-image: url(images/Image.png);"></div>
-                            <div class="card-text">
-                                <h2>
-                                    نسعى لتقديم جيل شبابي واعي وواعد
-                                </h2>
-                                <p>
-                                    منصة رقمية تهتم بالشباب تسعى لمناصرة القضايا الشبابية ودورهم في المجتمع منصة رقمية تهتم بالشباب تسعى لمناصرة القضايا الشبابية ودورهم في المجتمع 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-4 wow fadeInUp"  data-wow-delay=".8s">
-                        <div class="full-img-card">
-                            <div class="bg-div" style="background-image: url(images/Image.png);"></div>
-                            <div class="card-text">
-                                <h2>
-                                    نسعى لتقديم جيل شبابي واعي وواعد
-                                </h2>
-                                <p>
-                                    منصة رقمية تهتم بالشباب تسعى لمناصرة القضايا الشبابية ودورهم في المجتمع منصة رقمية تهتم بالشباب تسعى لمناصرة القضايا الشبابية ودورهم في المجتمع 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
         </section>
-
+        
         <section class="service">
             <div class="container">
                 <div class="main-title">
@@ -484,19 +463,19 @@
                     <div class="send-email">
                         <strong>تواصل معنا وارسل الايميل</strong>
                         <div class="input-group my-4">
-                            <input type="email" class="form-control" placeholder="Your Email" aria-label="" aria-describedby="basic-addon1">
                             <div class="input-group-prepend">
-                            <button type="button" class="btn bg-main-color text-white" id="basic-addon1">
-                                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.375 25.6623L23.8991 13.0655L0.375 0.46875V10.2662L17.2264 13.0655L0.375 15.8648V25.6623Z"
-                                        fill="#fff" />
-                                </svg>
-                                <span class="mx-5">
-                                    أرسل
-                                </span>
-                            </button>
+                                <button type="button" class="btn bg-main-color text-white" style="margin-right: -10px;" id="basic-addon1">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.375 25.6623L23.8991 13.0655L0.375 0.46875V10.2662L17.2264 13.0655L0.375 15.8648V25.6623Z"
+                                            fill="#fff" />
+                                    </svg>
+                                    <span class="mx-3">
+                                        أرسل
+                                    </span>
+                                </button>
                             </div>
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="" aria-describedby="basic-addon1">
                         </div>
                     </div>
                     <div class="social-links">
@@ -541,8 +520,10 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/locales/bootstrap-datepicker.ar.min.js" charset="UTF-8"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
@@ -552,82 +533,6 @@
     <script src="js/slider.js"></script>
 
     <script src="js/app.js"></script>
-  <script>
-    
-    $(document).ready(function(){
-        $('#main-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-            }
-        });
-        $('#partners-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:2
-                },
-                600:{
-                    items:5
-                },
-                1000:{
-                    items:5
-                }
-            }
-        });
-        $('#header-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        });
-        $('#blog-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        });
-    });
-  </script>
+
 </body>
 </html>

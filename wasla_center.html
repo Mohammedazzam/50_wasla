@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>وصلة</title>
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
-      
+        <link rel="icon" href="images/logo.svg">
         <link rel="stylesheet" href="css/owl.carousel.min.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
         <!-- slider css -->
         <link rel="stylesheet" href="css/slider.css">
         <link rel="stylesheet" href="css/animate.css"/>
@@ -51,7 +50,7 @@
                     <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".7s" href="aboute_us.html">من نحن</a>
                     <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".8s" href="#">تواصل معنا</a>
                 </div>
-                <a href="#" class="btn bg-main-color text-white wow fadeIn" data-wow-delay="1s">
+                <a href="login.html" class="btn bg-main-color text-white wow fadeIn" data-wow-delay="1s">
                     دخول
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.5 8.25H4.5C4.08579 8.25 3.75 8.58579 3.75 9V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V9C20.25 8.58579 19.9142 8.25 19.5 8.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -63,7 +62,7 @@
         </div>
     </nav>
     <header dir="ltr" class="blog-header">
-        <div id="header-carousel" class="owl-carousel owl-theme">
+        <div id="campaings-carousel" class="owl-carousel owl-theme center-carousel">
             <div dir="rtl" class="item bg-div blog-crousel" style="background-image: url('images/Image2.png');">
                 <div class="container d-flex justify-content-center">
                     <div class="blog-header-text text-center">
@@ -99,21 +98,11 @@
     <div class="wasla-center">
         <section class="wasla-news">
             <div class="container">
-                <div class="last-blogs-title d-flex justify-content-center">
-                    <svg width="130" height="108" viewBox="0 0 130 108" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect width="130" height="108" fill="url(#pattern0)" />
-                        <defs>
-                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_1_3522" transform="matrix(0.00833333 0 0 0.0100309 0 -0.00154321)" />
-                            </pattern>
-                            <image id="image0_1_3522" width="120" height="100"
-                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABkCAYAAABNcPQyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHcWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDYwLCAyMDIwLzA1LzEyLTE2OjA0OjE3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjIgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMy0wNS0xNlQwMjozNzozOSswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMy0wNS0xNlQwMjozNzozOSswMzowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjMtMDUtMTZUMDI6Mzc6MzkrMDM6MDAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzFmNDk3ZGItOTI2NS1jZjRmLWE1NTYtMTkwZDdkNmUxZDE0IiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6YTRkNzk2MWQtNzUxZC1iODRhLWJmOTUtZjllZWIxNDdiNmFkIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MDJlYTAxYTgtNDM1My0xZjRkLTkzMzktNGYwMzBhM2NlNTVkIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDowMmVhMDFhOC00MzUzLTFmNGQtOTMzOS00ZjAzMGEzY2U1NWQiIHN0RXZ0OndoZW49IjIwMjMtMDUtMTZUMDI6Mzc6MzkrMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMS4yIChXaW5kb3dzKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NzFmNDk3ZGItOTI2NS1jZjRmLWE1NTYtMTkwZDdkNmUxZDE0IiBzdEV2dDp3aGVuPSIyMDIzLTA1LTE2VDAyOjM3OjM5KzAzOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjEuMiAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDx4bXBNTTpJbmdyZWRpZW50cz4gPHJkZjpCYWc+IDxyZGY6bGkgc3RSZWY6bGlua0Zvcm09IlJlZmVyZW5jZVN0cmVhbSIgc3RSZWY6ZmlsZVBhdGg9ImNsb3VkLWFzc2V0Oi8vY2MtYXBpLXN0b3JhZ2UuYWRvYmUuaW8vYXNzZXRzL2Fkb2JlLWxpYnJhcmllcy80MzAzNjI3NC1kMjEyLTQyNzYtOTRmMi05NWI3NGZhMjhjZDc7bm9kZT03ZDliM2VkNS01Y2Y2LTRjZDMtYTY1Ny1mM2E1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" />
-                        </defs>
+                <div class="main-title mb-5">
+                    <h2>أخبار وصلة</h2>
+                    <svg width="421" height="20" viewBox="0 0 421 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 16C64.0365 6.94452 230.687 -5.73316 417 16" stroke="#039EDE" stroke-width="8" stroke-linecap="round"/>
                     </svg>
-                    <h2>
-                        أخبار وصلة
-                    </h2>
                 </div>
                 <div class="row">
                     <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".4s">
@@ -127,24 +116,18 @@
                                 <h2>
                                     المناصرة الرقمية وأثرها في المجتمع
                                 </h2>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p>
-                                            مدة القراءة: 15 دقيقة
-                                        </p>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#" class="btn btn-sm bg-main-color text-white">
-                                            التفاصيل
-                                        </a>
-                                    </div>
-                                </div>
+                                <p>
+                                    مدة القراءة: 15 دقيقة
+                                </p>
                             </div>
+                            <a href="#" class="a card-button">
+                                التفاصيل
+                            </a>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".4s">
                         <div class="blog-search-card">
-                            <div class="bg-div blog-search-card-img" style="background-image: url('images/Image2.png');">
+                            <div class="bg-div blog-search-card-img" style="background-image: url('images/Image.png');">
                                 <div class="date">
                                     14 <br> Feb
                                 </div>
@@ -153,24 +136,18 @@
                                 <h2>
                                     المناصرة الرقمية وأثرها في المجتمع
                                 </h2>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p>
-                                            مدة القراءة: 15 دقيقة
-                                        </p>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#" class="btn btn-sm bg-main-color text-white">
-                                            التفاصيل
-                                        </a>
-                                    </div>
-                                </div>
+                                <p>
+                                    مدة القراءة: 15 دقيقة
+                                </p>
                             </div>
+                            <a href="#" class="a card-button">
+                                التفاصيل
+                            </a>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".4s">
                         <div class="blog-search-card">
-                            <div class="bg-div blog-search-card-img" style="background-image: url('images/Image2.png');">
+                            <div class="bg-div blog-search-card-img" style="background-image: url('images/Image\ \(1\).png');">
                                 <div class="date">
                                     14 <br> Feb
                                 </div>
@@ -179,45 +156,13 @@
                                 <h2>
                                     المناصرة الرقمية وأثرها في المجتمع
                                 </h2>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p>
-                                            مدة القراءة: 15 دقيقة
-                                        </p>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#" class="btn btn-sm bg-main-color text-white">
-                                            التفاصيل
-                                        </a>
-                                    </div>
-                                </div>
+                                <p>
+                                    مدة القراءة: 15 دقيقة
+                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="1s">
-                        <div class="blog-search-card">
-                            <div class="bg-div blog-search-card-img" style="background-image: url('images/Image2.png');">
-                                <div class="date">
-                                    14 <br> Feb
-                                </div>
-                            </div>
-                            <div class="card-title">
-                                <h2>
-                                    المناصرة الرقمية وأثرها في المجتمع
-                                </h2>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p>
-                                            مدة القراءة: 15 دقيقة
-                                        </p>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#" class="btn btn-sm bg-main-color text-white">
-                                            التفاصيل
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="#" class="a card-button">
+                                التفاصيل
+                            </a>
                         </div>
                     </div>
                     <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".4s">
@@ -231,22 +176,16 @@
                                 <h2>
                                     المناصرة الرقمية وأثرها في المجتمع
                                 </h2>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p>
-                                            مدة القراءة: 15 دقيقة
-                                        </p>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#" class="btn btn-sm bg-main-color text-white">
-                                            التفاصيل
-                                        </a>
-                                    </div>
-                                </div>
+                                <p>
+                                    مدة القراءة: 15 دقيقة
+                                </p>
                             </div>
+                            <a href="#" class="a card-button">
+                                التفاصيل
+                            </a>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".4s">
                         <div class="blog-search-card">
                             <div class="bg-div blog-search-card-img" style="background-image: url('images/Image2.png');">
                                 <div class="date">
@@ -257,22 +196,16 @@
                                 <h2>
                                     المناصرة الرقمية وأثرها في المجتمع
                                 </h2>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p>
-                                            مدة القراءة: 15 دقيقة
-                                        </p>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#" class="btn btn-sm bg-main-color text-white">
-                                            التفاصيل
-                                        </a>
-                                    </div>
-                                </div>
+                                <p>
+                                    مدة القراءة: 15 دقيقة
+                                </p>
                             </div>
+                            <a href="#" class="a card-button">
+                                التفاصيل
+                            </a>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".4s">
                         <div class="blog-search-card">
                             <div class="bg-div blog-search-card-img" style="background-image: url('images/Image2.png');">
                                 <div class="date">
@@ -283,22 +216,16 @@
                                 <h2>
                                     المناصرة الرقمية وأثرها في المجتمع
                                 </h2>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p>
-                                            مدة القراءة: 15 دقيقة
-                                        </p>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#" class="btn btn-sm bg-main-color text-white">
-                                            التفاصيل
-                                        </a>
-                                    </div>
-                                </div>
+                                <p>
+                                    مدة القراءة: 15 دقيقة
+                                </p>
                             </div>
+                            <a href="#" class="a card-button">
+                                التفاصيل
+                            </a>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="1s">
+                    <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".4s">
                         <div class="blog-search-card">
                             <div class="bg-div blog-search-card-img" style="background-image: url('images/Image2.png');">
                                 <div class="date">
@@ -309,19 +236,33 @@
                                 <h2>
                                     المناصرة الرقمية وأثرها في المجتمع
                                 </h2>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p>
-                                            مدة القراءة: 15 دقيقة
-                                        </p>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#" class="btn btn-sm bg-main-color text-white">
-                                            التفاصيل
-                                        </a>
-                                    </div>
+                                <p>
+                                    مدة القراءة: 15 دقيقة
+                                </p>
+                            </div>
+                            <a href="#" class="a card-button">
+                                التفاصيل
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="blog-search-card">
+                            <div class="bg-div blog-search-card-img" style="background-image: url('images/Image2.png');">
+                                <div class="date">
+                                    14 <br> Feb
                                 </div>
                             </div>
+                            <div class="card-title">
+                                <h2>
+                                    المناصرة الرقمية وأثرها في المجتمع
+                                </h2>
+                                <p>
+                                    مدة القراءة: 15 دقيقة
+                                </p>
+                            </div>
+                            <a href="#" class="a card-button">
+                                التفاصيل
+                            </a>
                         </div>
                     </div>
                     
@@ -335,127 +276,19 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64644L7.17157 0.464465C6.97631 0.269203 6.65973 0.269203 6.46447 0.464465C6.2692 0.659727 6.2692 0.97631 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.73079 6.97631 7.73079 7.17157 7.53553L10.3536 4.35355ZM8.74228e-08 4.5L10 4.5L10 3.5L-8.74228e-08 3.5L8.74228e-08 4.5Z"/>
-                            </svg>
-                            السابق 
+                            شاهد المزيد
                         </a>                       
                     </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li>
-                        <a href="#">التالي
-                            <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.646935 3.64645C0.451673 3.84171 0.451673 4.15829 0.646934 4.35355L3.82892 7.53553C4.02418 7.7308 4.34076 7.7308 4.53602 7.53553C4.73128 7.34027 4.73128 7.02369 4.53602 6.82843L1.70759 4L4.53602 1.17157C4.73128 0.97631 4.73128 0.659728 4.53602 0.464466C4.34076 0.269203 4.02418 0.269203 3.82892 0.464465L0.646935 3.64645ZM11.0005 3.5L1.00049 3.5L1.00049 4.5L11.0005 4.5L11.0005 3.5Z"/>
-                            </svg> 
-                        </a>                       
-                    </li>
+
                 </ul>
             </div>
         </div>
         <!-- end Pagination -->
+
         <section class="social-sec">
             <div class="container">
-                <div class="twitter">
+                <div class="instagram">
                     <div class="last-blogs-title d-flex justify-content-center align-items-center">
-                        <svg width="154" height="128" viewBox="0 0 154 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M94.1651 117.471C81.3714 127.106 61.4874 126.08 49.7531 115.179L13.2814 81.2988C1.54702 70.398 2.40585 53.7503 15.1996 44.1149L59.9042 10.4464C72.6979 0.811013 92.5819 1.83677 104.316 12.7375L140.788 46.6182C152.522 57.5189 151.663 74.1667 138.87 83.8021L94.1651 117.471Z" stroke="#009DDE" stroke-width="8"/>
-                        </svg>
-                        <div >
-                            <h2 class="mx-4">
-                                تابعنا وشاركنا على تويترعبر حسابنا
-                            </h2>
-                            <a href="#" class="btn hov-grow rounded-pill social-link d-flex justify-content-center align-items-center twitter-bg">
-                                <div class="mx-3">
-                                    <span>
-                                        220K
-                                    </span>
-                                    <span>
-                                        Twitter
-                                    </span>
-                                </div>                      
-                                <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M35.4034 8.04547C35.427 8.38586 35.427 8.72626 35.427 9.06979C35.427 19.5372 27.4383 31.6094 12.8306 31.6094V31.6031C8.51541 31.6094 4.28989 30.3765 0.657227 28.0517C1.28469 28.127 1.91529 28.1647 2.54747 28.1663C6.12352 28.1694 9.59735 26.9725 12.4107 24.7686C9.01235 24.7043 6.03231 22.4941 4.99126 19.2674C6.1817 19.4965 7.40832 19.4494 8.57674 19.131C4.87174 18.3843 2.20622 15.1372 2.20622 11.3663C2.20622 11.3317 2.20622 11.2988 2.20622 11.2659C3.31017 11.8792 4.54622 12.2196 5.81057 12.2572C2.32102 9.93096 1.24537 5.30037 3.35263 1.67998C7.38473 6.629 13.3338 9.63763 19.72 9.95606C19.08 7.20469 19.9544 4.32155 22.0176 2.38743C25.2162 -0.611784 30.2469 -0.458058 33.2537 2.73096C35.0323 2.38116 36.7369 1.73018 38.2969 0.807824C37.7041 2.64155 36.4633 4.1992 34.8058 5.189C36.38 5.0039 37.9179 4.58351 39.3663 3.94194C38.3001 5.53567 36.9571 6.9239 35.4034 8.04547Z" fill="white"/>
-                                </svg>                                    
-                            </a>
-                        </div>
-                        <svg width="154" height="128" viewBox="0 0 154 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M94.1651 117.471C81.3714 127.106 61.4874 126.08 49.7531 115.179L13.2814 81.2988C1.54702 70.398 2.40585 53.7503 15.1996 44.1149L59.9042 10.4464C72.6979 0.811013 92.5819 1.83677 104.316 12.7375L140.788 46.6182C152.522 57.5189 151.663 74.1667 138.87 83.8021L94.1651 117.471Z" stroke="#009DDE" stroke-width="8"/>
-                        </svg>                        
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-6 col-xl-4 d-flex flex-column align-self-start">
-                           <img src="images/social/main1.png" class="wow fadeInRight" data-wow-delay=".4s" alt="">
-                           <img src="images/social/main3.png" class="wow fadeInRight" data-wow-delay=".6s" alt="">
-                        </div>
-                        <div class="col-12 col-lg-6 col-xl-4 d-flex flex-column align-self-start">
-                           <img src="images/social/main.png" class="wow fadeInRight" data-wow-delay=".8s" alt="">
-                           <img src="images/social/main1.png" class="wow fadeInRight" data-wow-delay="1s" alt="">
-                        </div>
-                        <div class="col-12 col-lg-6 col-xl-4 d-flex flex-column align-self-start">
-                            <img src="images/social/main1.png" class="wow fadeInRight" data-wow-delay="1.2s" alt="">
-                            <img src="images/social/main3.png" class="wow fadeInRight" data-wow-delay="1.4s" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="social-sec">
-            <div class="container">
-                <div class="facebook">
-                    <div class="last-blogs-title d-flex justify-content-center align-items-center">
-                        <svg width="154" height="128" viewBox="0 0 154 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M94.1651 117.471C81.3714 127.106 61.4874 126.08 49.7531 115.179L13.2814 81.2988C1.54702 70.398 2.40585 53.7503 15.1996 44.1149L59.9042 10.4464C72.6979 0.811013 92.5819 1.83677 104.316 12.7375L140.788 46.6182C152.522 57.5189 151.663 74.1667 138.87 83.8021L94.1651 117.471Z" stroke="#1877F2" stroke-width="8"/>
-                        </svg>                            
-                        <div >
-                            <h2 class="mx-4" style="color: #1877F2;">
-                                تابعنا وشاركنا على فيسبوك عبر حسابنا
-                            </h2>
-                            <a href="#" class="btn hov-grow rounded-pill social-link d-flex justify-content-center align-items-center facebook-bg">
-                                <div class="mx-3">
-                                    <span>
-                                        220K
-                                    </span>
-                                    <span>
-                                        Facebook
-                                    </span>
-                                </div>                      
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16.0893C0 24.044 5.77733 30.6587 13.3333 32V20.444H9.33333V16H13.3333V12.444C13.3333 8.444 15.9107 6.22267 19.556 6.22267C20.7107 6.22267 21.956 6.4 23.1107 6.57733V10.6667H21.0667C19.1107 10.6667 18.6667 11.644 18.6667 12.8893V16H22.9333L22.2227 20.444H18.6667V32C26.2227 30.6587 32 24.0453 32 16.0893C32 7.24 24.8 0 16 0C7.2 0 0 7.24 0 16.0893Z" fill="white"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <svg width="154" height="128" viewBox="0 0 154 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M94.1651 117.471C81.3714 127.106 61.4874 126.08 49.7531 115.179L13.2814 81.2988C1.54702 70.398 2.40585 53.7503 15.1996 44.1149L59.9042 10.4464C72.6979 0.811013 92.5819 1.83677 104.316 12.7375L140.788 46.6182C152.522 57.5189 151.663 74.1667 138.87 83.8021L94.1651 117.471Z" stroke="#1877F2" stroke-width="8"/>
-                        </svg>                                                   
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <img src="images/social/Group 1000005008.png" alt="">
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <img src="images/social/Group 1000005008.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="social-sec">
-            <div class="container">
-                <div class="twitter">
-                    <div class="last-blogs-title d-flex justify-content-center align-items-center">
-                        <svg width="154" height="128" viewBox="0 0 154 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M94.1305 117.471C81.3367 127.106 61.4528 126.08 49.7184 115.179L13.2467 81.2988C1.51235 70.398 2.37118 53.7503 15.1649 44.1149L59.8695 10.4464C72.6633 0.811013 92.5472 1.83677 104.282 12.7375L140.753 46.6182C152.488 57.5189 151.629 74.1667 138.835 83.8021L94.1305 117.471Z" stroke="url(#paint0_radial_1_7984)" stroke-width="8"/>
-                            <defs>
-                            <radialGradient id="paint0_radial_1_7984" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(148.036 41.5898) rotate(143.015) scale(112.948 97.8024)">
-                            <stop stop-color="#FFDD55"/>
-                            <stop offset="0.1" stop-color="#FFDD55"/>
-                            <stop offset="0.5" stop-color="#FF543E"/>
-                            <stop offset="1" stop-color="#C837AB"/>
-                            </radialGradient>
-                            </defs>
-                        </svg>
                         <div >
                             <h2 class="mx-4"
                              style="background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
@@ -464,7 +297,7 @@
                                     background-clip: text;
                                     text-fill-color: transparent;
                                     ">
-                                تابعنا وشاركنا على تويترعبر حسابنا
+                                تابعنا وشاركنا على انستجرام عبر حسابنا
                             </h2>
                             <a href="#" class="btn hov-grow rounded-pill social-link d-flex justify-content-center align-items-center instagram-bg">
                                 <div class="mx-3">
@@ -489,27 +322,43 @@
                                 </svg>                                    
                             </a>
                         </div>
-                        <svg width="154" height="128" viewBox="0 0 154 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M94.1305 117.471C81.3367 127.106 61.4528 126.08 49.7184 115.179L13.2467 81.2988C1.51235 70.398 2.37118 53.7503 15.1649 44.1149L59.8695 10.4464C72.6633 0.811013 92.5472 1.83677 104.282 12.7375L140.753 46.6182C152.488 57.5189 151.629 74.1667 138.835 83.8021L94.1305 117.471Z" stroke="url(#paint0_radial_1_7984)" stroke-width="8"/>
-                            <defs>
-                            <radialGradient id="paint0_radial_1_7984" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(148.036 41.5898) rotate(143.015) scale(112.948 97.8024)">
-                            <stop stop-color="#FFDD55"/>
-                            <stop offset="0.1" stop-color="#FFDD55"/>
-                            <stop offset="0.5" stop-color="#FF543E"/>
-                            <stop offset="1" stop-color="#C837AB"/>
-                            </radialGradient>
-                            </defs>
-                        </svg>                       
                     </div>
                     <div class="row">
-                        <div class="col-12 col-lg-6 col-xl-4 d-flex flex-column align-self-start">
-                           <img src="images/social/insta1.png" class="wow fadeInUp" data-wow-delay=".4s" alt="">
-                        </div>
-                        <div class="col-12 col-lg-6 col-xl-4 d-flex flex-column align-self-start">
-                           <img src="images/social/insta1.png" class="wow fadeInUp" data-wow-delay=".6s" alt="">
-                        </div>
-                        <div class="col-12 col-lg-6 col-xl-4 d-flex flex-column align-self-start">
-                            <img src="images/social/insta2.png" class="wow fadeInUp" data-wow-delay=".8s" alt="">
+                        <div id="social-carousel" class="owl-carousel owl-theme" dir="ltr">
+                            <div class="socail_item p-3">
+                                <img src="images/Image.png" alt="">
+                                <a href="#" class="a text_overley text-center">
+                                    <strong>
+                                        @waslaplatform
+                                    </strong>
+                                    <p class="fs-4">
+                                        شاهد هذه التغريدة وتغريدات أخرى على صفحتنا في إنستجرام
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="socail_item p-3">
+                                <img src="images/social/insta2.png" alt="">
+                                <a href="#" class="a text_overley text-center">
+                                    <strong>
+                                        @waslaplatform
+                                    </strong>
+                                    <p class="fs-4">
+                                        شاهد هذه التغريدة وتغريدات أخرى على صفحتنا في إنستجرام
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="socail_item p-3">
+                                <img src="images/social/insta1.png" alt="">
+                                <a href="#" class="a text_overley text-center">
+                                    <strong>
+                                        @waslaplatform
+                                    </strong>
+                                    <p class="fs-4">
+                                        شاهد هذه التغريدة وتغريدات أخرى على صفحتنا في إنستجرام
+                                    </p>
+                                </a>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -551,19 +400,19 @@
                     <div class="send-email mx-auto">
                         <strong>تواصل معنا وارسل الايميل</strong>
                         <div class="input-group my-4">
-                            <input type="email" class="form-control" placeholder="Your Email" aria-label="" aria-describedby="basic-addon1">
                             <div class="input-group-prepend">
-                            <button type="button" class="btn bg-main-color text-white" id="basic-addon1">
-                                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.375 25.6623L23.8991 13.0655L0.375 0.46875V10.2662L17.2264 13.0655L0.375 15.8648V25.6623Z"
-                                        fill="#fff" />
-                                </svg>
-                                <span class="mx-5">
-                                    أرسل
-                                </span>
-                            </button>
+                                <button type="button" class="btn bg-main-color text-white" style="margin-right: -10px;" id="basic-addon1">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.375 25.6623L23.8991 13.0655L0.375 0.46875V10.2662L17.2264 13.0655L0.375 15.8648V25.6623Z"
+                                            fill="#fff" />
+                                    </svg>
+                                    <span class="mx-3">
+                                        أرسل
+                                    </span>
+                                </button>
                             </div>
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="" aria-describedby="basic-addon1">
                         </div>
                     </div>
                     <div class="social-links">
@@ -609,90 +458,16 @@
 
   
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/locales/bootstrap-datepicker.ar.min.js" charset="UTF-8"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
     <script src="js/app.js"></script>
-  <script>
-    
-    $(document).ready(function(){
-        $('#main-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-            }
-        });
-        $('#partners-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:2
-                },
-                600:{
-                    items:5
-                },
-                1000:{
-                    items:5
-                }
-            }
-        });
-        $('#header-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        });
-        $('#blog-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        });
-    });
-  </script>
+
 </body>
 </html>
