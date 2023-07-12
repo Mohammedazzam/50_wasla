@@ -49,8 +49,8 @@ $(function () {
     
   });
 
-  // favorate heart click
-  $('.heart,.star').click(function(){
+  // favorate bookmark click
+  $('.bookmark,.star').click(function(){
     $(this).toggleClass('checked');
   });
   
@@ -78,8 +78,9 @@ $(function () {
   $(document).ready(function(){
     $('#main-carousel').owlCarousel({
         loop:true,
-        margin:0,
-        nav:false,
+        margin:10,
+        nav:true,
+        dots: true,
         autoplay:true,
         autoplayTimeout:2000,
         responsive:{
@@ -94,10 +95,34 @@ $(function () {
             }
         }
     });
+    $('#center-news-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots: true,
+        // rtl: true,
+        // autoplay:true,
+        autoplayTimeout:2000,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            900:{
+                items:3
+            },
+            1200:{
+                items:4
+            }
+        }
+    });
     $('#social-carousel').owlCarousel({
         loop:true,
         margin:20,
-        nav:false,
+        nav:true,
+        dots: true,
         autoplay:true,
         autoplayTimeout:5000,
         responsive:{
@@ -150,8 +175,8 @@ $(function () {
     });
     $('#campaings-carousel').owlCarousel({
         margin:20,
-        dots: true,
         nav:true,
+        dots: true,
         //dotsData: true,
         autoplayTimeout:2000,
         responsive:{
