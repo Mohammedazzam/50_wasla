@@ -42,7 +42,16 @@ $(function () {
       todayHighlight:true,
       weekStart:6
     });
-  
+
+    var months = ["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"];
+    $('.years-filter .year:not(.all)').each(function(){
+        months.forEach(element => {
+            $(this).append(`<option value="${element}">${element}</option>`);
+        });
+    });
+    $('.years-filter .year:not(.all)').on("click change", function(){
+        $(this).children('.title').hide();
+    });
   $(".option").click(function(){
     $(".option").removeClass("active");
     $(this).addClass("active");
@@ -242,4 +251,18 @@ $(function () {
     });
   });
 
+
+    // reset rating
+    $('.reset').click(function(){
+        console.log('kjgk');
+        $('.rating label input').prop('checked', false);
+    });
+
+    // campaing slider
+    $('.slider-container .options .option').click(function(){
+        var target = $(this).attr('data-slid');
+        console.log(target);
+        $('.slide-with.active').removeClass('active');
+        $('.'+target).addClass('active');
+    });
 });

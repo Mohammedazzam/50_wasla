@@ -48,7 +48,9 @@
 .color-second {
     color: var(--second-color) !important;
 }
-
+.text-justify{
+    text-align: justify;
+}
 .hov-grow {
     transition: all .2s ease-in-out;
 }
@@ -400,7 +402,7 @@ footer [type=email]{
 /* end navbar */
 /* start header */
 header {
-    height: 90vh;
+    height: 80vh;
     margin-bottom: 10vh;
     position: relative;
     /* background: rgb(255,255,255);
@@ -412,7 +414,7 @@ header .header_bg {
     opacity: 0.08;
     background-size: 300px 100px;
     width: 65%;
-    height: 80%;
+    height: 90%;
     position: absolute;
     right: 0;
     top: 0;
@@ -503,8 +505,8 @@ header .header-img {
 header .header-img .img-container {
     /* transform: rotate(-60deg) skewx(0deg) scale(1.3); */
     /* transform: rotate(-40deg) skew(20deg, -20deg) scale(1.3); */
-    height: 80vh;
-    background-position: center;
+    height: 70vh;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
     /* box-shadow: inset 10px -12px 150px 190px #000000ab; */
@@ -699,12 +701,14 @@ header .owl-carousel.owl-drag .owl-item {
     width: 100%;
     min-height: 100%;
 }
-#campaings-carousel.center-carousel  .owl-dots{
+#header-carousel .owl-dots,
+#campaings-carousel.center-carousel .owl-dots{
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
+/* #header-carousel .owl-dots{} */
 
 #campaings-carousel.center-carousel .owl-dots button{
     width: 10px;
@@ -1223,12 +1227,12 @@ footer .rights a {
 /* **************************************** Start Blog Bage ************************************************* */
 /* start blog-header */
 .blog-header {
-    min-height: 80vh;
+    height: 60vh;
 }
 
 .blog-header .blog-crousel {
     width: 100%;
-    height: 86vh;
+    height: 65vh;
     box-shadow: inset 10px -12px 150px 190px #000000ab;
     padding: 70px;
 }
@@ -1272,6 +1276,9 @@ footer .rights a {
 }
 
 /* .blog-main-sec .blog-cards-cont .blog-card .img-container .blog-card-bg */
+.blog-main-sec{
+    min-height: 50vh;
+}
 .blog-main-sec .blog-cards-cont .blog-card {
     min-height: 350px;
     overflow: hidden;
@@ -1323,7 +1330,17 @@ footer .rights a {
     color: #555555;
     font-size: 15px;
 }
-
+.blog-main-sec .campaigns-card{
+    padding: 3px;
+    width: 100%;
+    margin: 0;
+}
+.blog-main-sec .campaigns-card .campaigns-card-header,
+.blog-main-sec .campaigns-card .card-image{
+    border-radius: 0 !important;
+    height: auto;
+    margin: 0;
+}
 .blog-main-sec #second_blog_carousel {
     margin: 50px 0;
 
@@ -1778,7 +1795,7 @@ footer .rights a {
     position: relative;
     height: 50px;
     line-height: 50px;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .rating label {
@@ -2055,7 +2072,8 @@ footer .rights a {
     box-shadow: -5px 4px 18px 0px rgba(0, 0, 0, 0.06);
     margin-top: 20px;
     transition: all .2s ease-in;
-    height: 330px;
+    height: 230px;
+    /* height: 330px; */
     overflow: hidden;
 }
 
@@ -2064,7 +2082,9 @@ footer .rights a {
 }
 
 .sources-page .source-cards .card-source svg {
-    margin-bottom: 20px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
     fill: var(--main-color);
 }
 
@@ -2138,6 +2158,9 @@ footer .rights a {
     margin: 15px auto;
 }
 
+.campaings-slider-sec {
+    overflow: hidden;
+}
 .campaings-slider-sec .look-up p {
     color: #000;
     opacity: .5;
@@ -2151,6 +2174,17 @@ footer .rights a {
     font-family: 'nato_bold';
 }
 
+.campaings-slider-sec .slide-with{
+    /* display: none; */
+    height: 0;
+    opacity: 0;
+}
+.campaings-slider-sec .slide-with.active{
+    transition: all .5s ease-in-out;
+    opacity: 1;
+    height: 100%;
+    /* display: block; */
+}
 /* **************************************** End campaigns Bage ******************************************* */
 /* **************************************** start show-campaigns Bage ******************************************* */
 .infographic .header-img,
@@ -2205,12 +2239,12 @@ footer .rights a {
     color: #000;
 }
 
-.show-campaigns .years-fiter {
+.show-campaigns .years-filter {
     text-align: center;
     margin-top: 90px;
 }
 
-.show-campaigns .years-fiter a {
+.show-campaigns .years-filter .year {
     text-decoration: none;
     color: #777777;
     background-color: #fff;
@@ -2218,17 +2252,28 @@ footer .rights a {
     width: 140px;
     height: 35px;
     border: 1px solid #E5E7EB;
-    padding: 5px;
+    padding: 0 10px;
     border-radius: 20px;
     margin-top: 10px;
+    cursor: pointer;
 }
-
-.show-campaigns .years-fiter a.all {
+.show-campaigns .years-filter select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    text-align: center;
+}
+.show-campaigns .years-filter select:focus-visible{
+    outline: #777;
+}
+.show-campaigns .years-filter .year.all {
     position: relative;
-    padding-right: 30px;
+    padding: 5px 30px 5px 5px;
 }
 
-.show-campaigns .years-fiter a span {
+.show-campaigns .years-filter .year span {
     background-color: #93C5FD;
     border-radius: 20px;
     color: #fff;
@@ -2240,8 +2285,10 @@ footer .rights a {
     right: 5px;
     transform: translateY(-50%);
 }
-
-.show-campaigns .years-fiter a:hover {
+.datepicker table tr td span.month{
+    width: 31%;
+}
+.show-campaigns .years-filter a:hover {
     background-color: #DBEAFE;
     border-color: #93C5FD;
 }
@@ -3060,12 +3107,13 @@ footer .rights a {
 }
 
 /* **************************************** End login  Bages ******************************************* */
-
+/* **************************************** start Contact page ********************************** */
+.contact_us{
+    padding-top: 20px;
+}
+/* **************************************** start Contact page ********************************** */
 
 /* start media */
-
-
-
 
 @media (max-width:576px) {
 
