@@ -52,11 +52,10 @@ $(function () {
     $('.years-filter .year:not(.all)').on("click change", function(){
         $(this).children('.title').hide();
     });
-  $(".option").click(function(){
-    $(".option").removeClass("active");
-    $(this).addClass("active");
-    
-  });
+    $(".option").click(function(){
+        $(".option").removeClass("active");
+        $(this).addClass("active");
+    });
 
   // favorate bookmark click
   $('.bookmark,.star').click(function(){
@@ -147,6 +146,23 @@ $(function () {
         }
     });
     $('#partners-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:2000,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+    $('#partners-carousel2').owlCarousel({
         loop:true,
         margin:10,
         autoplay:true,
