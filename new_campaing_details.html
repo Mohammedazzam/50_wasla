@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>وصلة</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous">        <link rel="icon" href="images/logo.svg">
+        <link rel="stylesheet" href="css/owl.carousel.min.css"> 
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- slider css -->
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <!-- start go up -->
+    <div class="scroll-top">
+        <div class="go-up">
+            <svg style="transform: rotate(180deg);" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.70312 9.54688L1.32812 3.17188C0.859375 2.70312 0.859375 2 1.32812 1.57812L2.35938 0.5C2.82812 0.078125 3.53125 0.078125 3.95312 0.5L8.45312 5.04688L13 0.5C13.4219 0.078125 14.125 0.078125 14.5938 0.5L15.625 1.57812C16.0938 2 16.0938 2.70312 15.625 3.17188L9.25 9.54688C8.82812 9.96875 8.125 9.96875 7.70312 9.54688Z" fill="#fff"/>
+            </svg>            
+        </div>
+    </div>
+    <!-- end go up -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand wow fadeIn" data-wow-delay="1.3s" href="index.html">
+                <svg width="130" height="108" viewBox="0 0 130 108" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="130" height="108" fill="url(#pattern0)" />
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_1_3522" transform="matrix(0.00833333 0 0 0.0100309 0 -0.00154321)" />
+                        </pattern>
+                        <image id="image0_1_3522" width="120" height="100"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABkCAYAAABNcPQyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHcWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDYwLCAyMDIwLzA1LzEyLTE2OjA0OjE3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjIgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMy0wNS0xNlQwMjozNzozOSswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMy0wNS0xNlQwMjozNzozOSswMzowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjMtMDUtMTZUMDI6Mzc6MzkrMDM6MDAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzFmNDk3ZGItOTI2NS1jZjRmLWE1NTYtMTkwZDdkNmUxZDE0IiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6YTRkNzk2MWQtNzUxZC1iODRhLWJmOTUtZjllZWIxNDdiNmFkIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MDJlYTAxYTgtNDM1My0xZjRkLTkzMzktNGYwMzBhM2NlNTVkIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDowMmVhMDFhOC00MzUzLTFmNGQtOTMzOS00ZjAzMGEzY2U1NWQiIHN0RXZ0OndoZW49IjIwMjMtMDUtMTZUMDI6Mzc6MzkrMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMS4yIChXaW5kb3dzKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NzFmNDk3ZGItOTI2NS1jZjRmLWE1NTYtMTkwZDdkNmUxZDE0IiBzdEV2dDp3aGVuPSIyMDIzLTA1LTE2VDAyOjM3OjM5KzAzOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjEuMiAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDx4bXBNTTpJbmdyZWRpZW50cz4gPHJkZjpCYWc+IDxyZGY6bGkgc3RSZWY6bGlua0Zvcm09IlJlZmVyZW5jZVN0cmVhbSIgc3RSZWY6ZmlsZVBhdGg9ImNsb3VkLWFzc2V0Oi8vY2MtYXBpLXN0b3JhZ2UuYWRvYmUuaW8vYXNzZXRzL2Fkb2JlLWxpYnJhcmllcy80MzAzNjI3NC1kMjEyLTQyNzYtOTRmMi05NWI3NGZhMjhjZDc7bm9kZT03ZDliM2VkNS01Y2Y2LTRjZDMtYTY1Ny1mM2E1ZjUzMGQ1NzQiIHN0UmVmOkRvY3VtZW50SUQ9InV1aWQ6MmIzM2EzZjUtM2IxMi00Y2JiLWE0ZTktN2JjMGVlODAxYzdkIi8+IDwvcmRmOkJhZz4gPC94bXBNTTpJbmdyZWRpZW50cz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6FIz1LAAAGM0lEQVR4nO3dXYhXRRjH8e+qKb2wUdBWRjeD9CJJWVEZhIYgUWmRFOFKXkwRFUQQ5EVvBIVFXXTRnR2wQCQzLEgyb7a9KChQErwJ8vRCm71QRPSyudZ2MXtyW1bceWbmnGfOOb+7hf8zM7ufPfM/r3MGJicn6dPezGt6AH3SZoHPhwcGBlKNI02K8nxgObCE//8z/wIcBA5hzUQDIxPHd8Yd8ClQD1yUA8AKYBhYC1x4kopx4CPgTWAn1vycdoDh6SZwUc4D7gKeAi4VtjIObAO2YM3XkUYWPd0DLsqrga3AFZFaPAq8ADyLNUcjtRkt3QIuykeB5/Hcl5hjDgB3YM1XCdoWpxvARTkfKIBNiXv6EbgJaw4k7mfO8QXO7zDJ4b5OelyAc4ARivLaGvpKkryAj+NuqLHXQWBfrsj5ADeDWyVb5DyAm8WtkiWyfmAduFWyQ9YNrAu3SlbIeoF14lbJBlknsG7cKlkg6wMuygXox62iHlnXmayiXAjswl0Jyim/Amuw5uPUHeV7JitfXFC8JesAzhu3ikrk5oHbgVtFHXKzwO3CraIKuTngduJWUYPcDHC7cauoQK4fuBu4VRpHrhe4W7hVGkWuD7ibuFUaQ64HuNu4VRpBTg/c405P7chpz0WH4f6Auz/5AO5RE815FbjK4/Pic9d6bpsNw50AlmHNZ4La+lOUbwO3eVaJkHVcbAiflkezwZWnluk6PnCc79yxSKPRnuTIcYH7HSpJkiLHA+5xQ5IMOQ5wjxsjSZDDgd0Ncm/Q48ZIdOQwYPdE/Tbg9ghj6eNSIS+L0VjoFvwksDHGQGbk9wRt5pRBYC9FeW5oQ3LgolwJPB06gBMkq4VREmUxsH1qlhRHBlyUi3Cn55q/p6vdWQ3YkAakQA/glibqkz7PUZRnSIv9gd0h0WZph328MwTcJy2WbMHrgfOkHfYR5UFpoQS4jmeGFtbQR05ZQlH6XI78L37LD7npebWkI88MU5RLA9s4AmzSuNaVMGuA/b5FvutLLQdO9e1EkEFgZUD9GHBvi3ABrpMU+U7Rl0s6qTljwCqs+bzpgUTOJZIiX+CLJZ3UmLbiAlwgKfIFni/ppKa0GRfgdElRW85EtR3XpShP8y1pA3A3cAGs+cO3xBf4T98OEqc7uPCTpMgXWM2qq3QLF+ALSZEv8CeSThKka7gAhyRFfsBucexS0lHEdBEX4ANJkWQna7eko0jpKu4k8L6kUAK8Q9JRhHQVF2AP1nwnKfQHtmY/MCrpLCBfkgq3KIcpyouitxs3r0gLpcfBz0g7FOQwcEMyXLdsovcJhBozijWi6RmkwNaMAO9IO/XIYdyW+030lo/jaj7ZMwE8EtJAyC93P+6tJKmSEncd7n5uzbgAT2DNpyENyH9Ba74H7iTNLa6pcXeR5l1LMfMW8FJoI2H/wdaM4m58/yd0INNSB+4p0duOmxFgGGuC/67hU5Q1O4F7iIPc4zrcW7HmrxiNxfkOsmY74cg97nFc76tGJ0q8nYxw5Ft63Li4EHsvMgz5xam7NuOl47iQ4jBBjrwW2BUNuccFUh0HNo1cP670CcCkuJDyQL8p5Ga23MWCmuS4kPpMThjye943mTWBW5SXAVd6VtWCC3W9Vkd+3nfuf4gw3LsB32UFFwErgC34PYwXhKtnKcOZSYncoR0qHUsZzhb5dH0j8O4Jp+sO4UpS79WU2Mg97klT/+WyWMg97pzS3LsLw76TXwO20kFcvTtZsyWPuyqkSbLl6t3Jmi1xrkJpTKPT8vQ0v+W0D1kNLmgAhjYhq8IFLcDQBmR1uKAJGHJGVokL2oAhR2S1uKARGHJCVo0LWoEhB2T1uKAZGDQjZ4EL2oFBI3I2uJADMGhCzgoXcgEGDcjZ4UJOwNAkcpa4kBswVMgbqe/FHdniQo7AANbsANYBvyXuaTdwc664kCswgDV7gWsQrh91khwDHgfWY814gvZrS7MX/GPEveJnM/AYwhVZZ+RD4CGsORihrejJ646OmCnKIeBh3BtKhjyrJ4F9wMtTM4PadBe4intZ5ircOw6uB5YCZ8/41DHcin37cTtRe7Dm2xpHKU4PPFuK8izgzKmf/gaOYM2xBkckTlLgPvnlX2drp3sn/BGQAAAAAElFTkSuQmCC" />
+                    </defs>
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link wow fadeInRight active" data-wow-delay=".2s" href="blog.html">المدونة</a>
+                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".3s" href="source_lib.html">المصادر</a>
+                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".4s" href="campaigns.html">حملات المناصرة</a>
+                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".5s" href="infographic.html">انفوجرافيك</a>
+                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".6s" href="wasla_center.html">مركز وصلة</a>
+                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".7s" href="aboute_us.html">من نحن</a>
+                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".8s" href="contact_us.html">تواصل معنا</a>
+                </div>
+                <a href="login.html" class="btn bg-main-color text-white wow fadeIn" data-wow-delay="1s">
+                    دخول
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 8.25H4.5C4.08579 8.25 3.75 8.58579 3.75 9V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V9C20.25 8.58579 19.9142 8.25 19.5 8.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.625 8.25V4.875C8.625 3.97989 8.98058 3.12145 9.61351 2.48851C10.2465 1.85558 11.1049 1.5 12 1.5C12.8951 1.5 13.7535 1.85558 14.3865 2.48851C15.0194 3.12145 15.375 3.97989 15.375 4.875V8.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15.375C12.6213 15.375 13.125 14.8713 13.125 14.25C13.125 13.6287 12.6213 13.125 12 13.125C11.3787 13.125 10.875 13.6287 10.875 14.25C10.875 14.8713 11.3787 15.375 12 15.375Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="content new_campaing_details">
+        <section class="position-relative main_section">
+            <div class="w-100 overflow-hidden position-relative" style="max-height: 430px;">
+                <img width="100%" src="images/sss23.png" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-50 d-flex justify-content-center align-items-center">
+                    <p class="fs-2 text-white fw-bold">مناصرة ذوو الإحتياجات الخاصة ودمجهم في مؤسسات المجتمع المدني</p>
+                </div>
+            </div>
+            <div class="px-0 px-xl-5 w-100 position-absolute bottom-0 start-50" style="transform: translate(50%, 50%);">
+                <div class="row">
+                    <div class="col-10 col-xxl-6 m-auto">
+                        <div class="row p-4 bg-main-color rounded-4">
+                            <div class="wow fadeInLeft col-4 d-flex justify-content-around align-items-center">
+                                <div class="icon_div bg-white rounded-4 p-2 text-center color-main">
+                                    <i class="fa-solid fa-2x fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <span>المكان : </span>
+                                    <span>غزة - جباليا</span>
+                                </div>
+                            </div>
+                            <div class="wow fadeInLeft col-4 d-flex justify-content-around align-items-center" data-wow-delay=".2s">
+                                <div class="icon_div bg-white rounded-4 p-2 text-center color-main">
+                                    <i class="fa-solid fa-2x fa-calendar-days"></i>
+                                </div>
+                                <div>
+                                    <span>مدة الحملة :</span>
+                                    <span> 15 يوم</span>
+                                </div>
+                            </div>
+                            <div class="wow fadeInLeft col-4 d-flex justify-content-around align-items-center" data-wow-delay=".4s">
+                                <div class="icon_div bg-white rounded-4 p-2 text-center color-main">
+                                    <i class="fa-solid fa-2x fa-cubes"></i>
+                                </div>
+                                <div>
+                                    <span>الفئة : </span>
+                                    <span> الدعم النفسي</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards_section">
+            <div class="container">
+                <h2 class="fw-bold mb-5">
+                    أهداف الحملة
+                </h2>
+                <div class="row mb-5">
+                    <div class="col-6 col-xl-3 p-3">
+                        <div class="wow fadeInUp det_card bg-white rounded-3 shadow p-3">
+                            <div class="det_card_icon bg-main-color p-3 rounded-4 m-auto my-2" style="width: fit-content;">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.4455 23.7961C21.6692 23.7961 22.6647 22.8006 22.6647 21.577C22.6647 20.3533 21.6692 19.3578 20.4455 19.3578C19.2218 19.3578 18.2263 20.3533 18.2263 21.577C18.2263 22.8006 19.2218 23.7961 20.4455 23.7961Z" fill="white"/>
+                                    <path d="M21.5906 26.1964H19.3163C17.0753 26.1964 15.2522 28.0195 15.2522 30.2604V30.3788C16.8376 31.2119 18.6114 31.6541 20.4534 31.6541C22.2954 31.6541 24.0693 31.2119 25.6547 30.3788V30.2604C25.6547 28.0195 23.8316 26.1964 21.5906 26.1964Z" fill="white"/>
+                                    <path d="M39.3423 31.3392C38.2733 30.2704 36.8521 29.6817 35.3405 29.6817C34.2373 29.6817 33.1832 29.9964 32.2782 30.5811L29.1773 27.4803C30.7827 25.4953 31.6554 23.0413 31.6554 20.4527C31.6554 17.8683 30.7855 15.4181 29.1852 13.4349L32.2688 10.413C33.1759 11.0016 34.2336 11.3184 35.3405 11.3184C36.8521 11.3184 38.2733 10.7298 39.3423 9.66088C40.4111 8.592 40.9999 7.17085 40.9999 5.6593C40.9999 4.14767 40.4111 2.72645 39.3423 1.65765C38.2733 0.588772 36.8521 0.000118256 35.3405 0.000118256C33.8287 0.000118256 32.4075 0.588772 31.3386 1.65765C30.2697 2.72645 29.681 4.14767 29.681 5.6593C29.681 6.75861 29.9937 7.80939 30.5748 8.71227L27.4896 11.7358C25.5031 10.1263 23.0457 9.2512 20.4535 9.2512C17.8836 9.2512 15.4462 10.1114 13.4689 11.6945L10.4251 8.71219C11.0061 7.80923 11.3188 6.75861 11.3188 5.6593C11.3188 4.14767 10.7301 2.72645 9.66116 1.65765C7.45461 -0.548817 3.86416 -0.548817 1.65753 1.65765C-0.549016 3.8642 -0.549016 7.45433 1.65753 9.66088C2.72649 10.7298 4.14771 11.3184 5.65942 11.3184C6.76626 11.3184 7.82401 11.0015 8.73105 10.4129L11.7629 13.3835C10.1361 15.3756 9.25148 17.846 9.25148 20.4527C9.25148 23.0636 10.1389 25.538 11.7709 27.5319L8.7216 30.5812C7.81664 29.9964 6.76242 29.6817 5.65942 29.6817C4.14771 29.6817 2.72649 30.2704 1.65753 31.3392C0.588651 32.4081 0 33.8292 0 35.3409C0 36.8524 0.588651 38.2736 1.65753 39.3425C2.72649 40.4113 4.14771 41 5.65942 41C7.17105 41 8.59228 40.4113 9.66116 39.3425C10.7301 38.2736 11.3188 36.8524 11.3188 35.3409C11.3188 34.2377 11.004 33.1834 10.4191 32.2785L12.8677 29.8298C13.0307 27.3659 14.5793 25.2757 16.7404 24.3329C16.1661 23.563 15.8258 22.6091 15.8258 21.5769C15.8258 19.0297 17.8981 16.9575 20.4454 16.9575C22.9927 16.9575 25.065 19.0297 25.065 21.5769C25.065 22.6066 24.7262 23.5585 24.1544 24.3274C26.2924 25.2548 27.8332 27.3045 28.0316 29.7292L30.5807 32.2784C29.9958 33.1834 29.681 34.2377 29.681 35.3409C29.681 36.8524 30.2697 38.2736 31.3386 39.3425C32.4075 40.4113 33.8287 41 35.3405 41C36.8521 41 38.2733 40.4113 39.3423 39.3425C40.4111 38.2736 40.9999 36.8524 40.9999 35.3409C40.9999 33.8292 40.4111 32.4081 39.3423 31.3392Z" fill="white"/>
+                                    </svg>
+                            </div>
+                            <div class="text-center py-4">
+                                <h5 class="fw-bold mb-4">زيادة الوعي والتوعية</h5>
+                                <p>
+                                    تهدف هذه الحملة إلى زيادة الوعي بحقوق ذوي الاحتياجات الخاصة وتحسين فهم المجتمع حول التحديات التي يواجهونها يوميًا. يمكن تحقيق ذلك من الاجتماع
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3 p-3">
+                        <div class="wow fadeInUp det_card bg-white rounded-3 shadow p-3" data-wow-delay=".2s">
+                            <div class="det_card_icon bg-main-color p-3 rounded-4 m-auto my-2" style="width: fit-content;">
+                                <svg width="47" height="49" viewBox="0 0 47 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.35938 11.9531H9.95312V0.796875H0.390625V7.17188H8.35938V11.9531ZM43.4219 11.9531H45.0156V0.796875H35.4531V7.17188H43.4219V11.9531ZM14.7344 26.2969H17.9219V27.8906H14.7344V26.2969ZM9.95312 26.2969H13.1406V29.4844H9.95312V26.2969ZM14.7344 21.5156H17.9219V24.7031H14.7344V21.5156ZM19.5156 26.2969H22.7031V27.8906H19.5156V26.2969ZM0.390625 13.5469H13.1406V15.1406H0.390625V13.5469ZM0.390625 31.0781H13.1406V32.6719H0.390625V31.0781ZM1.98438 48.6094H13.1406V34.2656H1.98438V48.6094ZM8.35938 38.25H10.75V40.6406H8.35938V38.25ZM8.35938 42.2344H10.75V44.625H8.35938V42.2344ZM4.375 38.25H6.76562V40.6406H4.375V38.25ZM4.375 42.2344H6.76562V44.625H4.375V42.2344ZM19.5156 21.5156H22.7031V24.7031H19.5156V21.5156Z" fill="white"/>
+                                    <path d="M43.4219 29.4844V16.7344H3.57812V29.4844H8.35938V19.9219H38.6406V29.4844H43.4219ZM32.2656 11.1562C32.2656 6.3232 28.333 2.39062 23.5 2.39062C18.667 2.39062 14.7344 6.3232 14.7344 11.1562V15.1406H32.2656V11.1562ZM27.4844 6.86508C27.4844 8.13184 27.1048 9.36954 26.3946 10.4185C25.6844 11.4675 24.6762 12.2795 23.5 12.75C22.3238 12.2795 21.3156 11.4675 20.6054 10.4185C19.8952 9.36954 19.5156 8.13184 19.5156 6.86508V6.375H19.6527C20.3672 6.37506 21.0748 6.23434 21.7349 5.96088C22.395 5.68742 22.9948 5.28658 23.5 4.78125C24.0052 5.28658 24.605 5.68742 25.2651 5.96088C25.9252 6.23434 26.6328 6.37506 27.3473 6.375H27.4844V6.86508Z" fill="white"/>
+                                    <path d="M33.8594 21.5156H37.0469V24.7031H33.8594V21.5156ZM33.8594 26.2969H37.0469V29.4844H33.8594V26.2969ZM24.2969 21.5156H27.4844V24.7031H24.2969V21.5156ZM9.95312 21.5156H13.1406V24.7031H9.95312V21.5156ZM24.2969 26.2969H27.4844V27.8906H24.2969V26.2969ZM14.7344 29.4844H32.2656V31.0781H14.7344V29.4844ZM33.8594 48.6094H45.0156V34.2656H33.8594V48.6094ZM40.2344 38.25H42.625V40.6406H40.2344V38.25ZM40.2344 42.2344H42.625V44.625H40.2344V42.2344ZM36.25 38.25H38.6406V40.6406H36.25V38.25ZM36.25 42.2344H38.6406V44.625H36.25V42.2344ZM14.7344 32.6719H32.2656V34.2656H14.7344V32.6719ZM29.0781 21.5156H32.2656V24.7031H29.0781V21.5156ZM29.0781 26.2969H32.2656V27.8906H29.0781V26.2969ZM17.9219 48.6094H22.7031V45.4219H21.1094V43.8281H22.7031V40.6406H17.9219V48.6094Z" fill="white"/>
+                                    <path d="M14.7344 48.6094H16.3281V39.0469H30.6719V48.6094H32.2656V35.8594H14.7344V48.6094Z" fill="white"/>
+                                    <path d="M24.2969 43.8281H25.8906V45.4219H24.2969V48.6094H29.0781V40.6406H24.2969V43.8281ZM33.8594 13.5469H46.6094V15.1406H33.8594V13.5469ZM33.8594 31.0781H46.6094V32.6719H33.8594V31.0781Z" fill="white"/>
+                                </svg>                                    
+                            </div>
+                            <div class="text-center py-4">
+                                <h5 class="fw-bold mb-4">
+                                    تعزيز دور المؤسسات المدنية
+                                </h5>
+                                <p>
+                                    يهدف هذا الهدف إلى تعزيز دور المؤسسات المجتمعية في دمج ذوي الاحتياجات الخاصة. يمكن تحقيق ذلك من خلال توفير التدريب والموارد اللازمة لهذه المؤسسات
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3 p-3">
+                        <div class="wow fadeInUp det_card bg-white rounded-3 shadow p-3" data-wow-delay=".4s">
+                            <div class="det_card_icon bg-main-color p-3 rounded-4 m-auto my-2" style="width: fit-content;">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.30625 10.5875H13.0625C13.1528 10.5875 13.2422 10.6053 13.3256 10.6399C13.409 10.6744 13.4848 10.7251 13.5486 10.7889C13.6125 10.8528 13.6631 10.9285 13.6977 11.012C13.7322 11.0954 13.75 11.1848 13.75 11.2751C13.75 11.3653 13.7322 11.4547 13.6977 11.5381C13.6631 11.6216 13.6125 11.6973 13.5486 11.7612C13.4848 11.825 13.409 11.8757 13.3256 11.9102C13.2422 11.9448 13.1528 11.9626 13.0625 11.9626H3.36875C3.02231 11.9626 2.69006 12.1002 2.44509 12.3451C2.20012 12.5901 2.0625 12.9224 2.0625 13.2688C2.0625 13.6152 2.20012 13.9475 2.44509 14.1925C2.69006 14.4374 3.02231 14.5751 3.36875 14.5751H17.1875C17.3698 14.5751 17.5447 14.6475 17.6736 14.7764C17.8026 14.9053 17.875 15.0802 17.875 15.2626C17.875 15.4449 17.8026 15.6198 17.6736 15.7487C17.5447 15.8776 17.3698 15.9501 17.1875 15.9501H9.55625C9.20981 15.9501 8.87756 16.0877 8.63259 16.3326C8.38762 16.5776 8.25 16.9099 8.25 17.2563C8.25 17.6027 8.38762 17.935 8.63259 18.18C8.87756 18.4249 9.20981 18.5625 9.55625 18.5625H20.35C21.6236 18.5597 22.8844 18.3094 24.0625 17.8256V9.5563C24.0632 9.08933 24.1859 8.63065 24.4183 8.22565C24.6507 7.82065 24.9849 7.48338 25.3878 7.24723C25.7906 7.01108 26.2482 6.88423 26.7151 6.87924C27.1821 6.87426 27.6422 6.9913 28.05 7.2188V3.43755C27.0829 2.3523 25.8964 1.4847 24.5691 0.892123C23.2417 0.299545 21.8036 -0.00451374 20.35 5.06367e-05H6.80625C6.45981 5.06367e-05 6.12756 0.137673 5.88259 0.382642C5.63762 0.627612 5.5 0.959862 5.5 1.3063C5.5 1.65274 5.63762 1.98499 5.88259 2.22996C6.12756 2.47493 6.45981 2.61255 6.80625 2.61255H13.0625C13.2448 2.61255 13.4197 2.68498 13.5486 2.81391C13.6776 2.94285 13.75 3.11771 13.75 3.30005C13.75 3.48239 13.6776 3.65725 13.5486 3.78619C13.4197 3.91512 13.2448 3.98755 13.0625 3.98755H3.36875C3.02231 3.98755 2.69006 4.12517 2.44509 4.37014C2.20012 4.61511 2.0625 4.94736 2.0625 5.2938C2.0625 5.64024 2.20012 5.97249 2.44509 6.21746C2.69006 6.46243 3.02231 6.60005 3.36875 6.60005H13.0625C13.2448 6.60005 13.4197 6.67248 13.5486 6.80141C13.6776 6.93035 13.75 7.10521 13.75 7.28755C13.75 7.46989 13.6776 7.64475 13.5486 7.77369C13.4197 7.90262 13.2448 7.97505 13.0625 7.97505H1.30625C0.959811 7.97505 0.627561 8.11267 0.382592 8.35764C0.137622 8.60261 0 8.93486 0 9.2813C0 9.62774 0.137622 9.95999 0.382592 10.205C0.627561 10.4499 0.959811 10.5875 1.30625 10.5875Z" fill="white"/>
+                                    <path d="M17.2563 35.75C17.6027 35.75 17.9349 35.6124 18.1799 35.3674C18.4249 35.1225 18.5625 34.7902 18.5625 34.4438V23.65C18.5596 22.3765 18.3093 21.1156 17.8255 19.9375H9.55625C9.08929 19.9368 8.6306 19.8142 8.22561 19.5817C7.82061 19.3493 7.48334 19.0151 7.24718 18.6122C7.01103 18.2094 6.88418 17.7518 6.8792 17.2849C6.87421 16.818 6.99126 16.3578 7.21875 15.95H3.4375C2.35225 16.9171 1.48465 18.1036 0.892077 19.431C0.299499 20.7583 -0.00455951 22.1964 4.86033e-06 23.65V37.1938C4.86033e-06 37.3653 0.033792 37.5352 0.0994372 37.6936C0.165082 37.8521 0.2613 37.9961 0.382597 38.1174C0.503893 38.2387 0.647893 38.3349 0.806375 38.4006C0.964856 38.4662 1.13472 38.5 1.30625 38.5C1.65269 38.5 1.98494 38.3624 2.22991 38.1174C2.47488 37.8725 2.6125 37.5402 2.6125 37.1938V30.9375C2.6125 30.7552 2.68494 30.5803 2.81387 30.4514C2.9428 30.3224 3.11767 30.25 3.3 30.25C3.48234 30.25 3.65721 30.3224 3.78614 30.4514C3.91507 30.5803 3.9875 30.7552 3.9875 30.9375V40.6313C3.9875 40.9777 4.12513 41.31 4.3701 41.5549C4.61507 41.7999 4.94732 41.9375 5.29375 41.9375C5.64019 41.9375 5.97244 41.7999 6.21741 41.5549C6.46238 41.31 6.6 40.9777 6.6 40.6313V30.9375C6.6 30.7552 6.67244 30.5803 6.80137 30.4514C6.9303 30.3224 7.10517 30.25 7.2875 30.25C7.46984 30.25 7.64471 30.3224 7.77364 30.4514C7.90257 30.5803 7.975 30.7552 7.975 30.9375V42.6938C7.975 43.0402 8.11263 43.3725 8.3576 43.6174C8.60256 43.8624 8.93481 44 9.28125 44C9.62769 44 9.95994 43.8624 10.2049 43.6174C10.4499 43.3725 10.5875 43.0402 10.5875 42.6938V30.9375C10.5875 30.7552 10.6599 30.5803 10.7889 30.4514C10.9178 30.3224 11.0927 30.25 11.275 30.25C11.4573 30.25 11.6322 30.3224 11.7611 30.4514C11.8901 30.5803 11.9625 30.7552 11.9625 30.9375V40.6313C11.9625 40.9777 12.1001 41.31 12.3451 41.5549C12.5901 41.7999 12.9223 41.9375 13.2688 41.9375C13.6152 41.9375 13.9474 41.7999 14.1924 41.5549C14.4374 41.31 14.575 40.9777 14.575 40.6313V26.8125C14.575 26.6302 14.6474 26.4553 14.7764 26.3264C14.9053 26.1974 15.0802 26.125 15.2625 26.125C15.4448 26.125 15.6197 26.1974 15.7486 26.3264C15.8776 26.4553 15.95 26.6302 15.95 26.8125V34.4438C15.95 34.7902 16.0876 35.1225 16.3326 35.3674C16.5776 35.6124 16.9098 35.75 17.2563 35.75Z" fill="white"/>
+                                    <path d="M42.6937 33.4125H30.9375C30.7552 33.4125 30.5803 33.3401 30.4514 33.2111C30.3224 33.0822 30.25 32.9073 30.25 32.725C30.25 32.5427 30.3224 32.3678 30.4514 32.2389C30.5803 32.1099 30.7552 32.0375 30.9375 32.0375H40.6312C40.9777 32.0375 41.3099 31.8999 41.5549 31.6549C41.7999 31.4099 41.9375 31.0777 41.9375 30.7313C41.9375 30.3848 41.7999 30.0526 41.5549 29.8076C41.3099 29.5626 40.9777 29.425 40.6312 29.425H26.8125C26.6302 29.425 26.4553 29.3526 26.3264 29.2236C26.1974 29.0947 26.125 28.9198 26.125 28.7375C26.125 28.5552 26.1974 28.3803 26.3264 28.2514C26.4553 28.1224 26.6302 28.05 26.8125 28.05H34.4437C34.7902 28.05 35.1224 27.9124 35.3674 27.6674C35.6124 27.4224 35.75 27.0902 35.75 26.7438C35.75 26.3973 35.6124 26.0651 35.3674 25.8201C35.1224 25.5751 34.7902 25.4375 34.4437 25.4375H23.65C22.3764 25.4404 21.1156 25.6907 19.9375 26.1745V34.4437C19.9374 34.911 19.8152 35.3701 19.583 35.7756C19.3508 36.1811 19.0166 36.5188 18.6137 36.7554C18.2107 36.9919 17.753 37.1191 17.2857 37.1242C16.8185 37.1294 16.3581 37.0123 15.95 36.7847V40.5625C16.9171 41.6478 18.1036 42.5154 19.4309 43.1079C20.7583 43.7005 22.1964 44.0046 23.65 44H37.1937C37.5402 44 37.8724 43.8624 38.1174 43.6174C38.3624 43.3724 38.5 43.0402 38.5 42.6937C38.5 42.3473 38.3624 42.0151 38.1174 41.7701C37.8724 41.5251 37.5402 41.3875 37.1937 41.3875H30.9375C30.7552 41.3875 30.5803 41.3151 30.4514 41.1861C30.3224 41.0572 30.25 40.8823 30.25 40.7C30.25 40.5177 30.3224 40.3428 30.4514 40.2139C30.5803 40.0849 30.7552 40.0125 30.9375 40.0125H40.6312C40.9777 40.0125 41.3099 39.8749 41.5549 39.6299C41.7999 39.3849 41.9375 39.0527 41.9375 38.7062C41.9375 38.3598 41.7999 38.0276 41.5549 37.7826C41.3099 37.5376 40.9777 37.4 40.6312 37.4H30.9375C30.7552 37.4 30.5803 37.3276 30.4514 37.1986C30.3224 37.0697 30.25 36.8948 30.25 36.7125C30.25 36.5302 30.3224 36.3553 30.4514 36.2264C30.5803 36.0974 30.7552 36.025 30.9375 36.025H42.6937C43.0402 36.025 43.3724 35.8874 43.6174 35.6424C43.8624 35.3974 44 35.0652 44 34.7187C44 34.3723 43.8624 34.0401 43.6174 33.7951C43.3724 33.5501 43.0402 33.4125 42.6937 33.4125Z" fill="white"/>
+                                    <path d="M42.6937 5.5C42.3473 5.5 42.0151 5.63762 41.7701 5.88259C41.5251 6.12756 41.3875 6.45981 41.3875 6.80625V13.0625C41.3875 13.2448 41.3151 13.4197 41.1861 13.5486C41.0572 13.6776 40.8823 13.75 40.7 13.75C40.5177 13.75 40.3428 13.6776 40.2139 13.5486C40.0849 13.4197 40.0125 13.2448 40.0125 13.0625V3.36875C40.0125 3.02231 39.8749 2.69006 39.6299 2.44509C39.3849 2.20012 39.0527 2.0625 38.7062 2.0625C38.3598 2.0625 38.0276 2.20012 37.7826 2.44509C37.5376 2.69006 37.4 3.02231 37.4 3.36875V13.0625C37.4 13.2448 37.3276 13.4197 37.1986 13.5486C37.0697 13.6776 36.8948 13.75 36.7125 13.75C36.5302 13.75 36.3553 13.6776 36.2264 13.5486C36.0974 13.4197 36.025 13.2448 36.025 13.0625V1.30625C36.025 0.959811 35.8874 0.627561 35.6424 0.382592C35.3974 0.137622 35.0652 0 34.7187 0C34.3723 0 34.0401 0.137622 33.7951 0.382592C33.5501 0.627561 33.4125 0.959811 33.4125 1.30625V13.0625C33.4125 13.2448 33.3401 13.4197 33.2111 13.5486C33.0822 13.6776 32.9073 13.75 32.725 13.75C32.5427 13.75 32.3678 13.6776 32.2389 13.5486C32.1099 13.4197 32.0375 13.2448 32.0375 13.0625V3.36875C32.0375 3.02231 31.8999 2.69006 31.6549 2.44509C31.4099 2.20012 31.0777 2.0625 30.7313 2.0625C30.3848 2.0625 30.0526 2.20012 29.8076 2.44509C29.5626 2.69006 29.425 3.02231 29.425 3.36875V17.1875C29.425 17.3698 29.3526 17.5447 29.2236 17.6736C29.0947 17.8026 28.9198 17.875 28.7375 17.875C28.5552 17.875 28.3803 17.8026 28.2514 17.6736C28.1224 17.5447 28.05 17.3698 28.05 17.1875V9.55625C28.05 9.20981 27.9124 8.87756 27.6674 8.63259C27.4224 8.38762 27.0902 8.25 26.7438 8.25C26.3973 8.25 26.0651 8.38762 25.8201 8.63259C25.5751 8.87756 25.4375 9.20981 25.4375 9.55625V20.35C25.4404 21.6236 25.6907 22.8844 26.1745 24.0625H34.4437C34.911 24.0626 35.3701 24.1848 35.7756 24.417C36.1811 24.6492 36.5188 24.9834 36.7554 25.3863C36.9919 25.7893 37.1191 26.247 37.1242 26.7143C37.1294 27.1815 37.0123 27.6419 36.7847 28.05H40.5625C41.6478 27.0829 42.5154 25.8964 43.1079 24.5691C43.7005 23.2417 44.0046 21.8036 44 20.35V6.80625C44 6.45981 43.8624 6.12756 43.6174 5.88259C43.3724 5.63762 43.0402 5.5 42.6937 5.5Z" fill="white"/>
+                                </svg>                                    
+                            </div>
+                            <div class="text-center py-4">
+                                <h5 class="fw-bold mb-4">تشجيع الاندماج والتنوع</h5>
+                                <p>
+                                    تهدف هذه الحملة إلى تشجيع المجتمع على قبول التنوع والتضامن مع ذوي الاحتياجات الخاصة واحترام حقوقهم. يمكن تحقيق ذلك من خلال تنظيم فعاليات تروج للتفاهم والتعاطف.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3 p-3">
+                        <div class="wow fadeInUp det_card bg-white rounded-3 shadow p-3" data-wow-delay=".6s">
+                            <div class="det_card_icon bg-main-color p-3 rounded-4 m-auto my-2" style="width: fit-content;">
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_61_98)">
+                                    <path d="M29.6917 24.3477C29.0656 27.4195 26.2538 29.7383 23 29.7383C19.7462 29.7383 17.0242 27.4195 16.3981 24.3477H13.7026C14.3636 28.9072 18.2603 32.4336 23 32.4336C27.7397 32.4336 31.7263 28.9072 32.3872 24.3477H29.6917Z" fill="white"/>
+                                    <path d="M35.0825 24.3477C34.4022 30.3955 29.2268 35.1289 23 35.1289C16.7732 35.1289 11.6877 30.3955 11.0073 24.3477H0V25.6953C0 26.2757 0.372492 26.7916 0.922605 26.9745L6.46758 28.7841C6.70055 29.4449 6.94663 30.0463 7.20987 30.6016L4.65139 35.7422C4.52568 35.995 4.48258 36.2809 4.52815 36.5596C4.57372 36.8382 4.70568 37.0955 4.90538 37.2951L8.70487 41.0946C9.11681 41.5066 9.74059 41.6039 10.2578 41.3486L15.3984 38.7901C15.9538 39.0534 16.5552 39.2995 17.2159 39.5324L19.0255 45.0774C19.115 45.3459 19.2866 45.5795 19.5162 45.7451C19.7458 45.9107 20.0216 45.9999 20.3047 46H25.7852C26.3655 46 26.8814 45.6275 27.0644 45.0774L28.874 39.5324C29.5347 39.2995 30.1361 39.0534 30.6914 38.7901L35.832 41.3486C36.3493 41.6052 36.9744 41.5066 37.385 41.0946L41.1845 37.2951C41.3842 37.0955 41.5161 36.8382 41.5617 36.5596C41.6073 36.2809 41.5642 35.995 41.4385 35.7422L38.88 30.6016C39.1432 30.0462 39.3893 29.4448 39.6223 28.7841L45.0774 26.9745C45.3459 26.885 45.5795 26.7134 45.7451 26.4838C45.9107 26.2542 45.9999 25.9784 46 25.6953V24.3477H35.0825Z" fill="white"/>
+                                    <path d="M19.2053 24.3477C19.7635 25.9129 21.2454 27.043 23 27.043C24.7546 27.043 26.3264 25.9129 26.8846 24.3477H19.2053ZM23 0C20.027 0 17.6094 2.41761 17.6094 5.39062C17.6094 8.36364 20.027 10.7812 23 10.7812C25.973 10.7812 28.4805 8.36364 28.4805 5.39062C28.4805 2.41761 25.973 0 23 0ZM36.5664 0C33.5934 0 31.1758 2.41761 31.1758 5.39062C31.1758 8.36364 33.5934 10.7812 36.5664 10.7812C39.5394 10.7812 41.957 8.36364 41.957 5.39062C41.957 2.41761 39.5394 0 36.5664 0ZM9.52344 0C6.55042 0 4.13281 2.41761 4.13281 5.39062C4.13281 8.36364 6.55042 10.7812 9.52344 10.7812C12.4965 10.7812 14.9141 8.36364 14.9141 5.39062C14.9141 2.41761 12.4965 0 9.52344 0ZM41.1633 12.0286C39.8561 12.9368 38.2753 13.4766 36.5664 13.4766C34.8646 13.4766 33.2887 12.9425 31.9846 12.0412C31.3936 12.3806 30.8255 12.7621 30.3111 13.2222C32.932 15.1813 34.7516 18.2411 35.1365 21.6523H46V20.3047C46 16.7807 44.0341 13.648 41.1633 12.0286ZM23 13.4766C18.2555 13.4766 14.3179 17.0869 13.6624 21.6523H32.4273C31.772 17.0869 27.7445 13.4766 23 13.4766ZM14.1052 12.0412C12.8011 12.9425 11.2253 13.4766 9.52344 13.4766C7.81452 13.4766 6.23372 12.9368 4.92658 12.0286C2.05571 13.648 0 16.7807 0 20.3047V21.6523H10.9534C11.3383 18.2411 13.1579 15.1813 15.7787 13.2222C15.2643 12.7621 14.6963 12.3806 14.1052 12.0412Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_61_98">
+                                    <rect width="46" height="46" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </div>
+                            <div class="text-center py-4">
+                                <h5 class="fw-bold mb-4">تحسين الوصول إلى الخدمات</h5>
+                                <p>
+                                    يجب أن تسعى الحملة إلى تحسين الوصول إلى الخدمات والفرص التي تساعد ذوي الاحتياجات الخاصة على المشاركة الكاملة في المجتمع. يمكن ذلك من خلال العمل مع الحكومات والمؤسسات 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="circle_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-6 wow fadeInRight" data-wow-delay=".8s">
+                        <h2 class="fw-bold mb-5">
+                            الأطراف ذات العلاقة
+                        </h2>
+                        <p class="fs-5 lh-lg">
+                            هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار رقائق "ليتراسيت"
+                        </p>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <h2 class="fw-bold color-main mb-5 text-center">
+                            الفئة المستهدفة
+                        </h2>
+                        <div class="d-flex flex-wrap justify-content-center align-items-center">
+                            <div class="wow bounceIn circle bg-main-color d-flex justify-content-center align-items-center">
+                                <p class="text-center">الأشخاص ذوي الإعاقة وذويهم</p>
+                            </div>
+                            <div data-wow-delay=".2s" class="wow bounceIn circle bg-main-color d-flex justify-content-center align-items-center">
+                                <p class="text-center">وزارة النقل والمواصلات</p>
+                            </div>
+                            <div data-wow-delay=".4s" class="wow bounceIn circle bg-main-color d-flex justify-content-center align-items-center">
+                                <p class="text-center">الناشطون المجتمعيون، والمؤثرون. المؤسسات ذات الصلة بالأشخاص ذوي الإعاقة.</p>
+                            </div>
+                            <div data-wow-delay=".6s" class="wow bounceIn circle bg-main-color d-flex justify-content-center align-items-center">
+                                <p class="text-center">جمعية أصحاب مدارس السياقة، ومدارس تعليم القيادة.</p>
+                            </div>
+                            <div data-wow-delay=".8s" class="wow bounceIn circle bg-main-color d-flex justify-content-center align-items-center">
+                                <p class="text-center">سائقو الأجرة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="campaing_parteners py-5">
+            <div class="container">
+                <h2 class="fw-bold mb-5 text-center">
+                    شركاء الحملة
+                </h2>
+                <div  dir="ltr">
+                    <div id="partners-carousel" class="owl-carousel owl-theme">
+                        <div class="item bg-white p-3 rounded-3">
+                            <img src="images/HOLCIM 2.png" alt="">
+                        </div>
+                        <div class="item bg-white p-3 rounded-3">
+                            <img src="images/HOLCIM 3.png" alt="">
+                        </div>
+                        <div class="item bg-white p-3 rounded-3">
+                            <img src="images/HOLCIM 4.png" alt="">
+                        </div>
+                        <div class="item bg-white p-3 rounded-3">
+                            <img src="images/HOLCIM 2 (1).png" alt="">
+                        </div>
+                        <div class="item bg-white p-3 rounded-3">
+                            <img src="images/HOLCIM 2 (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="target_groups">
+            <div class="container">
+                <h2 class="fw-bold mb-5">
+                    الفئات المستهدفة
+                </h2>
+                <div class="row">
+                    <div class="col-4 col-lg-4 col-xl-4">
+                        <div class="target_groups_card position-relative shadow rounded-2 bg-white py-5 px-1 px-lg-3 mx-2 my-5">
+                            <div class="icon_div rounded-circle bg-main-color d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-3x fa-children"></i>
+                            </div>
+                            <h4 class="fw-bold mt-4 text-center">
+                                فئة الشباب من كلا الجنسين
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-4 col-xl-4">
+                        <div class="target_groups_card position-relative shadow rounded-2 bg-white py-5 px-1 px-lg-3 mx-2 my-5">
+                            <div class="icon_div rounded-circle bg-main-color d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-3x fa-wheelchair"></i>
+                            </div>
+                            <h4 class="fw-bold mt-4 text-center">
+                                ذوي الإعاقة
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-4 col-xl-4">
+                        <div class="target_groups_card position-relative shadow rounded-2 bg-white  py-5 px-1 px-lg-3 mx-2 my-5">
+                            <div class="icon_div rounded-circle bg-main-color d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-3x fa-person-cane"></i>
+                            </div>
+                            <h4 class="fw-bold mt-4 text-center">
+                                كبار السن
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="campaign_activities">
+            <div class="container">
+                <div class="row">
+                    <div class="col12 col-lg-6">
+                        <h2 class="fw-bold mb-5">
+                            أنشطة الحملة
+                        </h2>
+                        <p class="lh-lg fs-5">
+                            هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي 
+                        </p>
+                        <div class="row">
+                            <div data-wow-delay=".2s" class="wow fadeInLeft col-6 mb-5 d-flex justify-content-start align-items-center">
+                                <div class="svg_div bg-main-color rounded-3 p-2 text-center text-white">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.425 15.6H20.775V13.875C20.775 12.675 19.8 11.7 18.6 11.7C17.4 11.7 16.425 12.675 16.425 13.875V15.6ZM32.0625 24.975C31.65 25.4625 31.05 25.8 30.375 25.8H28.3875C27.7125 25.8 27.075 25.4625 26.7 24.975C26.2875 25.4625 25.6875 25.8 25.0125 25.8H23.025C21.7875 25.8 20.8125 24.825 20.8125 23.5875V22.0125H16.9125V26.2875C19.3875 26.4375 21.5625 27.825 22.8375 29.8125C24.3 28.05 26.4375 27.0375 28.725 27.0375C29.025 27.0375 29.25 27.2625 29.25 27.5625C29.25 27.8625 29.025 28.0875 28.725 28.0875C26.5875 28.0875 24.6 29.1 23.3625 30.825C23.8125 31.8 24.0375 32.85 24.0375 33.975C24.0375 34.275 23.8125 34.5 23.5125 34.5C23.2125 34.5 22.9875 34.275 22.9875 33.975C22.9875 30.3375 20.025 27.3375 16.35 27.3375C16.05 27.3375 15.825 27.1125 15.825 26.8125V21.5625C15.825 21.2625 16.05 21.0375 16.35 21.0375H21.7875C22.3875 21.0375 22.9125 20.8125 23.325 20.4C23.7375 20.025 23.9625 19.4625 23.9625 18.9375C23.9625 18.375 23.7375 17.85 23.325 17.4375C22.875 16.9875 22.275 16.725 21.6375 16.725H13.95C12.3375 16.725 11.0625 18.0375 11.0625 19.6125V30.525C11.0625 33.6 12.8625 36.4125 15.6375 37.725C16.65 38.2125 17.8125 38.475 19.0125 38.475C19.3125 38.475 19.5375 38.7 19.5375 39C19.5375 39.3 19.3125 39.525 19.0125 39.525C17.925 39.525 16.9125 39.3 15.975 38.9625V48H30.6375V38.85C29.7 39.1875 28.65 39.4125 27.6 39.4125C27.3 39.4125 27.075 39.1875 27.075 38.8875C27.075 38.5875 27.3 38.3625 27.6 38.3625C28.725 38.3625 29.8125 38.1375 30.7875 37.6875V37.725C30.9375 37.575 35.5125 35.8125 35.5125 30.4125V25.8H33.7875C33.075 25.8 32.475 25.5 32.0625 24.975Z" fill="white"/>
+                                        <path d="M25.05 18.8625C25.0125 19.6875 24.7125 20.475 24.1125 21.0375C23.5125 21.6375 22.725 21.975 21.8625 21.975H21.825V23.55C21.825 24.225 22.35 24.75 23.025 24.75H25.0125C25.6875 24.75 26.2125 24.225 26.2125 23.55V11.8125C26.2125 10.65 25.275 9.6375 24.0375 9.6375C22.8375 9.6375 21.8625 10.6125 21.8625 11.8125V15.5625C22.725 15.6 23.55 15.975 24.1875 16.575C24.75 17.25 25.05 18.0375 25.05 18.8625ZM34.7625 13.5C33.5625 13.5 32.5875 14.475 32.5875 15.675V23.5875C32.5875 24.2625 33.1125 24.7875 33.7875 24.7875H35.775C36.45 24.7875 36.975 24.2625 36.975 23.5875V15.675C36.9375 14.5125 36 13.5 34.7625 13.5ZM28.3875 24.7875H30.375C31.05 24.7875 31.575 24.2625 31.575 23.5875V13.875C31.575 12.675 30.6 11.7 29.4 11.7C28.2 11.7 27.225 12.675 27.225 13.875V23.5875C27.1875 24.2625 27.75 24.7875 28.3875 24.7875ZM47.4 23.4H44.0625C43.7625 23.4 43.5375 23.625 43.5375 23.925C43.5375 24.225 43.7625 24.45 44.0625 24.45H47.4C47.7 24.45 47.925 24.225 47.925 23.925C47.925 23.625 47.7 23.4 47.4 23.4ZM4.42501 23.925C4.42501 23.625 4.20001 23.4 3.90001 23.4H0.600012C0.300012 23.4 0.0750122 23.625 0.0750122 23.925C0.0750122 24.225 0.300012 24.45 0.600012 24.45H3.93751C4.20001 24.4125 4.42501 24.1875 4.42501 23.925ZM24 4.35C24.3 4.35 24.525 4.125 24.525 3.825V0.525C24.525 0.225 24.3 0 24 0C23.7 0 23.475 0.225 23.475 0.525V3.8625C23.475 4.125 23.7 4.35 24 4.35ZM40.2 7.0125L37.8375 9.375C37.65 9.5625 37.65 9.9 37.8375 10.0875C38.025 10.275 38.3625 10.275 38.55 10.0875L40.9125 7.725C41.1 7.5375 41.1 7.2 40.9125 7.0125C40.725 6.7875 40.3875 6.7875 40.2 7.0125ZM7.80001 7.0125C7.61251 6.825 7.27501 6.825 7.08751 7.0125C6.90001 7.2 6.90001 7.5375 7.08751 7.725L9.45001 10.0875C9.63751 10.275 9.97501 10.275 10.1625 10.0875C10.35 9.9 10.35 9.5625 10.1625 9.375L7.80001 7.0125ZM15.825 5.55C15.9375 5.8125 16.2375 5.925 16.5 5.8125C16.7625 5.7 16.875 5.4 16.7625 5.1375L15.4875 2.0625C15.375 1.8 15.075 1.6875 14.8125 1.8C14.55 1.9125 14.4375 2.2125 14.55 2.475L15.825 5.55ZM31.5 5.85C31.7625 5.9625 32.0625 5.85 32.175 5.5875L33.45 2.5125C33.5625 2.25 33.45 1.95 33.1875 1.8375C32.925 1.725 32.625 1.8375 32.5125 2.1L31.2375 5.175C31.0875 5.4375 31.2375 5.7375 31.5 5.85ZM42.5625 16.725C42.75 16.725 42.6375 16.725 45.825 15.4125C46.0875 15.3 46.2 15 46.0875 14.7375C45.975 14.475 45.675 14.3625 45.4125 14.475L42.375 15.75C42.1125 15.8625 42 16.1625 42.1125 16.425C42.15 16.6125 42.3375 16.725 42.5625 16.725ZM5.25001 31.125L2.17501 32.4C1.91251 32.5125 1.80001 32.8125 1.91251 33.075C1.98751 33.2625 2.17501 33.375 2.36251 33.375C2.55001 33.375 2.43751 33.375 5.62501 32.0625C5.88751 31.95 6.00001 31.65 5.88751 31.3875C5.81251 31.1625 5.51251 31.0125 5.25001 31.125ZM45.825 32.4L42.75 31.125C42.4875 31.0125 42.1875 31.125 42.075 31.3875C41.9625 31.65 42.075 31.95 42.3375 32.0625C45.6 33.4125 45.4125 33.375 45.6 33.375C45.7875 33.375 45.975 33.2625 46.0875 33.075C46.2 32.8125 46.0875 32.5125 45.825 32.4ZM2.17501 15.45C5.43751 16.8 5.25001 16.7625 5.43751 16.7625C5.62501 16.7625 5.81251 16.65 5.92501 16.4625C6.03751 16.2 5.92501 15.9 5.66251 15.7875L2.58751 14.5125C2.32501 14.4 2.02501 14.5125 1.91251 14.775C1.80001 15.0375 1.91251 15.3375 2.17501 15.45Z" fill="white"/>
+                                    </svg>                                        
+                                </div>
+                                <div class="color-main fs-4 ms-3">
+                                    تعزيز روح العمل
+                                </div>
+                            </div>
+                            <div data-wow-delay=".4s" class="wow fadeInLeft col-6 mb-5 d-flex justify-content-start align-items-center">
+                                <div class="svg_div bg-main-color rounded-3 p-2 text-center text-white">
+                                    <svg width="49" height="47" viewBox="0 0 49 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.3133 32.0726C12.6333 31.3649 11.4426 31.277 10.6654 31.8671L10.6449 31.8539L8.88604 33.6128C8.50038 33.9973 8.28893 34.5103 8.28893 35.0557C8.26574 36.1542 9.2329 37.1192 10.3302 37.097C10.969 37.1073 11.5378 36.788 11.9545 36.3184L13.3133 34.9596C13.5981 34.6749 13.7891 34.3205 13.8684 33.9348C14.0108 33.2678 13.8003 32.5524 13.3133 32.0726ZM8.42097 26.093C7.62478 25.2967 6.33107 25.2976 5.53392 26.093C5.34866 26.2793 4.20634 27.4209 3.99489 27.6333C2.15874 29.626 4.88695 32.3553 6.88073 30.5203L8.42097 28.9801C9.21764 28.1847 9.21764 26.8896 8.42097 26.093ZM17.4871 36.7281C16.9417 36.7281 16.4286 36.9408 16.043 37.3264L14.5027 38.8667C14.4955 38.8739 14.4883 38.8811 14.4811 38.8895C13.7093 39.6521 13.7209 41.0024 14.5027 41.7537C15.2993 42.5491 16.5944 42.5491 17.3898 41.7537L18.9312 40.2123C20.2079 38.9389 19.2902 36.7213 17.4871 36.7281ZM31.1859 14.0703C28.0345 16.0575 23.8091 15.6802 21.0662 12.9373L17.4955 9.36787L21.9516 4.91175C17.1655 -0.459258 8.74944 -0.799985 3.65488 4.32918C-1.46731 9.41653 -1.13896 17.8226 4.22076 22.6102C8.12397 20.4286 12.9238 23.4757 12.608 27.9205C15.1925 28.1999 17.3805 30.5424 17.499 33.1276C19.9294 33.0755 22.3435 34.8957 22.9355 37.2965C24.9588 36.7542 27.2265 37.426 28.6123 39.029L28.6531 38.9809C30.662 40.1871 32.7874 37.7097 31.2722 35.9053L31.2758 35.9005C31.2446 35.8704 23.1626 27.7884 23.1626 27.7884L25.7108 25.2401L33.7316 33.2609C35.7242 35.0967 38.4541 32.3667 36.6174 30.3739L28.5979 22.3531L31.1461 19.8048L39.1669 27.8256C39.9264 28.6169 41.2942 28.6165 42.0539 27.8256C42.8493 27.0291 42.8493 25.7339 42.0539 24.9386L31.1859 14.0703Z" fill="white"/>
+                                        <path d="M45.3447 4.32896C40.4609 -0.553665 32.5146 -0.553665 27.6308 4.32896C26.6812 5.27918 23.4901 8.47103 22.5932 9.36778L23.6144 10.389C25.3901 12.1647 28.2784 12.1647 30.0529 10.389L31.3276 9.11427C32.0054 9.79945 44.4461 22.2189 44.7957 22.5932C50.1426 17.8038 50.4594 9.40971 45.3447 4.32896ZM25.8154 41.3127C25.0188 40.5172 23.7246 40.5163 22.9284 41.3127L21.3882 42.8529C20.5956 43.6127 20.5959 44.9801 21.3882 45.74C22.149 46.5308 23.5148 46.5303 24.2752 45.74L25.8154 44.1997C26.6063 43.4409 26.6063 42.0697 25.8154 41.3127Z" fill="white"/>
+                                    </svg>                                        
+                                </div>
+                                <div class="color-main fs-4 ms-3">
+                                    الرعاية والتوعية
+                                </div>
+                            </div>
+                            <div data-wow-delay=".6s" class="wow fadeInLeft col-6 mb-5 d-flex justify-content-start align-items-center">
+                                <div class="svg_div bg-main-color rounded-3 p-2 text-center text-white">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.409 0C22.3067 0 19.6903 2.61646 19.6903 5.71874C19.6903 8.82101 22.3067 11.4375 25.409 11.4375C28.5113 11.4375 31.034 8.82101 31.034 5.71874C31.034 2.61646 28.5113 0 25.409 0ZM31.652 11.4375C30.1065 13.1511 27.893 14.25 25.409 14.25C22.925 14.25 20.6177 13.1511 19.0723 11.4375C17.723 12.9336 16.8778 14.8937 16.8778 17.0625V18.4687C16.8778 19.246 17.5067 19.875 18.284 19.875H32.4402C33.2175 19.875 33.8465 19.246 33.8465 18.4687V17.0625C33.8465 14.8937 33.0012 12.9336 31.652 11.4375ZM13.5888 43.1628L6.42242 28.7952C5.73045 27.4078 4.04633 26.842 2.65724 27.5302L0.784215 28.458C0.0868101 28.8039 -0.196971 29.6515 0.151122 30.3477L8.58861 47.2226C8.93557 47.9185 9.7796 48.1955 10.4714 47.8543L12.3203 46.9383C13.7148 46.2475 14.2833 44.5554 13.5888 43.1628ZM46.8497 23.2218C45.6965 22.3781 44.0933 22.5468 43.1372 23.5875L35.4497 33.0374C34.9153 33.5999 33.9028 33.9374 33.3685 33.9374H26.8153C26.0277 33.9374 25.409 33.3188 25.409 32.5312C25.409 31.7436 26.0277 31.1249 26.8153 31.1249H32.4402C33.9871 31.1249 35.2527 29.8593 35.2527 28.3124C35.2527 26.7656 33.9871 25.4999 32.4402 25.4999H25.0715C24.3706 25.4999 24.0211 25.0555 23.4684 24.5717C21.2925 22.6138 18.0357 21.6705 14.7385 22.4347C12.9078 22.859 11.6732 23.5986 10.421 24.5903L10.3793 24.5564L8.34532 26.3465L16.3388 42.3749H32.4402C35.084 42.3749 37.6153 41.1093 39.1903 38.9999L47.4402 27.1874C48.3683 25.9499 48.1152 24.15 46.8497 23.2218Z" fill="white"/>
+                                    </svg>                                                                               
+                                </div>
+                                <div class="color-main fs-4 ms-3">
+                                    احتضان ذوي الاعاقة
+                                </div>
+                            </div>
+                            <div data-wow-delay=".8s" class="wow fadeInLeft col-6 mb-5 d-flex justify-content-start align-items-center">
+                                <div class="svg_div bg-main-color rounded-3 p-2 text-center text-white">
+                                    <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.87109 15.5517C9.87109 14.2 10.1825 12.9198 10.7371 11.7786H3.80943C1.95325 11.7786 0.443069 13.2887 0.443069 15.1449V27.5416H3.80943V16.4926H6.50474V46H9.87109V27.5416H12.5664V46H15.9328V25.9379C15.8047 25.8377 15.6777 25.7363 15.5517 25.6335C11.8354 22.6022 9.87109 19.1161 9.87109 15.5517Z" fill="white"/>
+                                        <path d="M11.2188 9.0832C13.727 9.0832 15.7604 7.04986 15.7604 4.5416C15.7604 2.03334 13.727 0 11.2188 0C8.7105 0 6.67715 2.03334 6.67715 4.5416C6.67715 7.04986 8.7105 9.0832 11.2188 9.0832Z" fill="white"/>
+                                        <path d="M40.1906 11.7786H33.2629C33.8175 12.9198 34.1289 14.2 34.1289 15.5517C34.1289 19.1161 32.1646 22.6023 28.4483 25.6336C28.3222 25.7363 28.1952 25.8378 28.0672 25.938V46H31.4336V27.5416H34.1289V46H37.4953V16.4925H40.1906V27.5415H43.5569V15.1448C43.5569 13.2887 42.0467 11.7786 40.1906 11.7786Z" fill="white"/>
+                                        <path d="M32.7813 9.0832C35.2895 9.0832 37.3229 7.04986 37.3229 4.5416C37.3229 2.03334 35.2895 0 32.7813 0C30.273 0 28.2397 2.03334 28.2397 4.5416C28.2397 7.04986 30.273 9.0832 32.7813 9.0832Z" fill="white"/>
+                                        <path d="M31.4336 15.5517C31.4336 12.2564 28.7622 9.58496 25.4669 9.58496C24.1739 9.58496 22.9771 9.99662 22 10.6956C21.0229 9.99662 19.8261 9.58496 18.5331 9.58496C15.2378 9.58496 12.5664 12.2564 12.5664 15.5517C12.5664 22.2424 21.9996 26.5652 22 26.5654C22.0004 26.5652 31.4336 22.2423 31.4336 15.5517Z" fill="white"/>
+                                    </svg>                                                                               
+                                </div>
+                                <div class="color-main fs-4 ms-3">
+                                    دمج روح العمل
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col12 col-lg-6 overflow-hidden">
+                        <img class="d-block m-auto wow flipInY" src="images/disability.png" height="575px" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="campaing_channel"> 
+            <div class="container">
+                <h2 class="fw-bold mb-5">
+                    قنوات الحملة
+                </h2>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <a href="#" data-wow-delay=".2s" class="wow fadeInUp nice_button twitter">
+                            <span class="d-inline-flex justify-content-center align-items-center">
+                                <p class="fs-5 m-0">Wasla 2024</p>
+                            </span>
+                            <div class="floating_div twitter">
+                                <i class="fa-brands fa-twitter text-white fa-3x"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#"  data-wow-delay=".4s" class="wow fadeInUp nice_button instagram">
+                            <span class="d-inline-flex justify-content-center align-items-center">
+                                <p class="fs-5 m-0">Wasla 2024</p>
+                            </span>
+                            <div class="floating_div instagram">
+                                <i class="fa-brands fa-instagram text-white fa-3x"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#"  data-wow-delay=".6s" class="wow fadeInUp nice_button facebook">
+                            <span class="d-inline-flex justify-content-center align-items-center">
+                                <p class="fs-5 m-0">Wasla 2024</p>
+                            </span>
+                            <div class="floating_div facebook">
+                                <i class="fa-brands fa-facebook-f text-white fa-3x"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#"  data-wow-delay=".8s" class="wow fadeInUp nice_button mot">
+                            <span class="d-inline-flex justify-content-center align-items-center">
+                                <p class="fs-5 m-0">Wasla 2024</p>
+                            </span>
+                            <div class="floating_div mot">
+                                <img src="images/mot.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#"  data-wow-delay="1s" class="wow fadeInUp nice_button globe">
+                            <span class="d-inline-flex justify-content-center align-items-center">
+                                <p class="fs-5 m-0">Wasla 2024</p>
+                            </span>
+                            <div class="floating_div globe">
+                                <i class="fa-solid fa-globe text-white fa-3x"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="bg-main-color py-5 mb-5">
+            <div class="container">
+                <h2 class="fw-bold mb-5">
+                    الجهات المنفذة
+                </h2>
+                <div  dir="ltr">
+                    <div id="partners-carousel2" class="owl-carousel owl-theme">
+                        <div class="item bg-white p-3 rounded-3">
+                            <img src="images/HOLCIM 2.png" alt="">
+                        </div>
+                        <div class="item bg-white p-3 rounded-3">
+                            <img src="images/HOLCIM 3.png" alt="">
+                        </div>
+                        <div class="item bg-white p-3 rounded-3">
+                            <img src="images/HOLCIM 4.png" alt="">
+                        </div>
+                        <div class="item bg-white p-3 rounded-3">
+                            <img src="images/HOLCIM 2 (1).png" alt="">
+                        </div>
+                        <div class="item bg-white p-3 rounded-3">
+                            <img src="images/HOLCIM 2 (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="fw-bold mb-5">
+                        أهم المنتجات الرقمية
+                    </h2>
+                    <a href="#" class="a fw-bold mb-5">
+                        عرض الكل
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-xl-4 p-4 mb-4 overflow-hidden">
+                        <div class=" wow flipInY">
+                            <img class="rounded-3" height="350px" src="images/Rectangle 51.png" alt="">
+                            <h4 class="fw-bold my-3">
+                                دورنا تجاه ذو الإحتياجات الخاصة و المناصرة الرقمية
+                            </h4>
+                            <a href="#" class="a d-flex justify-content-start align-items-center">
+                                <span>المزيد</span>
+                                <i class="fa-solid fa-arrow-left-long mx-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-4 p-4 mb-4 overflow-hidden">
+                        <div class=" wow flipInY" data-wow-delay=".2s">
+                            <img class="rounded-3" height="350px" src="images/Rectangle 50.png" alt="">
+                            <h4 class="fw-bold my-3">
+                                دورنا تجاه ذو الإحتياجات الخاصة و المناصرة الرقمية
+                            </h4>
+                            <a href="#" class="a d-flex justify-content-start align-items-center">
+                                <span>المزيد</span>
+                                <i class="fa-solid fa-arrow-left-long mx-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-4 p-4 mb-4 overflow-hidden">
+                        <div class=" wow flipInY" data-wow-delay=".4s">
+                            <img class="rounded-3" height="350px" src="images/Rectangle 52.png" alt="">
+                            <h4 class="fw-bold my-3">
+                                دورنا تجاه ذو الإحتياجات الخاصة و المناصرة الرقمية
+                            </h4>
+                            <a href="#" class="a d-flex justify-content-start align-items-center">
+                                <span>المزيد</span>
+                                <i class="fa-solid fa-arrow-left-long mx-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+    
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-xl-4">
+                    <img src="images/footer-logo.png" alt="" srcset="">
+                    <p>
+                        وصلة برنامج ومنصة رقمية تهتم بالمناصرات ومناصرة القضاياالتي تهتم بالشباب وبالأشخاصال مُهمشين
+                    </p>                        
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-xl-4">
+                    <strong>الرئيسية</strong>
+                    <div class="row footer-links">
+                        <div class="col-4">
+                            <a href="#"><p>مدونة وصلة</p></a>
+                            <a href="#"><p>إنفوجرافيك</p></a>
+                            <a href="#"><p>من نحن</p></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#"><p>مكتبة المصادر</p></a>
+                            <a href="#"><p>مكتبة المصادر</p></a>
+                            <a href="#"><p>تواصل معنا</p></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#"><p>سجل مع وصلة</p></a>
+                            <a href="#"><p>تسجيل الدخول</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-xl-4">
+                    <div class="send-email">
+                        <strong>تواصل معنا وارسل الايميل</strong>
+                        <div class="input-group my-4">
+                            <div class="input-group-prepend">
+                                <button type="button" class="btn bg-main-color text-white" style="margin-right: -10px;" id="basic-addon1">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.375 25.6623L23.8991 13.0655L0.375 0.46875V10.2662L17.2264 13.0655L0.375 15.8648V25.6623Z"
+                                            fill="#fff" />
+                                    </svg>
+                                    <span class="mx-3">
+                                        أرسل
+                                    </span>
+                                </button>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <strong>تواصل معنا</strong>
+                        <div>
+                            <a href="#" class="facebook">
+                                <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.315 3.9578C9.6917 3.83314 8.84983 3.74 8.32037 3.74C6.8867 3.74 6.79358 4.36333 6.79358 5.36066V7.13607H10.3774L10.065 10.8137H6.79358V22H2.30632V10.8137H0L0 7.13607H2.30632V4.86127C2.30632 1.74533 3.77079 0 7.44771 0C8.72517 0 9.66017 0.187001 10.8753 0.436334L10.315 3.9578Z" fill="white"/>
+                                </svg>                                    
+                            </a>
+                            <a href="#" class="linkedin">
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.77475 2.28389C4.77475 3.52898 3.82671 4.5366 2.34415 4.5366C0.919355 4.5366 -0.0286772 3.52898 0.000662254 2.28389C-0.0286772 0.978283 0.919332 0 2.37255 0C3.82669 0 4.74633 0.978283 4.77475 2.28389ZM0.119858 20.8191V6.31621H4.62712V20.8181H0.119858V20.8191Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.23931 10.9446C8.23931 9.13566 8.17971 7.5935 8.12012 6.31816H12.0351L12.2432 8.30499H12.3322C12.9254 7.38538 14.4079 5.99268 16.8101 5.99268C19.7752 5.99268 21.9995 7.95016 21.9995 12.219V20.821H17.4922V12.7838C17.4922 10.9144 16.8404 9.63993 15.2093 9.63993C13.9633 9.63993 13.2224 10.4999 12.9263 11.3297C12.8071 11.6268 12.7484 12.0412 12.7484 12.4574V20.821H8.24113V10.9446H8.23931Z" fill="white"/>
+                                </svg>                                    
+                            </a>
+                            <a href="#" class="twitter">
+                                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 2.30865C23.1177 2.70062 22.1681 2.9646 21.1722 3.08379C22.1889 2.47423 22.9697 1.5095 23.3368 0.359974C22.3865 0.924736 21.3314 1.33351 20.2107 1.5551C19.3123 0.59836 18.0316 0 16.6165 0C13.8975 0 11.6928 2.20465 11.6928 4.92367C11.6928 5.30924 11.7368 5.68522 11.8208 6.046C7.72829 5.84121 4.10053 3.88054 1.67189 0.901539C1.24792 1.62869 1.00553 2.47424 1.00553 3.37658C1.00553 5.08447 1.87347 6.59157 3.19579 7.47471C2.38784 7.44911 1.62949 7.22752 0.964734 6.85875V6.92034C0.964734 9.30658 2.66302 11.296 4.91407 11.7496C4.5013 11.8616 4.06613 11.9224 3.61736 11.9224C3.29978 11.9224 2.991 11.8912 2.69022 11.8336C3.31658 13.7895 5.13566 15.2134 7.28991 15.2534C5.60523 16.5733 3.48217 17.3612 1.17512 17.3612C0.776747 17.3612 0.384774 17.338 0 17.2916C2.17905 18.6884 4.76688 19.5043 7.5475 19.5043C16.6037 19.5043 21.5562 12.0016 21.5562 5.49563C21.5562 5.28204 21.5522 5.06927 21.5418 4.85888C22.5049 4.16293 23.34 3.29578 24 2.30865Z" fill="white"/>
+                                </svg>                                    
+                            </a>
+                            <a href="#" class="inestgram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2.16215C15.2041 2.16215 15.5837 2.17439 16.849 2.23212C18.019 2.28547 18.6544 2.48096 19.0773 2.6453C19.6374 2.86299 20.0371 3.12302 20.457 3.54291C20.877 3.96286 21.137 4.3626 21.3547 4.92273C21.519 5.34557 21.7145 5.98096 21.7679 7.15095C21.8256 8.41629 21.8378 8.79584 21.8378 11.9999C21.8378 15.2041 21.8256 15.5836 21.7679 16.849C21.7145 18.019 21.519 18.6543 21.3547 19.0772C21.137 19.6373 20.877 20.0371 20.4571 20.457C20.0371 20.8769 19.6374 21.1369 19.0773 21.3546C18.6544 21.519 18.019 21.7144 16.849 21.7678C15.5839 21.8255 15.2044 21.8378 12 21.8378C8.79563 21.8378 8.41618 21.8255 7.15097 21.7678C5.98098 21.7144 5.34559 21.519 4.92274 21.3546C4.36261 21.1369 3.96287 20.8769 3.54297 20.457C3.12308 20.0371 2.863 19.6373 2.64531 19.0772C2.48097 18.6543 2.28548 18.019 2.23213 16.849C2.1744 15.5836 2.16216 15.2041 2.16216 11.9999C2.16216 8.79584 2.1744 8.41629 2.23213 7.15095C2.28548 5.98096 2.48097 5.34557 2.64531 4.92273C2.863 4.3626 3.12303 3.96286 3.54297 3.54296C3.96287 3.12302 4.36261 2.86299 4.92274 2.6453C5.34559 2.48096 5.98098 2.28547 7.15097 2.23212C8.41632 2.17439 8.79587 2.16215 12 2.16215ZM12 0C8.741 0 8.33234 0.0138138 7.05241 0.072213C5.77516 0.130469 4.90283 0.333342 4.13954 0.629958C3.35044 0.936626 2.68123 1.34694 2.01406 2.01406C1.34695 2.68122 0.936629 3.35043 0.630008 4.13953C0.333343 4.90282 0.13047 5.77514 0.0722133 7.05239C0.0138139 8.33231 0 8.74096 0 11.9999C0 15.259 0.0138139 15.6676 0.0722133 16.9475C0.13047 18.2248 0.333343 19.0971 0.630008 19.8604C0.936629 20.6495 1.34695 21.3187 2.01406 21.9859C2.68123 22.653 3.35044 23.0633 4.13954 23.3699C4.90283 23.6666 5.77516 23.8694 7.05241 23.9277C8.33234 23.9861 8.741 23.9999 12 23.9999C15.259 23.9999 15.6677 23.9861 16.9476 23.9277C18.2248 23.8694 19.0972 23.6666 19.8605 23.3699C20.6496 23.0633 21.3188 22.653 21.9859 21.9859C22.653 21.3187 23.0634 20.6495 23.37 19.8604C23.6667 19.0971 23.8695 18.2248 23.9278 16.9475C23.9862 15.6676 24 15.259 24 11.9999C24 8.74096 23.9862 8.33231 23.9278 7.05239C23.8695 5.77514 23.6667 4.90282 23.37 4.13953C23.0634 3.35043 22.653 2.68122 21.9859 2.01406C21.3188 1.34694 20.6496 0.936626 19.8605 0.629958C19.0972 0.333342 18.2248 0.130469 16.9476 0.072213C15.6677 0.0138138 15.259 0 12 0Z" fill="white"/>
+                                    <path d="M12.0059 5.84341C8.60262 5.84341 5.84375 8.60228 5.84375 12.0055C5.84375 15.4088 8.60262 18.1677 12.0059 18.1677C15.4092 18.1677 18.1681 15.4088 18.1681 12.0055C18.1681 8.60228 15.4092 5.84341 12.0059 5.84341ZM12.0059 16.0055C9.79676 16.0055 8.00591 14.2147 8.00591 12.0055C8.00591 9.79641 9.79676 8.00557 12.0059 8.00557C14.2151 8.00557 16.0059 9.79641 16.0059 12.0055C16.0059 14.2147 14.2151 16.0055 12.0059 16.0055Z" fill="white"/>
+                                    <path d="M19.8507 5.59615C19.8507 6.3914 19.206 7.03613 18.4107 7.03613C17.6154 7.03613 16.9707 6.3914 16.9707 5.59615C16.9707 4.80085 17.6154 4.15613 18.4107 4.15613C19.206 4.15613 19.8507 4.80085 19.8507 5.59615Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="youtube">
+                                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3005 1.37807C24.6996 1.77717 24.9872 2.27386 25.1346 2.81868C25.9835 6.23572 25.7873 11.6324 25.1511 15.1813C25.0037 15.7261 24.7161 16.2228 24.317 16.6219C23.9179 17.021 23.4212 17.3086 22.8764 17.456C20.8819 18 12.8544 18 12.8544 18C12.8544 18 4.82691 18 2.8324 17.456C2.28759 17.3086 1.79089 17.021 1.39179 16.6219C0.992691 16.2228 0.705107 15.7261 0.557679 15.1813C-0.296167 11.7791 -0.0620999 6.37912 0.541197 2.83517C0.688622 2.29035 0.976206 1.79365 1.37531 1.39455C1.77441 0.99545 2.2711 0.707864 2.81592 0.560444C4.81043 0.0164795 12.8379 0 12.8379 0C12.8379 0 20.8654 0 22.8599 0.543954C23.4047 0.691384 23.9014 0.97897 24.3005 1.37807ZM16.9423 8.99999L10.283 12.8571V5.14285L16.9423 8.99999Z" fill="white"/>
+                                </svg>                                    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rights">
+            جميع الحقوق محفوظة لمنصة وصلة لاب 2023 - <a href="#">تطوير شركة شفت</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/locales/bootstrap-datepicker.ar.min.js" charset="UTF-8"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -3145,6 +3145,140 @@ footer .rights a {
 }
 /* **************************************** start Contact page ********************************** */
 
+
+
+
+/* **************************************** start new campaing details page ********************************** */
+.new_campaing_details{
+    background-color: white;
+}
+
+.new_campaing_details .campaing_channel,
+.new_campaing_details .campaign_activities,
+.new_campaing_details .target_groups,
+.new_campaing_details .circle_section,
+.new_campaing_details .cards_section,
+.new_campaing_details .main_section{
+    margin-bottom: 200px;
+}
+.new_campaing_details .icon_div{
+    width: 50px;
+    height: 50px;
+}
+.new_campaing_details .det_card{
+    height: 335px;
+}
+.new_campaing_details .det_card_icon{
+    height: 75px;
+    width: 75px;
+}
+.new_campaing_details .circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px dashed blue;
+    padding: 5px;
+    margin: 5px;
+}
+.new_campaing_details .circle p{
+    font-size: 14px;
+    margin: 0;
+}
+.new_campaing_details .campaing_parteners{
+    background-color: #F5F5F5;
+    margin-bottom: 150px;
+}
+.new_campaing_details .target_groups .target_groups_card .icon_div{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+.new_campaing_details .campaign_activities .svg_div{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new_campaing_details .nice_button{
+    height: 90px;
+    /* background-color: #1D9BF0; */
+    border-radius: 50rem 0 100rem 50rem;
+    margin: 20px 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    display: block;
+    color: #000;
+}
+.new_campaing_details .nice_button > span{
+    background-color: white;
+    display: inline-block;
+    border-radius: 100rem 0 100rem 0;
+    height: 100%;
+    border: 1px solid var(--main-color);
+    width: 75%;
+    z-index: 0;
+    outline: 3px solid #fff;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+.new_campaing_details .nice_button > span:hover{
+    transform: translateX(-10px)
+}
+.new_campaing_details .nice_button .floating_div{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 45%;
+    text-align: left;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new_campaing_details .nice_button .floating_div img{
+    width: 40px;
+    height: 40px;
+}
+.new_campaing_details .nice_button .floating_div img,
+.new_campaing_details .nice_button .floating_div i{
+    transform: translateX(-50%);
+}
+.new_campaing_details .twitter{
+    background: linear-gradient(90deg, #43C5F9 3.56%, #46C6F9 28.49%, #51CAFA 49.73%, #62D1FC 69.62%, #7BDAFE 88.58%, #8CE0FF 98.98%);
+}
+.new_campaing_details  .instagram{
+    background: radial-gradient(135.25% 221.7% at 6.93% 98.15%, #FDED00 0%, #FDD90D 6.89%, #FEA52D 21.01%, #FF5361 40.93%, #FF257E 51.42%, #F42584 53.07%, #9F25AF 66.54%, #5B26D1 78.44%, #2A26EA 88.31%, #0B26F9 95.79%, #0026FF 100%);
+}
+.new_campaing_details .facebook{
+    background: linear-gradient(90deg, #25529B 3.56%, #26549E 42.4%, #295BA6 67.74%, #2E66B5 89.14%, #316DBF 98.98%);
+}
+.new_campaing_details .mot{
+    background: linear-gradient(90deg, #C9AD3F 3.56%, #C9AD3F 43.59%, #F3D665 69.69%, #F3D665 91.75%, #F3D665 98.98%);
+}
+.new_campaing_details .globe{
+    background: linear-gradient(90deg, #0080B7 3.56%, #0083BA 43.59%, #008BC2 69.69%, #009AD1 91.75%, #00A1D8 98.98%);
+}
+
+
+/* **************************************** End new campaing details page ********************************** */
+
+
+
+
+
+
+
+
+
+
+
+
 /* start media */
 
 @media (max-width:576px) {
