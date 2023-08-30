@@ -210,9 +210,9 @@ button.close {
 [type="email"] {
   direction: rtl;
 }
-footer [type="email"] {
+/* footer [type="email"] {
   direction: ltr;
-}
+} */
 
 ::-webkit-calendar-picker-indicator {
   position: absolute;
