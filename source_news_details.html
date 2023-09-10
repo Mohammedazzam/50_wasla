@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/side_navbar.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -33,10 +35,9 @@
     <!-- end go up -->
     <!-- background of bage -->
     <div class="body-bg"></div>
-
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
-            <a class="navbar-brand wow fadeIn" data-wow-delay="1.3s" href="index.html">
+            <a class="navbar-brand" href="index.html">
                 <svg width="130" height="108" viewBox="0 0 130 108" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="130" height="108" fill="url(#pattern0)" />
@@ -54,22 +55,20 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse lateral-left" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".2s" href="blog.html">المدونة</a>
-                    <a class="nav-item nav-link wow fadeInRight active" data-wow-delay=".3s"
-                        href="source_lib.html">المصادر</a>
-                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".4s" href="campaigns.html">حملات
+                    <a class="nav-item nav-link active" href="blog.html">المدونة</a>
+                    <a class="nav-item nav-link" href="source_lib.html">المصادر</a>
+                    <a class="nav-item nav-link" href="campaigns.html">حملات
                         المناصرة</a>
-                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".5s"
-                        href="infographic.html">انفوجرافيك</a>
-                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".6s" href="wasla_center.html">مركز
+                    <a class="nav-item nav-link" href="infographic.html">انفوجرافيك</a>
+                    <a class="nav-item nav-link" href="wasla_center.html">مركز
                         وصلة</a>
-                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".7s" href="aboute_us.html">من نحن</a>
-                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".8s" href="contact_us.html">تواصل
+                    <a class="nav-item nav-link" href="aboute_us.html">من نحن</a>
+                    <a class="nav-item nav-link" href="contact_us.html">تواصل
                         معنا</a>
                 </div>
-                <a href="login.html" class="btn bg-main-color text-white wow fadeIn" data-wow-delay="1s">
+                <a href="login.html" class="btn bg-main-color text-white">
                     دخول
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -95,7 +94,8 @@
                 <div class="search-filter">
                     <form action="">
                         <div class="row justify-content-center">
-                            <div data-wow-delay=".4s" class="wow bounceInRight form-group col-6 col-md-4 col-xl-2 my-4">
+                            <div data-wow-delay=".4s"
+                                class="wow bounceInRight form-group col-12 col-sm-6 col-md-4 col-xl-2 my-1 my-md-4">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -117,7 +117,8 @@
                                     <option value="">التصنيف</option>
                                 </select>
                             </div>
-                            <div data-wow-delay=".6s" class="wow bounceInRight form-group col-6 col-md-4 col-xl-2 my-4">
+                            <div data-wow-delay=".6s"
+                                class="wow bounceInRight form-group col-12 col-sm-6 col-md-4 col-xl-2 my-1 my-md-4">
                                 <svg width="28" height="22" viewBox="0 0 28 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -144,20 +145,19 @@
                                 </select>
                             </div>
                             <div data-wow-delay=".8s"
-                                class="wow bounceInRight form-group col-6 col-md-4 col-xl-3 my-md-4 my-xl-4">
+                                class="wow bounceInRight form-group col-12 col-sm-6 col-md-4 col-xl-3 my-1 my-md-4 my-xl-4">
                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M19.4449 13.75H12.5005V20H19.4449V13.75ZM18.056 0V2.5H6.94493V0H4.16715V2.5H2.77827C1.24354 2.5 0.0143772 3.61875 0.0143772 5L0.000488281 22.5C0.000488281 23.8813 1.24354 25 2.77827 25H22.2227C23.7574 25 25.0005 23.8813 25.0005 22.5V5C25.0005 3.61875 23.7574 2.5 22.2227 2.5H20.8338V0H18.056ZM22.2227 22.5H2.77827V8.75H22.2227V22.5Z"
                                         fill="#039EDE" />
                                 </svg>
-                                <input class="form-control form-control-lg datetimepicker" type="text" value="سنة النشر"
-                                    name="">
+                                <input class="datetimepicker form-control form-control-lg" type="text" value="سنة النشر"
+                                    name="" id="">
                             </div>
                         </div>
                     </form>
                 </div>
-
                 <div class="news-title">
                     <div class="row">
                         <div class="d-flex justify-content-between align-items-center">
@@ -174,13 +174,13 @@
                         <div class="col-12">
                             <div class="card-details">
                                 <div class="row">
-                                    <div class="col-2">
+                                    <div class="col-6 col-sm-4 my-2 my-lg-0 col-lg-2">
                                         الناشر:
                                         <span>
                                             مؤسسة ضامن
                                         </span>
                                     </div>
-                                    <div class="col-3 x-border">
+                                    <div class="col-6 col-sm-4 my-2 my-lg-0 col-lg-3 x-border">
                                         تاريخ النشر:
                                         <span>
                                             22-05-2022
@@ -192,7 +192,7 @@
                                             </svg>
                                         </span>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-6 col-sm-4 my-2 my-lg-0 col-lg-3">
                                         تاريخ الإصدار:
                                         <span>
                                             22-05-2022
@@ -204,10 +204,10 @@
                                             </svg>
                                         </span>
                                     </div>
-                                    <div class="col-2 x-border">
+                                    <div class="col-6 col-sm-4 my-2 my-lg-0 col-lg-2 x-border">
                                         <div class="btn btn-sm btn-light">مبادرة</div>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-6 col-sm-4 my-2 my-lg-0 col-lg-2">
                                         250
                                         <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -319,7 +319,7 @@
             <div class="col-12 col-lg-3">
                 <div class="side-calcs container">
                     <div class="row">
-                        <div class="col-6 col-lg-12">
+                        <div class="col-12 col-sm-6 col-lg-12">
                             <div class="types">
                                 <span class="types-title">
                                     الأصناف
@@ -359,7 +359,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-12">
+                        <div class="col-12 col-sm-6 col-lg-12">
                             <div class="geniral-calcs">
                                 <span class="types-title">
                                     الإحصائيات العامة
@@ -393,7 +393,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-12">
+                        <div class="col-12 col-sm-6 col-lg-12">
                             <div class="social-photo">
                                 <span class="types-title">
                                     صور من مواقع التواصل
@@ -555,7 +555,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-12">
+                        <div class="col-12 col-sm-6 col-lg-12">
                             <div class="hashtags">
                                 <span class="types-title">
                                     الجديد من ال #
@@ -729,7 +729,7 @@
                             <div class="col-12">
                                 <div class="H-blog">
                                     <div class="row">
-                                        <div class="col-4 user-data">
+                                        <div class="col-6 col-sm-4 user-data">
                                             <div class="user-img bg-div"
                                                 style="background-image: url('images/avatar.png');"></div>
                                             <div class="bloger-details">
@@ -755,7 +755,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-4 rate-stars">
+                                        <div class="col-6 col-sm-4 rate-stars">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill="#FAFF00" stroke="#FAFF00" stroke-width="1.4"
@@ -794,7 +794,7 @@
                             <div class="col-12">
                                 <div class="H-blog">
                                     <div class="row">
-                                        <div class="col-4 user-data">
+                                        <div class="col-6 col-sm-4 user-data">
                                             <div class="user-img bg-div"
                                                 style="background-image: url('images/avatar.png');"></div>
                                             <div class="bloger-details">
@@ -820,7 +820,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-4 rate-stars">
+                                        <div class="col-6 col-sm-4 rate-stars">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill="#FAFF00" stroke="#FAFF00" stroke-width="1.4"
@@ -859,7 +859,7 @@
                             <div class="col-12">
                                 <div class="H-blog">
                                     <div class="row">
-                                        <div class="col-4 user-data">
+                                        <div class="col-6 col-sm-4 user-data">
                                             <div class="user-img bg-div"
                                                 style="background-image: url('images/avatar.png');"></div>
                                             <div class="bloger-details">
@@ -885,7 +885,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-4 rate-stars">
+                                        <div class="col-6 col-sm-4 rate-stars">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill="#FAFF00" stroke="#FAFF00" stroke-width="1.4"

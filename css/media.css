@@ -1,0 +1,600 @@
+/* start media */
+
+@media (max-width: 576px) {
+  .navbar-collapse {
+    padding-right: 30px;
+  }
+
+  .blog-header,
+  header {
+    height: unset;
+    min-height: unset;
+    margin-bottom: 2vh;
+  }
+
+  header .header-text {
+    position: unset;
+    transform: unset;
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .about-us .our-features h2,
+  .main-title h2,
+  header .header-text h2 {
+    font-size: 30px;
+  }
+  .campaing-item {
+    height: 300px;
+  }
+  .campaing-item h2 {
+    font-size: 20px;
+  }
+  .campaing-item .card-details .x-border {
+    border: none;
+  }
+  .campaing-item p {
+    display: none;
+  }
+  .main-title svg {
+    width: 100%;
+  }
+  .show-campaigns .campaigns-header .main-title p,
+  header .header-text p {
+    font-size: 17px;
+  }
+  #campaings-carousel:not(.center-carousel) .owl-dots {
+    height: 90px;
+  }
+  #campaings-carousel:not(.center-carousel) .owl-dots button {
+    height: 70px;
+  }
+  .about_wasla h2 {
+    font-size: 60px;
+  }
+  header .header-img .img-container {
+    height: 30vh;
+  }
+  .campaing_info .text_content {
+    width: 90%;
+  }
+  .campaing_info .text_content .campaing-title .folow {
+    display: none;
+  }
+  .campaing_info .text_content h2 {
+    font-size: 25px;
+  }
+  .contact .contact-ways {
+    text-align: center;
+  }
+
+  .about_wasla .about-text .text-content {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 50px auto;
+    position: unset;
+  }
+
+  footer .rights {
+    font-size: 16px;
+  }
+
+  .blog-news-details .news-details p:last-of-type {
+    width: 100%;
+  }
+
+  .go-login-div {
+    min-height: 250px;
+  }
+
+  .go-login-div .vertical-center .btn-cont,
+  .go-login-div .vertical-center {
+    position: unset;
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  .email-sent {
+    width: 300px;
+  }
+  .source-search .def-card {
+    margin: 30px auto;
+    height: 370px;
+  }
+  .show-campaigns .header-img,
+  .infographic .header-img {
+    height: 50vh;
+  }
+  .def-card .def-card-header .card-image {
+    height: 80%;
+  }
+
+  .def-card .card-text {
+    margin: -30% auto 20px auto;
+  }
+
+  .blog-header .blog-crousel .blog-header-text {
+    width: 90%;
+  }
+  .blog-header .blog-crousel {
+    padding: 40px;
+  }
+  .blog-header .blog-crousel .blog-header-text h2 {
+    font-size: 24px;
+  }
+
+  .blog-header .blog-crousel .blog-header-text p {
+    font-size: 16px;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .last-blogs-title svg {
+    width: 90px;
+  }
+
+  .last-blogs-title h2 {
+    font-size: 40px;
+    vertical-align: middle;
+  }
+
+  .blog-main-sec .blog-cards-cont .blog-card {
+    padding: 10px;
+    box-shadow: -5px 4px 18px 0px rgba(0, 0, 0, 0.06);
+    margin: 10px auto;
+  }
+
+  #second_blog_carousel .blog-header-text h2 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  #second_blog_carousel .blog-header-text p {
+    width: 100%;
+  }
+
+  .show-campaigns .campaigns-header .main-title p {
+    width: 100%;
+  }
+  .blog-main-sec .search {
+    width: 100%;
+  }
+
+  .contact iframe {
+    width: 100%;
+  }
+  .about-us .our-features img {
+    height: 250px;
+  }
+  .new_campaing_details .main_section img {
+    height: 300px;
+    width: auto;
+  }
+  .new_campaing_details .icon_div {
+    width: 40px;
+    height: 40px;
+  }
+  .new_campaing_details .icon_div i {
+    font-size: 24px;
+  }
+  .new_campaing_details .cards_section {
+    padding-top: 80px;
+  }
+  .go-login-div .vertical-center .btn {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 900px;
+  }
+
+  .navbar-collapse {
+    padding-right: 30px;
+  }
+
+  /* header .header-img {
+            display: none;
+        } */
+
+  header .header-text {
+    position: unset;
+    transform: unset;
+    width: 100%;
+    padding: 20px 10px;
+  }
+  header .header-img .img-container {
+    height: 50vh;
+  }
+  .about_wasla .about-text .text-content {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 50px auto;
+    position: unset;
+  }
+
+  .campaing-item p {
+    max-height: 125px;
+    overflow: hidden;
+  }
+  .campaigns-card .campaigns-card-header {
+    margin: 0;
+  }
+
+  .campaigns-card .card-text {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .campaing_info .text_content {
+    width: 90%;
+  }
+  .campaing_info .text_content .campaing-title .folow {
+    display: none;
+  }
+  .def-card .def-card-header .card-image {
+    height: 80%;
+  }
+
+  .def-card .card-text {
+    margin: -40% auto 20px auto;
+  }
+
+  .def-card .card-text {
+    padding: 10px;
+  }
+
+  .last-blogs-title svg {
+    width: 90px;
+  }
+
+  .last-blogs-title h2 {
+    font-size: 40px;
+    vertical-align: middle;
+  }
+
+  #second_blog_carousel .blog-header-text h2 {
+    font-size: 40px;
+  }
+
+  #second_blog_carousel .blog-header-text p {
+    width: 100%;
+  }
+
+  .infographic .header-img {
+    height: 50vh;
+    width: 60%;
+    margin: auto;
+  }
+  .show-campaigns .header-img {
+    height: 50vh;
+  }
+  .new_campaing_details .icon_div {
+    width: 40px;
+    height: 40px;
+  }
+  .new_campaing_details .icon_div i {
+    font-size: 24px;
+  }
+  .new_campaing_details .cards_section {
+    padding-top: 40px;
+  }
+  .go-login-div .vertical-center .btn-cont,
+  .go-login-div .vertical-center {
+    position: unset;
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  .blog-header .blog-crousel .blog-header-text h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 950px;
+  }
+
+  .navbar-collapse {
+    padding-right: 30px;
+  }
+
+  .blog-header,
+  header {
+    height: unset;
+    min-height: unset;
+    margin-bottom: 2vh;
+  }
+
+  .blog-header .blog-crousel {
+    /* height: 100%; */
+    padding: 30px;
+  }
+
+  header .header-text {
+    position: unset;
+    transform: unset;
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .campaing-item p {
+    line-height: 1.6;
+  }
+  /* header .header-img, */
+  .sources-page .header-img {
+    display: none;
+  }
+
+  #campaings-carousel .owl-nav button {
+    background: #ffffff81;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #777;
+    line-height: 1;
+  }
+  #campaings-carousel .owl-nav button:first-of-type {
+    left: 0;
+  }
+  #campaings-carousel .owl-nav button:last-of-type {
+    right: 0;
+  }
+  .campaigns-header .main-title h2 {
+    font-size: 30px;
+  }
+  .about_wasla .about-text .text-content {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 20px auto;
+    position: inherit;
+  }
+  .about_wasla .cards-col:last-of-type {
+    margin-top: auto;
+  }
+  .contact iframe {
+    width: 100%;
+  }
+
+  .contact .contact-ways a svg {
+    width: 100%;
+  }
+  .infographic .main-title {
+    padding-top: 0;
+  }
+  .infographic .main-title p {
+    margin-top: auto;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    margin: 0 0.1em;
+    font-size: 15px;
+  }
+
+  .blog-header .blog-crousel .blog-header-text {
+    width: 100%;
+  }
+
+  .blog-header .blog-crousel .blog-header-text p {
+    font-size: 18px;
+  }
+
+  .blog-main-sec .blog-cards-cont .blog-card {
+    box-shadow: unset;
+  }
+
+  .blog-main-sec .blog-cards-cont .blog-card p {
+    max-height: 110px;
+    overflow: hidden;
+    line-height: 1.8;
+    font-size: 20px;
+  }
+
+  .sources-page .source-lib-header {
+    height: 70vh;
+  }
+  .new_campaing_details .campaing_channel,
+  .new_campaing_details .campaign_activities,
+  .new_campaing_details .main_section,
+  .new_campaing_details .campaing_parteners,
+  .new_campaing_details .target_groups,
+  .new_campaing_details .cards_section {
+    margin-bottom: 30px;
+  }
+  .not-found a {
+    width: 155px;
+  }
+  .campaigns-header,
+  .show-campaigns .campaigns-header .main-title {
+    padding-top: 0;
+  }
+  .show-campaigns .campaigns-header .main-title h2 {
+    font-size: 30px;
+  }
+  .show-campaigns .years-filter {
+    margin-top: 0;
+  }
+
+  .sources-page .source-lib-header .text h2 {
+    font-size: 30px;
+  }
+  .sources-page .source-lib-header .text p {
+    max-height: 215px;
+    overflow: hidden;
+  }
+  .sources-page .sources .search {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .blog-header .blog-crousel {
+    height: 55vh;
+  }
+
+  .infographic .header-img,
+  .show-campaigns .header-img {
+    height: 720px;
+  }
+
+  .infographic-header {
+    min-height: 50vh;
+  }
+
+  .go-login-div .vertical-center .btn-cont,
+  .go-login-div .vertical-center {
+    position: unset;
+    transform: unset;
+  }
+  header .header-img .img-container {
+    height: 50vh;
+  }
+  .sources-page .source-lib-header {
+    height: 900px;
+  }
+
+  footer .send-email .input-group {
+    width: 50%;
+    margin: auto;
+  }
+  .new_campaing_details .cards_section {
+    padding-top: 40px;
+  }
+  .sources-page .source-lib-header {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1500px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 1300px;
+  }
+
+  header .header-text {
+    width: 100%;
+    /* top: 20%; */
+  }
+
+  .about_wasla .about-text .text-content {
+    right: 50px;
+  }
+
+  .sources-page .source-lib-header svg {
+    bottom: 30px;
+  }
+  .source-cards {
+    margin-top: -40px !important;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 17px;
+    margin: 0 0.5em;
+  }
+
+  header .header-img {
+    left: 0;
+    transform: unset;
+    border-radius: 70px;
+    margin: unset;
+    height: 70%;
+  }
+
+  .go-login-div .vertical-center .btn {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .def-card .def-card-header {
+    height: 85%;
+  }
+
+  .blog-header .blog-crousel .blog-header-text {
+    width: 80%;
+  }
+
+  .blog-header .blog-crousel .blog-header-text h2 {
+    font-size: 45px;
+  }
+
+  .blog-header .blog-crousel .blog-header-text p {
+    font-size: 20px;
+  }
+
+  #second_blog_carousel .blog-header-text h2 {
+    font-size: 50px;
+  }
+
+  #second_blog_carousel .blog-header-text p {
+    width: 70%;
+  }
+
+  .show-campaigns .campaigns-header .main-title h2 {
+    font-size: 50px;
+  }
+
+  .show-campaigns .campaigns-header .main-title p {
+    width: 90%;
+  }
+
+  .def-card .def-card-header {
+    height: 65%;
+  }
+
+  .infographic .header-img,
+  .show-campaigns .header-img {
+    height: 670px;
+  }
+
+  .go-login-div .vertical-center .btn-cont,
+  .go-login-div .vertical-center {
+    position: unset;
+    transform: unset;
+  }
+
+  .sources-page .source-lib-header {
+    height: 850px;
+  }
+  /* .navbar-light .navbar-nav .nav-link {
+            font-size: 20px;
+            margin: 0 0.3em;
+        } */
+  .go-login-div .vertical-center .btn {
+    width: unset;
+    margin: auto 10px;
+  }
+
+  /* .def-card .def-card-header {
+            height: 95%;
+        } */
+  .blog-header .blog-crousel .blog-header-text {
+    width: 80%;
+  }
+
+  .blog-header .blog-crousel .blog-header-text h2 {
+    font-size: 50px;
+  }
+
+  .blog-header .blog-crousel .blog-header-text p {
+    font-size: 20px;
+  }
+
+  header .header-img {
+    left: 0;
+    transform: unset;
+    border-radius: 70px;
+    margin: unset;
+    height: 70%;
+  }
+
+  header .header-img .img-container {
+    height: 60vh;
+    /* transform: unset; */
+  }
+}

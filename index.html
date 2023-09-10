@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/side_navbar.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -40,7 +42,7 @@
     <!-- end go up -->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
-            <a class="navbar-brand wow fadeIn" data-wow-delay="1.3s" href="index.html">
+            <a class="navbar-brand" href="index.html">
                 <svg width="130" height="108" viewBox="0 0 130 108" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="130" height="108" fill="url(#pattern0)" />
@@ -58,22 +60,20 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse lateral-left" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link wow fadeInRight active" data-wow-delay=".2s"
-                        href="blog.html">المدونة</a>
-                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".3s" href="source_lib.html">المصادر</a>
-                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".4s" href="campaigns.html">حملات
+                    <a class="nav-item nav-link active" href="blog.html">المدونة</a>
+                    <a class="nav-item nav-link" href="source_lib.html">المصادر</a>
+                    <a class="nav-item nav-link" href="campaigns.html">حملات
                         المناصرة</a>
-                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".5s"
-                        href="infographic.html">انفوجرافيك</a>
-                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".6s" href="wasla_center.html">مركز
+                    <a class="nav-item nav-link" href="infographic.html">انفوجرافيك</a>
+                    <a class="nav-item nav-link" href="wasla_center.html">مركز
                         وصلة</a>
-                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".7s" href="aboute_us.html">من نحن</a>
-                    <a class="nav-item nav-link wow fadeInRight" data-wow-delay=".8s" href="contact_us.html">تواصل
+                    <a class="nav-item nav-link" href="aboute_us.html">من نحن</a>
+                    <a class="nav-item nav-link" href="contact_us.html">تواصل
                         معنا</a>
                 </div>
-                <a href="login.html" class="btn bg-main-color text-white wow fadeIn" data-wow-delay="1s">
+                <a href="login.html" class="btn bg-main-color text-white">
                     دخول
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -359,7 +359,7 @@
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="row ">
-                            <div class="col-6 cards-col">
+                            <div class="col-12 col-sm-6 cards-col">
                                 <a class="a" href="blog.html">
                                     <div class="card wow fadeInUp" data-wow-delay=".2s">
                                         <svg width="121" height="121" viewBox="0 0 121 121" fill="none"
@@ -415,7 +415,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-6 cards-col">
+                            <div class="col-12 col-sm-6 cards-col">
                                 <a class="a" href="source_lib.html">
                                     <div class="card wow fadeInUp" data-wow-delay=".6s">
                                         <svg width="121" height="121" viewBox="0 0 121 121" fill="none"
@@ -508,7 +508,7 @@
                                     <div class="col-12 col-xl-9">
                                         <div class="card-details">
                                             <div class="row">
-                                                <div class="col-4">
+                                                <div class="col-12 my-1 my-md-0 text-start text-md-center col-sm-4">
                                                     منذ 3 أيام
                                                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -520,7 +520,8 @@
                                                             fill="#555555" />
                                                     </svg>
                                                 </div>
-                                                <div class="col-4 x-border">
+                                                <div
+                                                    class="col-12 my-1 my-md-0 text-start text-md-center col-sm-4 x-border">
                                                     22-05-2022
                                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -529,7 +530,7 @@
                                                             fill="#555555" />
                                                     </svg>
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="col-12 my-1 my-md-0 text-start text-md-center col-sm-4">
                                                     مؤسسة ضامن
                                                 </div>
                                             </div>
@@ -564,7 +565,7 @@
                                     <div class="col-12 col-xl-9">
                                         <div class="card-details">
                                             <div class="row">
-                                                <div class="col-4">
+                                                <div class="col-12 my-1 my-md-0 text-start text-md-center col-sm-4">
                                                     منذ 3 أيام
                                                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -576,7 +577,8 @@
                                                             fill="#555555" />
                                                     </svg>
                                                 </div>
-                                                <div class="col-4 x-border">
+                                                <div
+                                                    class="col-12 my-1 my-md-0 text-start text-md-center col-sm-4 x-border">
                                                     22-05-2022
                                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -585,7 +587,7 @@
                                                             fill="#555555" />
                                                     </svg>
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="col-12 my-1 my-md-0 text-start text-md-center col-sm-4">
                                                     مؤسسة ضامن
                                                 </div>
                                             </div>
@@ -620,7 +622,7 @@
                                     <div class="col-12 col-xl-9">
                                         <div class="card-details">
                                             <div class="row">
-                                                <div class="col-4">
+                                                <div class="col-12 my-1 my-md-0 text-start text-md-center col-sm-4">
                                                     منذ 3 أيام
                                                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -632,7 +634,8 @@
                                                             fill="#555555" />
                                                     </svg>
                                                 </div>
-                                                <div class="col-4 x-border">
+                                                <div
+                                                    class="col-12 my-1 my-md-0 text-start text-md-center col-sm-4 x-border">
                                                     22-05-2022
                                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -641,7 +644,7 @@
                                                             fill="#555555" />
                                                     </svg>
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="col-12 my-1 my-md-0 text-start text-md-center col-sm-4">
                                                     مؤسسة ضامن
                                                 </div>
                                             </div>
@@ -676,7 +679,7 @@
                                     <div class="col-12 col-xl-9">
                                         <div class="card-details">
                                             <div class="row">
-                                                <div class="col-4">
+                                                <div class="col-12 my-1 my-md-0 text-start text-md-center col-sm-4">
                                                     منذ 3 أيام
                                                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -688,7 +691,8 @@
                                                             fill="#555555" />
                                                     </svg>
                                                 </div>
-                                                <div class="col-4 x-border">
+                                                <div
+                                                    class="col-12 my-1 my-md-0 text-start text-md-center col-sm-4 x-border">
                                                     22-05-2022
                                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -697,7 +701,7 @@
                                                             fill="#555555" />
                                                     </svg>
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="col-12 my-1 my-md-0 text-start text-md-center col-sm-4">
                                                     مؤسسة ضامن
                                                 </div>
                                             </div>
@@ -889,7 +893,7 @@
             </div>
         </section>
 
-        <section class="carousel-section" dir="ltr">
+        <section class="carousel-section overflow-hidden" dir="ltr">
             <div class="sec-bg">
                 <div class="bg-svg bg-div" style="background: url('images/dots.svg');"></div>
                 <div class="bg-shape"></div>
@@ -1171,19 +1175,19 @@
 
         <section>
             <div class="container">
-                <div class="jon-email py-4 px-5">
+                <div class="jon-email py-2 py-lg-4 px-5">
                     <div class="row">
-                        <div class="col-7">
+                        <div class="col-12 col-md-7">
                             <h2 class="fs-1">سجل الآن</h2>
                             <p>
                                 لتصلك أحدث المصادر عبر بريدك الإلكتروني
                             </p>
                         </div>
-                        <div class="col-5">
-                            <div class="input-group my-4">
+                        <div class="col-12 col-md-5">
+                            <div class="input-group my-2 my-md-4">
                                 <div class="input-group-prepend">
                                     <button type="button" class="btn btn-lg btn-dark text-white" id="basic-addon1">
-                                        <span class="mx-3">
+                                        <span class="mx-md-3">
                                             اشترك الآن
                                         </span>
                                     </button>
