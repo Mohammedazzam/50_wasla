@@ -1601,7 +1601,7 @@ footer .rights a {
 .search-filter .form-group > svg {
   position: absolute;
   top: 50%;
-  right: 20px;
+  left: 20px;
   transform: translateY(-50%);
 }
 
@@ -1623,7 +1623,7 @@ footer .rights a {
 .search-filter .form-group select {
   border-color: var(--main-color);
   color: var(--main-color);
-  padding: 13px 40px 13px 5px;
+  padding: 13px 10px 13px 40px;
   border-radius: 10px;
 }
 
@@ -2825,6 +2825,9 @@ footer .rights a {
 }
 /* **************************************** End wasla-center  Bage ******************************************* */
 /* **************************************** start about us  Bage ******************************************* */
+.about-us {
+  overflow: hidden;
+}
 .about-us section {
   margin: 50px auto;
   padding: 20px 0;
