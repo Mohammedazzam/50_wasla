@@ -48,6 +48,12 @@
 .color-second {
   color: var(--second-color) !important;
 }
+.text-gray-500 {
+  color: #a8a8af;
+}
+.bg-gray-500 {
+  background-color: #a8a8af;
+}
 .text-justify {
   text-align: justify;
 }
@@ -69,7 +75,12 @@
   stroke: #fff !important;
   color: #fff !important;
 }
-
+.rounded-4 {
+  border-radius: 1.5rem;
+}
+.rounded-5 {
+  border-radius: 2rem;
+}
 .a {
   text-decoration: none;
   color: var(--main-color);
@@ -180,7 +191,16 @@ button.close {
   text-decoration: none;
   opacity: 0.75;
 }
-
+.fa-circle-play,
+.fa-spotify {
+  transition: all 0.2s ease-in-out;
+}
+.fa-spotify:hover {
+  color: #1db954 !important;
+}
+.fa-circle-play:hover {
+  color: var(--main-color) !important;
+}
 .line_t_start,
 .line_b_start {
   display: block;
@@ -1383,7 +1403,7 @@ footer .rights a {
 
 .pagination ul li {
   display: inline-block;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   margin: 0 3px;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
@@ -1393,6 +1413,8 @@ footer .rights a {
 .pagination ul li a {
   text-decoration: none;
   color: #666666;
+  padding: 5px 10px;
+  display: block;
 }
 
 .pagination ul li svg {
@@ -3312,3 +3334,13 @@ footer .rights a {
 }
 
 /* **************************************** End new campaing details page ********************************** */
+/* **************************************** start podcast page ********************************** */
+
+.podcast_page .rounded-img {
+  width: 450px;
+  height: 450px;
+}
+.podcast_page .search .border-main-color {
+  border-color: var(--main-color);
+}
+/* **************************************** End podcast page ********************************** */
