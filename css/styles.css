@@ -3354,4 +3354,8 @@ footer .rights a {
 .podcast_page .search .border-main-color {
   border-color: var(--main-color);
 }
+.podcast_page .play_div {
+  width: 100%;
+  box-shadow: inset 0px -40px 20px -5px rgb(0 0 0 / 52%);
+}
 /* **************************************** End podcast page ********************************** */
