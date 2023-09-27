@@ -2860,6 +2860,7 @@ footer .rights a {
   font-family: "nato_bold";
 }
 
+.campaing_msg .campaing_msg_list ul li,
 .about-us .our-features ul li {
   font-size: 20px;
   line-height: 29px;
@@ -3333,6 +3334,16 @@ footer .rights a {
   );
 }
 
+/* ---------------- new_campaing_details2 */
+.new_campaing_details2 {
+}
+
+.new_campaing_details2 .campaing_msg .campaing_msg_list ul li {
+  margin: 25px auto;
+}
+.new_campaing_details2 .card_cont {
+  height: 150px;
+}
 /* **************************************** End new campaing details page ********************************** */
 /* **************************************** start podcast page ********************************** */
 
